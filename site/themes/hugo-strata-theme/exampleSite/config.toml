@@ -1,19 +1,18 @@
-baseurl = "/"
-#baseurl = "https://example.org/"
-languageCode = "it-it"
-title = "Team Romagna Judo 2017"
+baseurl = "https://example.org/"
+languageCode = "en-us"
+title = "Strata"
 theme = "hugo-strata-theme"
-#disqusShortname = "spf13"
+disqusShortname = "spf13"
 # Enable Google Analytics by inserting your tracking code
-#googleAnalytics = ""
+googleAnalytics = ""
 # Define how many posts should appear on a site
 paginate = 10
 
 [params]
 	# To provide some metadata for search engines feel free to add a few
     # information about you and your website.
-	name = "Team Romagna Judo"
-	description = "Team Romagna Judo 1972"
+	name = "Your name"
+	description = "Describe your website"
 
 	# Format dates with Go's time formatting
 	date_format = "2006-01-02"
@@ -143,13 +142,6 @@ paginate = 10
 	weight = 10
 
 [[menu.main]]
-    name = "About"
-    url  = "about"
-    weight = 5
-
-[[menu.main]]
 	name = "Blog"
 	url  = "post/"
-	weight = 10
-
-
+	weight = 0
