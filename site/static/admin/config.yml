@@ -1,6 +1,6 @@
 backend:
-  name: github
-  repo: gcsolaroli/Sito-TeamRomagnaJudo
+  name: bitbucket
+  repo: teamromagnajudo/sito
   branch: master
 
 publish_mode: editorial_workflow
