@@ -1,6 +1,6 @@
 backend:
-  name: bitbucket
-  repo: teamromagnajudo/sito
+  name:   github
+  repo:   teamromagnajudo1972/sito
   branch: master
 
 publish_mode: editorial_workflow
@@ -27,7 +27,6 @@ collections:
 #     field: language
 #     value: it
 
-collections:
   - name: "blog"
     label: "Blog"
 #   folder: "_posts/blog" # The path to the folder where the documents are stored
