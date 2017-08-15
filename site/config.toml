@@ -121,7 +121,7 @@ pluralizeListTitles = false
 		content = "Per contattarci, usate questo modulo."
 
 		# This can be exact coordinates or a searchable address in google maps
-		gmaps_address = "44.419297,11.7683251"
+		gmaps_address = "Team Romagna Judo, Lugo"
 		address = [
 			"Via Tomaso Emaldi, 20",
 			"48022 Lugo",
@@ -153,15 +153,25 @@ pluralizeListTitles = false
 
 
 # Menu links that appear on the left sidebar
-[[menu.main]]
-	name = "Home"
-	url  = "/"
-	weight = 10
+#[[menu.main]]
+#	name = "Home"
+#	url  = "/"
+#	weight = 10
 
 [[menu.main]]
-    name = "About"
-    url  = "about"
-    weight = 5
+    name = "Team"
+    url  = "team"
+    weight = 1
+
+[[menu.main]]
+    name = "Allenatori"
+    url  = "allenatori"
+    weight = 2
+
+[[menu.main]]
+    name = "Palestre"
+    url  = "palestre"
+    weight = 3
 
 [[menu.main]]
 	name = "Notizie"
