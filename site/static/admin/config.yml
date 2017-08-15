@@ -8,6 +8,9 @@ publish_mode: editorial_workflow
 media_folder: "site/static/images/uploads"
 public_folder: "/images/uploads"
 
+taxonomies: 
+	atleta : "atleti"
+
 collections:
   - name: "news"
     label: "Notizie"
@@ -27,6 +30,7 @@ collections:
 #   filter:
 #     field: language
 #     value: it
+
 
   - name: "blog"
     label: "Blog"
