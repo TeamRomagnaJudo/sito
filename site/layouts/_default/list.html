@@ -1,0 +1,12 @@
+{{ define "main" }}
+    {{ .Content }}
+
+    {{ $paginator := .Paginate .Data.Pages }}
+    {{ range $paginator.Pages }}
+        {{ .Render "summary" }}
+    {{ end }}
+
+	<h1>custom list page</h1>
+
+    {{ partial "pagination" . }}
+{{ end }}
