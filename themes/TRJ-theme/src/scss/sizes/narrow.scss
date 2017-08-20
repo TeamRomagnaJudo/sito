@@ -1,11 +1,9 @@
-$offset: 10px;
-
 body {
-	width: 100%;
-	background-color: yellow;
+	$offset: 10px;
+//	background-color: yellow;
 
 	header {
-		height: 150px;
+		height: 400px;
 
 		.logo {
 			top: $offset;
@@ -21,16 +19,27 @@ body {
 		}
 
 		nav {
-			height: 30px;
+//			height: auto;
+			ul {
+				li {
+//					display: block;
+
+					a {
+//						width: 100%;
+					}
+				}
+			}
 		}
 	
 		.onorificenze {
+			max-width: 40%;
 			top: $offset;
 			right: $offset;
 
 			li {
+				font-weight: bold;
 				padding-bottom: 2px;
-				font-size: 8pt;
+				font-size: 9pt;
 			}
 		}
 	}

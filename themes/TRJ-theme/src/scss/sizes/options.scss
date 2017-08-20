@@ -1,11 +1,14 @@
-@media only screen and (min-width: 100px) {
+$cut1: 700px;
+$cut2: 1100px;
+
+@media only screen and (min-width: 100px) and (max-width: $cut1 - 1px) {
 	@import "narrow";
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: $cut1) and (max-width: $cut2 - 1px) {
 	@import "wide";
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: $cut2) {
 	@import "extra-wide";
 }

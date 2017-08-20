@@ -1,0 +1,7 @@
+{{ define "main" }}
+    {{ .Content }}
+
+    {{ range .Data.Pages }}
+        {{ . }}
+    {{ end }}
+{{ end }}

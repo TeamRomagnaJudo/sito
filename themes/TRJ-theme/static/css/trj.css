@@ -369,134 +369,130 @@ template {
 [hidden] {
   display: none; }
 
-@media only screen and (min-width: 100px) {
-  body {
-    width: 100%;
-    background-color: yellow; }
-    body header {
-      height: 150px; }
-      body header .logo {
-        top: 10px;
-        left: 10px;
-        padding: 10px;
-        border-radius: 5px;
-        height: 78.5px;
-        width: 133.33333px; }
-        body header .logo img {
-          width: inherit; }
-      body header nav {
-        height: 30px; }
-      body header .onorificenze {
-        top: 10px;
-        right: 10px; }
-        body header .onorificenze li {
-          padding-bottom: 2px;
-          font-size: 8pt; }
-    body.home header {
-      height: 200px; }
-    body.home nav {
-      height: 50px; } }
-@media only screen and (min-width: 700px) {
-  body {
-    background-color: orange; }
-    body header {
-      height: 300px; }
-      body header .logo {
-        top: 20px;
-        left: 20px;
-        padding: 20px;
-        border-radius: 10px;
-        height: 117.75px;
-        width: 200px; }
-        body header .logo img {
-          width: inherit; }
-      body header nav {
-        height: 40px; }
-      body header .onorificenze {
-        top: 20px;
-        right: 20px; }
-        body header .onorificenze li {
-          padding-bottom: 4px;
-          font-size: 12pt; }
-    body.home header {
-      height: 400px; } }
+@media only screen and (min-width: 100px) and (max-width: 699px) {
+  body header {
+    height: 400px; }
+    body header .logo {
+      top: 10px;
+      left: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      height: 78.5px;
+      width: 133.33333px; }
+      body header .logo img {
+        width: inherit; }
+    body header .onorificenze {
+      max-width: 40%;
+      top: 10px;
+      right: 10px; }
+      body header .onorificenze li {
+        font-weight: bold;
+        padding-bottom: 2px;
+        font-size: 9pt; }
+  body.home header {
+    height: 200px; }
+  body.home nav {
+    height: 50px; } }
+@media only screen and (min-width: 700px) and (max-width: 1099px) {
+  body header {
+    height: 300px; }
+    body header .logo {
+      top: 20px;
+      left: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      height: 117.75px;
+      width: 200px; }
+      body header .logo img {
+        width: inherit; }
+    body header nav {
+      height: 40px; }
+    body header .onorificenze {
+      top: 20px;
+      right: 20px; }
+      body header .onorificenze li {
+        padding-bottom: 4px;
+        font-size: 12pt; }
+  body.home header {
+    height: 400px; } }
 @media only screen and (min-width: 1100px) {
-  body {
-    background-color: red; }
-    body header {
-      height: 400px; }
-      body header .logo {
-        top: 30px;
-        left: 30px;
-        padding: 30px;
-        border-radius: 15px;
-        height: 235.5px;
-        width: 400px; }
-        body header .logo img {
-          width: inherit; }
-      body header nav {
-        height: 50px; }
-      body header .onorificenze {
-        top: 30px;
-        right: 30px; }
-        body header .onorificenze li {
-          padding-bottom: 6px;
-          font-size: 18pt; }
-    body.home header {
-      height: 700px; } }
+  body header {
+    height: 400px; }
+    body header .logo {
+      top: 30px;
+      left: 30px;
+      padding: 30px;
+      border-radius: 15px;
+      height: 235.5px;
+      width: 400px; }
+      body header .logo img {
+        width: inherit; }
+    body header nav {
+      height: 50px; }
+    body header .onorificenze {
+      top: 30px;
+      right: 30px; }
+      body header .onorificenze li {
+        padding-bottom: 6px;
+        font-size: 18pt; }
+  body.home header {
+    height: 700px; } }
 body {
   margin: 0px;
   font-family: sans-serif; }
-  body header {
-    overflow: hidden;
+
+header {
+  overflow: hidden;
+  position: relative;
+  background: url(../images/background.jpg) no-repeat;
+  background-size: cover;
+  background-position: 50% 0%;
+  width: 100%; }
+  header .logo {
+    display: block;
     position: relative;
-    background: url(../images/background.jpg) no-repeat;
-    background-size: cover;
-    background-position: 50% 0%;
-    width: 100%; }
-    body header .logo {
-      display: block;
-      position: relative;
-      background-color: rgba(255, 255, 255, 0.6); }
-    body header nav {
-      position: absolute;
-      width: 100%;
-      bottom: 0;
-      background-color: rgba(255, 255, 255, 0.3); }
-      body header nav ul {
-        margin: 0px; }
-        body header nav ul li {
+    background-color: rgba(255, 255, 255, 0.6); }
+  header nav {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.3); }
+    header nav ul {
+      padding: 0px;
+      margin: 0px; }
+      header nav ul li {
+        display: inline-block;
+        cursor: pointer; }
+        header nav ul li:hover a {
+          background-color: rgba(255, 255, 255, 0.8); }
+        header nav ul li.active a {
+          background-color: #2d4187;
+          color: white; }
+        header nav ul li a {
+          display: inline-block;
           background-color: rgba(255, 255, 255, 0.5);
           border-radius: 5px;
           margin: 5px;
           padding: 10px;
-          display: inline-block;
-          cursor: pointer; }
-          body header nav ul li:hover {
-            background-color: rgba(255, 255, 255, 0.8); }
-          body header nav ul li.active {
-            background-color: #2d4187; }
-            body header nav ul li.active a {
-              color: white; }
-          body header nav ul li a {
-            color: #2d4187;
-            font-weight: bold;
-            text-decoration: none; }
-    body header .onorificenze {
-      position: absolute;
-      margin: 0px;
-      padding: 0px;
-      list-style: none; }
-      body header .onorificenze li {
-        color: white;
-        font-family: serif;
-        font-style: italic;
-        text-align: right; }
-  body footer {
-    background-color: gray; }
-    body footer .sponsor ul {
-      margin: 0px;
-      padding: 0px;
-      list-style: none; }
-      body footer .sponsor ul li a img {
-        width: 300px; }
+          color: #2d4187;
+          font-weight: bold;
+          text-decoration: none; }
+  header .onorificenze {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    list-style: none; }
+    header .onorificenze li {
+      color: white;
+      font-family: serif;
+      font-style: italic;
+      text-align: right; }
+
+footer {
+  background-color: gray; }
+  footer .sponsor ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none; }
+    footer .sponsor ul li a img {
+      width: 300px; }

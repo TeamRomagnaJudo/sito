@@ -24,6 +24,7 @@ archetypeDir = "archetypes"
 #googleAnalytics = ""
 # Define how many posts should appear on a site
 paginate = 10
+paginatePath = "page"
 pluralizeListTitles = false
 
 

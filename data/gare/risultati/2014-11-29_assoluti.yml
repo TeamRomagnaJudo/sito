@@ -1,0 +1,10 @@
+data: 2014-11-29
+luogo: Olbia
+titolo: Campionati Italiani Assoluti
+descrizione: Descrizione dei campionati Italiani Assoluti
+
+risultati:
+  - atleta:      Fabio Pucci
+    cintura:     nera
+    categoria:   -60Kg maschili
+    piazzamento: 7

@@ -1,0 +1,20 @@
+data: 2014-11-23
+luogo: Lugo - Ravenna
+titolo: Trofeo Regionale Esordienti A
+descrizione: Trofeo Regionale Eserdienti A e cinture colorate
+
+risultati:
+  - atleta:      Maia Rondini
+    cintura:     verde
+    categoria:   -45Kg femminili
+    piazzamento: 1
+
+  - atleta:      Francesca Fabi
+    cintura:     arancione
+    categoria:   -40Kg femminili
+    piazzamento: 1
+
+  - atleta:      Simone Argnani
+    cintura:     gialla
+    categoria:   -40Kg maschili
+    piazzamento: 3

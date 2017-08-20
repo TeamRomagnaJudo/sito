@@ -12,104 +12,99 @@ $red: rgba(196, 45, 42, 1);
 body {
 	margin: 0px;
 	font-family: sans-serif;
+}
 
-	header {
-		overflow: hidden;
+header {
+	overflow: hidden;
+	position: relative;
+
+	background: url(../images/background.jpg) no-repeat;
+	background-size: cover;
+	background-position: 50% 0%;
+	width: 100%;
+
+	.logo {
+		display: block;
 		position: relative;
-
-		background: url(../images/background.jpg) no-repeat;
-		background-size: cover;
-		background-position: 50% 0%;
-		width: 100%;
-
-		.logo {
-			display: block;
-			position: relative;
-			background-color: rgba(255, 255, 255, 0.6);
-			
-			img {
-			}
+		background-color: rgba(255, 255, 255, 0.6);
+		
+		img {
 		}
+	}
 
-		nav {
-			position: absolute;
-			width: 100%;
-			bottom: 0;
-			background-color: rgba(255, 255, 255, 0.3);
+	nav {
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		background-color: rgba(255, 255, 255, 0.3);
 
-			ul {
-				margin: 0px;
+		ul {
+			padding: 0px;
+			margin: 0px;
 
-				li {
+			li {
+				display: inline-block;
+				cursor: pointer;
+
+				&:hover {
+					a {
+						background-color: rgba(255, 255, 255, 0.8);
+					}
+				}
+
+				&.active {
+					a {
+						background-color: $blue;
+						color: white;
+					}
+					
+				}
+				
+				a {
+					display: inline-block;
 					background-color: rgba(255, 255, 255, 0.5);
 					border-radius: 5px;
 					margin:5px;
 					padding: 10px;
-					display: inline-block;
-					cursor: pointer;
 
-					&:hover {
-						background-color: rgba(255, 255, 255, 0.8);
-					}
-
-					&.active {
-						background-color: $blue;
-
-						a {
-							color: white;
-						}
-						
-					}
-					
-					a {
-						color: $blue;
-						font-weight: bold;
-						text-decoration: none;
-
-//						&:visited {
-
-//						}
-					}
+					color: $blue;
+					font-weight: bold;
+					text-decoration: none;
 				}
 			}
 		}
+	}
 
-		.onorificenze {
-			position: absolute;
+	.onorificenze {
+		position: absolute;
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+
+		li {
+			color: white;
+			font-family: serif;
+			font-style: italic;
+			text-align: right;
+		}
+	}
+}
+
+footer {
+	background-color: gray;
+
+	.sponsor {
+		ul {
 			margin: 0px;
 			padding: 0px;
 			list-style: none;
-
 			li {
-				color: white;
-				font-family: serif;
-				font-style: italic;
-				text-align: right;
-			}
-		}
-	}
-
-	footer {
-		background-color: gray;
-
-		.sponsor {
-			ul {
-				margin: 0px;
-				padding: 0px;
-				list-style: none;
-				li {
-					a {
-						img {
-							width: 300px;
-						}
+				a {
+					img {
+						width: 300px;
 					}
 				}
 			}
-		}
-	}
-
-	&.home {
-		header {
 		}
 	}
 }

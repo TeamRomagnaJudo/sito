@@ -1,0 +1,16 @@
+{{ define "main" }}
+    {{ .Content }}
+
+    {{ $gare := sort $.Site.Data.gare.risultati "data" "desc" }}
+    <ul>{{ range $gare }}
+        <li>
+            {{ $dayOfWeek := dateFormat "Monday" .data }}
+            {{ $month := dateFormat "01" .data }}
+            <a href="" title="{{ .titolo }}">{{ index $.Site.Data.date.giorniDellaSettimana $dayOfWeek }}, {{ dateFormat "02" .data }} {{ index $.Site.Data.date.mesi $month }} {{ dateFormat "2006" .data }} - {{ .descrizione }}</a>
+            <ul>{{ range .risultati }}
+                <li>{{ .atleta }} - {{ .piazzamento }}</li>
+            {{ end }}</ul>
+        </li>
+
+    {{ end }}</li>
+{{ end }}
