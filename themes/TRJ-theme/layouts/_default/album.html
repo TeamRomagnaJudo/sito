@@ -1,0 +1,14 @@
+{{ define "main" }}
+{{ .Content }}
+
+{{ $album := sort $.Site.Data.album "data" "desc" }}
+<ul>{{ range $album }}
+    <li>
+        {{ $dayOfWeek := dateFormat "Monday" .data }}
+        {{ $month := dateFormat "01" .data }}
+        <a data-flickr-embed="true"  href="{{ .album }}" title="Prova"><img src="{{ .cover }}" width="640" height="427" alt="{{ .titolo }}"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+    </li>
+
+{{ end }}</li>
+{{ end }}
