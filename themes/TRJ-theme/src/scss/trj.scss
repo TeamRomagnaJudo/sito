@@ -1,0 +1,102 @@
+$logo-width: 800px;
+$logo-height: 471px;
+
+$blue: rgba(45, 65, 135, 1);
+$red: rgba(196, 45, 42, 1);
+
+
+@import "normalize";
+@import "sizes/options";
+
+
+
+
+body {
+	margin: 0px;
+	font-family: sans-serif;
+
+	header {
+		overflow: hidden;
+		position: relative;
+
+		background: url(../images/background.jpg) no-repeat;
+		background-size: cover;
+		background-position: 50% 0%;
+		width: 100%;
+
+		.logo {
+			display: block;
+			position: relative;
+			background-color: rgba(255, 255, 255, 0.6);
+			
+			img {
+			}
+		}
+
+		nav {
+			position: absolute;
+			width: 100%;
+			bottom: 0;
+			background-color: rgba(255, 255, 255, 0.3);
+
+			ul {
+				margin: 0px;
+
+				li {
+					background-color: rgba(255, 255, 255, 0.5);
+					border-radius: 5px;
+					margin:5px;
+					padding: 10px;
+					display: inline-block;
+					cursor: pointer;
+
+					&:hover {
+						background-color: rgba(255, 255, 255, 0.8);
+					}
+
+					&.active {
+						background-color: $blue;
+
+						a {
+							color: white;
+						}
+						
+					}
+					
+					a {
+						color: $blue;
+						font-weight: bold;
+						text-decoration: none;
+
+//						&:visited {
+
+//						}
+					}
+				}
+			}
+		}
+	}
+	
+	footer {
+		background-color: gray;
+
+		.sponsor {
+			ul {
+				margin: 0px;
+				list-style: none;
+				li {
+					a {
+						img {
+							width: 300px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.home {
+		header {
+		}
+	}
+}

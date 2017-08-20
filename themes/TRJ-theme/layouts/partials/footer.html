@@ -1,0 +1,10 @@
+<footer>
+    <div class="sponsor">
+        <ul>
+        {{ range $.Site.Data.sponsor }}
+            <li>
+                <a href="{{ .url }}"><img src="{{ .image }}" /></a>
+            </li>
+        {{ end }}
+    </div>
+</footer>

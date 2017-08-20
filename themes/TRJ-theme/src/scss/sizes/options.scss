@@ -1,0 +1,11 @@
+@media only screen and (min-width: 100px) {
+	@import "narrow";
+}
+
+@media only screen and (min-width: 700px) {
+	@import "wide";
+}
+
+@media only screen and (min-width: 1100px) {
+	@import "extra-wide";
+}

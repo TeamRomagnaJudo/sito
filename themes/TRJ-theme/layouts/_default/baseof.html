@@ -1,0 +1,12 @@
+<html>
+{{ partial "meta" . }}
+<body class="{{ .Page.Kind }}">
+{{ partial "header" . }}
+
+<div id="main" {{ if .Page.Params.contentClass }}class="{{ .Page.Params.contentClass }}"{{ end }}>
+    {{ block "main" . }}{{ end }}
+</div>
+
+{{ partial "footer" . }}
+</body>
+</html>

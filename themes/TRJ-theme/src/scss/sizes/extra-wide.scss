@@ -1,0 +1,31 @@
+body {
+	background-color: red;
+
+	header {
+		height: 400px;
+
+		.logo {
+			top: 30px;
+			left: 30px;
+			padding: 30px;
+			border-radius: 15px;
+
+			height: $logo-height / 2;
+			width: $logo-width / 2;
+			
+			img {
+				width: inherit;
+			}
+		}
+
+		nav {
+			height: 50px;
+		}
+	}
+
+	&.home {
+		header {
+			height: 700px;
+		}
+	}
+}

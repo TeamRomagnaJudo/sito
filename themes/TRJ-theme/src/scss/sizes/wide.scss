@@ -1,0 +1,30 @@
+body {
+	background-color: orange;
+
+	header {
+		height: 300px;
+
+		.logo {
+			top: 20px;
+			left: 20px;
+			padding: 20px;
+			border-radius: 10px;
+
+			height: $logo-height / 4;
+			width: $logo-width / 4;
+			
+			img {
+				width: inherit;
+			}
+		}
+		nav {
+			height: 40px;
+		}
+	}
+
+	&.home {
+		header {
+			height: 400px;
+		}
+	}
+}

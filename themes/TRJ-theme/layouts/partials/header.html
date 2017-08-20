@@ -1,0 +1,16 @@
+{{ $currentPage := . }}
+
+<header>
+    <a class="logo" href="{{- .Site.BaseURL -}}">
+        <img src="../images/logo.png">
+    </a>
+
+    <nav>
+    	<ul>{{ with .Site.Menus.main }}
+            {{ range . }}
+                <li {{if eq $currentPage.Params.menu .Identifier }} class="active"{{end}}><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+            {{ end }}
+        {{ end }}</ul>
+	</nav>
+
+</header>

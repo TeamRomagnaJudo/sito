@@ -1,0 +1,35 @@
+body {
+	width: 100%;
+	background-color: yellow;
+
+	header {
+		height: 150px;
+
+		.logo {
+			top: 10px;
+			left: 10px;
+			padding: 10px;
+			border-radius: 5px;
+			height: $logo-height / 6;
+			width: $logo-width / 6;
+			
+			img {
+				width: inherit;
+			}
+		}
+
+		nav {
+			height: 30px;
+		}
+	}
+
+	&.home {
+		header {
+			height: 200px;
+		}
+
+		nav {
+			height: 50px;
+		}
+	}
+}

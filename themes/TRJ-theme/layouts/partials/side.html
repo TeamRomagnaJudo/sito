@@ -1,0 +1,5 @@
+<div class="side">
+    {{ range $index, $element := $.Site.Data.prova }}
+      <div>{{ $index }} - {{ $element.url }}</div>
+    {{ end }}
+</div>
