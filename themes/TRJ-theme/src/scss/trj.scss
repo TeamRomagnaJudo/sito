@@ -9,8 +9,6 @@ $red: rgba(196, 45, 42, 1);
 @import "sizes/options";
 
 
-
-
 body {
 	margin: 0px;
 	font-family: sans-serif;
@@ -75,14 +73,29 @@ body {
 				}
 			}
 		}
+
+		.onorificenze {
+			position: absolute;
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+
+			li {
+				color: white;
+				font-family: serif;
+				font-style: italic;
+				text-align: right;
+			}
+		}
 	}
-	
+
 	footer {
 		background-color: gray;
 
 		.sponsor {
 			ul {
 				margin: 0px;
+				padding: 0px;
 				list-style: none;
 				li {
 					a {

@@ -16,3 +16,7 @@ Netlify usa la versione 0.19 di Hugo, quindi occorre fare le prove con questa ve
 --buildFuture --buildDrafts --buildExpired
 
 
+# Appunti
+
+Medaglia d'Onore al Merito Sportivo
+Stella di Bronzo del C.O.N.I

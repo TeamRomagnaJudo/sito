@@ -13,4 +13,8 @@
         {{ end }}</ul>
 	</nav>
 
+    <ul class="onorificenze">{{ range $.Site.Data.onorificenze }}
+        <li>{{ .descrizione }}</li>
+    {{ end }}</ul>
+    <ul>
 </header>

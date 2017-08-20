@@ -1,3 +1,5 @@
+$offset: 10px;
+
 body {
 	width: 100%;
 	background-color: yellow;
@@ -6,10 +8,10 @@ body {
 		height: 150px;
 
 		.logo {
-			top: 10px;
-			left: 10px;
-			padding: 10px;
-			border-radius: 5px;
+			top: $offset;
+			left: $offset;
+			padding: $offset;
+			border-radius: $offset / 2;
 			height: $logo-height / 6;
 			width: $logo-width / 6;
 			
@@ -20,6 +22,16 @@ body {
 
 		nav {
 			height: 30px;
+		}
+	
+		.onorificenze {
+			top: $offset;
+			right: $offset;
+
+			li {
+				padding-bottom: 2px;
+				font-size: 8pt;
+			}
 		}
 	}
 
