@@ -1,6 +1,6 @@
 [build]
-  command = "hugo"
+  command = "hugo_0.19"
   publish = "public"
 
 [context.deploy-preview]
-  command = "hugo --buildDrafts --buildFuture"
+  command = "hugo_0.19 --buildDrafts --buildFuture"
