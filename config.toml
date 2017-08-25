@@ -206,7 +206,7 @@ disableKinds = []
 #   children = "menu"
 
 [[menu.main]]
-    name = "Sedi"
+    name = "Palestre"
     url  = "palestre"
     identifier = "sedi"
     weight = 2
