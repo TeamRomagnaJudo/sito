@@ -5,21 +5,21 @@ backend:
 
 publish_mode: editorial_workflow
 
-media_folder: "site/static/images/uploads"
+media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  - name: "news"
+  - name: "notizie"
     label: "Notizie"
 #   folder: "_posts/blog" # The path to the folder where the documents are stored
-    folder: "site/content/notizie" # The path to the folder where the documents are stored
+    folder: "content/notizie" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Layout",                name: "layout",    widget: "hidden", default: "news"}
+      - {label: "Layout",                name: "layout",    widget: "hidden", default: "notizie"}
       - {label: "Title",                 name: "title",     widget: "string"}
       - {label: "Publish Date",          name: "date",      widget: "datetime"}
-      - {label: "Tag",                   name: "tag",       widget: "string"}
+#     - {label: "Tag",                   name: "tag",       widget: "string"}
 #     - {label: "Featured Image",        name: "thumbnail", widget: "image"}
 #     - {label: "Rating (scale of 1-5)", name: "rating",    widget: "number"}
       - {label: "Body",                  name: "body",      widget: "markdown"}
@@ -28,14 +28,14 @@ collections:
 #     field: language
 #     value: it
 
-  - name: "blog"
-    label: "Blog"
+  - name: "gare"
+    label: "Gare"
 #   folder: "_posts/blog" # The path to the folder where the documents are stored
-    folder: "site/content/post" # The path to the folder where the documents are stored
+    folder: "content/gare" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Layout",                name: "layout",    widget: "hidden", default: "news"}
+      - {label: "Layout",                name: "layout",    widget: "hidden", default: "gare"}
       - {label: "Title",                 name: "title",     widget: "string"}
       - {label: "Publish Date",          name: "date",      widget: "datetime"}
 #     - {label: "Featured Image",        name: "thumbnail", widget: "image"}
