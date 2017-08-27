@@ -1,3 +1,4 @@
+//	FlexBox cheatsheet: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 $header-height: 800px;
 $logo-width: 800px;
 $logo-height: 471px;
@@ -15,6 +16,7 @@ $black: rgba(0, 0, 0, 1);
 
 
 @import "normalize";
+@import "_flex";
 @import "sizes/_options";
 
 
@@ -24,28 +26,19 @@ body {
 }
 
 header {
-	overflow: hidden;
 	position: relative;
+	overflow: hidden;
 
-	background-color: gray;
-	background-size: cover;
-	background-position: 50% 0%;
-	width: 100%;
-
-	.logo {
-		display: block;
+	.carousel {
 		position: absolute;
 		top: 0px;
 		left: 0px;
-		background-color: rgba(255, 255, 255, 0.6);
-	}
-
-	.carousel {
+		width: 100%;
+		overflow: hidden;
+		
 		$numberOfImagesInHeaderCarousel: 5;
 		$carouselDuration: 10s;
 
-		overflow: hidden;
-		width: 100%;
 
 		.panes {
 			margin: 0px;
@@ -54,13 +47,11 @@ header {
 			position: relative;
 			width: 100% * $numberOfImagesInHeaderCarousel;
 
-			overflow: hidden; /* This is used solely to clear floats, it does not add functionality. */
-			
 			-moz-animation: carousel $carouselDuration infinite;
 			-webkit-animation: carousel $carouselDuration infinite;
 			animation: carousel $carouselDuration infinite;	
 			
-			& > li {
+			li {
 				position: relative;
 				float: left;
 				width: 100% / $numberOfImagesInHeaderCarousel;
@@ -69,80 +60,173 @@ header {
 					display: block;
 					width: 100%;
 					max-width: 100%;
+				//	opacity: 0.5;
 				}				
 			}
 		}
 	}	
 
-	nav {
-		position: absolute;
-		width: 100%;
-		bottom: 0;
-		background-color: rgba(255, 255, 255, 0.3);
+	.header {
+		position: relative;
+		top: 0px;
+		left: 0px;
 
-		ul {
-			padding: 0px;
-			margin: 0px;
+		@include flexbox;
+		@include flex-direction(column);
 
-			li {
-				display: inline-block;
+		.top {
+			@include flexbox;
+			@include flex-direction(row);
+			@include justify-content(space-between);
 
+			margin: 10px;
+			margin-bottom: 2vw;
+			
+			.logo {
+				background-color: rgba(255, 255, 255, 0.6);
+				padding: 1em;
+				border-radius: 1em;
+				width: 40%;
+				max-width: 300px;
+				
 				a {
-					display: inline-block;
-					background-color: rgba(255, 255, 255, 0.5);
-					border-radius: 5px;
-					margin:5px;
+					display: block;
+
+					img {
+						width: 100%;
+					}
+				}
+			}
+			
+			.spacer {
+				width: 50px;
+			}
+			.onorificenze {
+				@include flexbox;
+				@include flex-direction(column);
+//				width: 50%;
+//				max-width: 500px;
+				
+				ul {
+					background-color: rgba(255, 255, 255, 0.3);
+					border-radius: 4px;
+					margin: 0px;
 					padding: 10px;
-
-					color: $blue;
-					font-weight: bold;
-					text-decoration: none;
-
-					&:hover {
-						background-color: rgba(255, 255, 255, 0.8);
-					}
-
-					&.active {
-						background-color: $blue;
-						color: white;
-					}
+					list-style: none;
 					
+					li {
+						font-size: 2.5vw;
+						text-align: right;
+						color: white;
+						font-family: serif;
+						font-style: italic;
+					}
 				}
 			}
 		}
-	}
+	
+		nav {
+			background-color: rgba(255, 255, 255, 0.6);
+			
+			ul {
+				@include flexbox;
+				@include flex-wrap(wrap);
+//				@include flex-wrap(wrap-reverse);
+				
+				list-style: none;
+				padding: 0px;
+				margin: 0px;
+				border: 0px;
 
-	.onorificenze {
-		position: absolute;
-		margin: 0px;
-		padding: 0px;
-		list-style: none;
+				li {
+					@include flex-grow(1);
+//					display: inline-block;
+					padding: 0px;
+					margin: 0px;
+					border: 0px;						
+					
+					a {
+						text-align: center;
+						display: block;
+//						border-radius: 5px;
+//						margin:5px;
+						padding: 10px;
+						border-right: 1px solid white;
+						border-bottom: 1px solid white;
+						
+						color: $blue;
+						font-weight: bold;
+						text-decoration: none;
 
-		background-color: rgba(255, 255, 255, 0.3);
-		border-radius: 4px;
-		padding: 10px;
+						&:hover {
+							background-color: rgba(255, 255, 255, 0.8);
+						}
 
-		li {
-			color: white;
-			font-family: serif;
-			font-style: italic;
-			text-align: right;
+						&.active {
+							background-color: $blue;
+							color: white;
+						}
+						
+					}
+				}
+			}
 		}
 	}
 }
 
 footer {
+	@include flexbox;
+	@include flex-direction(row);
+	@include justify-content(space-between);
+	@include flex-wrap(wrap);
+
 	background-color: gray;
 
+	.datiSocietari {
+		@include inline-flex;
+		padding: 5px;
+
+		p {
+			margin: 0px;
+		}
+
+		color: white;
+		font-size: 10pt;
+
+		.p-name {
+			font-size: 110%;
+			display: block;
+			text-decoration: none;
+			&:visited {
+				color: white;
+			}
+		}
+
+		.p-street-address {
+			display: block;
+		}
+
+		.p-region {
+			display: block;
+		}
+
+		.u-email {
+			text-decoration: none;
+			color: white;
+		}
+	}
+
 	.sponsor {
+		@include inline-flex;
 		ul {
 			margin: 0px;
 			padding: 0px;
 			list-style: none;
 			li {
+				padding: 5px;
 				a {
 					img {
-						width: 300px;
+						width: 200px;
 					}
 				}
 			}

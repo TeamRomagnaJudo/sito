@@ -370,150 +370,314 @@ template {
   display: none; }
 
 @media only screen and (min-width: 100px) and (max-width: 699px) {
-  body header {
-    height: 160px; }
-    body header .logo {
-      top: 10px;
-      left: 10px;
-      padding: 10px;
-      border-radius: 5px;
-      height: 62.8px;
-      width: 106.66667px; }
-      body header .logo img {
-        width: inherit; }
-    body header .onorificenze {
-      max-width: 40%;
-      top: 10px;
-      right: 10px; }
-      body header .onorificenze li {
-        font-weight: bold;
-        padding-bottom: 2px;
-        font-size: 9pt; } }
+  body {
+    /*
+    	$offset: 10px;
+    	$ratio: 5;
+    
+    	header {
+    		height: $header-height / $ratio;
+    
+    		.logo {
+    			top: $offset;
+    			left: $offset;
+    			padding: $offset;
+    			border-radius: $offset / 2;
+    			height: $logo-height / $ratio / 1.5;
+    			width: $logo-width / $ratio / 1.5;
+    			
+    			img {
+    				width: inherit;
+    			}
+    		}
+    	
+    		.onorificenze {
+    			max-width: 40%;
+    			top: $offset;
+    			right: $offset;
+    
+    			li {
+    				font-weight: bold;
+    				padding-bottom: 2px;
+    				font-size: 9pt;
+    
+    				color: red;
+    			}
+    		}
+    	}
+    */ } }
 @media only screen and (min-width: 700px) and (max-width: 1099px) {
-  body header {
-    height: 200px; }
-    body header .logo {
-      top: 20px;
-      left: 20px;
-      padding: 20px;
-      border-radius: 10px;
-      height: 78.5px;
-      width: 133.33333px; }
-      body header .logo img {
-        width: inherit; }
-    body header nav {
-      height: 40px; }
-    body header .onorificenze {
-      top: 20px;
-      right: 20px; }
-      body header .onorificenze li {
-        padding-bottom: 4px;
-        font-size: 12pt; } }
+  body {
+    /*	
+    	$offset: 20px;
+    	$ratio: 4;
+    
+    	header {
+    		height: $header-height / $ratio;
+    		
+    		.logo {
+    			top: $offset;
+    			left: $offset;
+    			padding: $offset;
+    			border-radius: $offset / 2;
+    
+    			height: $logo-height / $ratio / 1.5;
+    			width: $logo-width / $ratio / 1.5;
+    			
+    			img {
+    				width: inherit;
+    			}
+    		}
+    	
+    		.onorificenze {
+    			top: $offset;
+    			right: $offset;
+    			li {
+    				padding-bottom: 4px;
+    				font-size: 12pt;
+    				color: blue;
+    			}
+    		}
+    	}
+    */ } }
 @media only screen and (min-width: 1100px) {
-  body header {
-    height: 266.66667px; }
-    body header .logo {
-      top: 30px;
-      left: 30px;
-      padding: 30px;
-      border-radius: 10px;
-      height: 104.66667px;
-      width: 177.77778px; }
-      body header .logo img {
-        width: inherit; }
-    body header nav {
-      height: 50px; }
-    body header .onorificenze {
-      top: 30px;
-      right: 30px; }
-      body header .onorificenze li {
-        padding-bottom: 6px;
-        font-size: 18pt; } }
+  body {
+    /*
+    	$ratio: 3;
+    	$offset: 30px;
+    
+    	header {
+    		height: $header-height / $ratio;
+    
+    		.logo {
+    			top: $offset;
+    			left: $offset;
+    			padding: $offset;
+    			border-radius: $offset / $ratio;
+    
+    			height: $logo-height / $ratio / 1.5;
+    			width: $logo-width / $ratio / 1.5;
+    			
+    			img {
+    				width: inherit;
+    			}
+    		}
+    
+    		nav {
+    			height: 50px;
+    		}
+    
+    		.onorificenze {
+    			top: $offset;
+    			right: $offset;
+    			
+    			li {
+    				padding-bottom: 6px;
+    				font-size: 18pt;
+    			}
+    		}
+    	}
+    */ } }
 body {
   margin: 0px;
   font-family: sans-serif; }
 
 header {
-  overflow: hidden;
   position: relative;
-  background-color: gray;
-  background-size: cover;
-  background-position: 50% 0%;
-  width: 100%; }
-  header .logo {
-    display: block;
+  overflow: hidden; }
+  header .carousel {
     position: absolute;
     top: 0px;
     left: 0px;
-    background-color: rgba(255, 255, 255, 0.6); }
-  header .carousel {
-    overflow: hidden;
-    width: 100%; }
+    width: 100%;
+    overflow: hidden; }
     header .carousel .panes {
       margin: 0px;
       padding: 0px;
       list-style: none;
       position: relative;
       width: 500%;
-      overflow: hidden;
-      /* This is used solely to clear floats, it does not add functionality. */
       -moz-animation: carousel 10s infinite;
       -webkit-animation: carousel 10s infinite;
       animation: carousel 10s infinite; }
-      header .carousel .panes > li {
+      header .carousel .panes li {
         position: relative;
         float: left;
         width: 20%; }
-        header .carousel .panes > li img {
+        header .carousel .panes li img {
           display: block;
           width: 100%;
           max-width: 100%; }
-  header nav {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.3); }
-    header nav ul {
-      padding: 0px;
-      margin: 0px; }
-      header nav ul li {
-        display: inline-block; }
-        header nav ul li a {
-          display: inline-block;
-          background-color: rgba(255, 255, 255, 0.5);
-          border-radius: 5px;
-          margin: 5px;
+  header .header {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    header .header .top {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-direction: normal;
+      -webkit-box-orient: horizontal;
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      justify-content: space-between;
+      margin: 10px;
+      margin-bottom: 2vw; }
+      header .header .top .logo {
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 1em;
+        border-radius: 1em;
+        width: 40%;
+        max-width: 300px; }
+        header .header .top .logo a {
+          display: block; }
+          header .header .top .logo a img {
+            width: 100%; }
+      header .header .top .spacer {
+        width: 50px; }
+      header .header .top .onorificenze {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-direction: normal;
+        -webkit-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        header .header .top .onorificenze ul {
+          background-color: rgba(255, 255, 255, 0.3);
+          border-radius: 4px;
+          margin: 0px;
           padding: 10px;
-          color: #1e136a;
-          font-weight: bold;
-          text-decoration: none; }
-          header nav ul li a:hover {
-            background-color: rgba(255, 255, 255, 0.8); }
-          header nav ul li a.active {
-            background-color: #1e136a;
-            color: white; }
-  header .onorificenze {
-    position: absolute;
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    padding: 10px; }
-    header .onorificenze li {
-      color: white;
-      font-family: serif;
-      font-style: italic;
-      text-align: right; }
+          list-style: none; }
+          header .header .top .onorificenze ul li {
+            font-size: 2.5vw;
+            text-align: right;
+            color: white;
+            font-family: serif;
+            font-style: italic; }
+    header .header nav {
+      background-color: rgba(255, 255, 255, 0.6); }
+      header .header nav ul {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        border: 0px; }
+        header .header nav ul li {
+          -webkit-box-flex: 1;
+          -webkit-flex-grow: 1;
+          -moz-flex-grow: 1;
+          -ms-flex-positive: 1;
+          flex-grow: 1;
+          padding: 0px;
+          margin: 0px;
+          border: 0px; }
+          header .header nav ul li a {
+            text-align: center;
+            display: block;
+            padding: 10px;
+            border-right: 1px solid white;
+            border-bottom: 1px solid white;
+            color: #1e136a;
+            font-weight: bold;
+            text-decoration: none; }
+            header .header nav ul li a:hover {
+              background-color: rgba(255, 255, 255, 0.8); }
+            header .header nav ul li a.active {
+              background-color: #1e136a;
+              color: white; }
 
 footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   background-color: gray; }
-  footer .sponsor ul {
-    margin: 0px;
-    padding: 0px;
-    list-style: none; }
-    footer .sponsor ul li a img {
-      width: 300px; }
+  footer .datiSocietari {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 5px;
+    color: white;
+    font-size: 10pt; }
+    footer .datiSocietari p {
+      margin: 0px; }
+    footer .datiSocietari .p-name {
+      font-size: 110%;
+      display: block;
+      text-decoration: none; }
+      footer .datiSocietari .p-name:visited {
+        color: white; }
+    footer .datiSocietari .p-street-address {
+      display: block; }
+    footer .datiSocietari .p-region {
+      display: block; }
+    footer .datiSocietari .u-email {
+      text-decoration: none;
+      color: white; }
+  footer .sponsor {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
+    footer .sponsor ul {
+      margin: 0px;
+      padding: 0px;
+      list-style: none; }
+      footer .sponsor ul li {
+        padding: 5px; }
+        footer .sponsor ul li a img {
+          width: 200px; }
 
 @keyframes carousel {
   0% {
