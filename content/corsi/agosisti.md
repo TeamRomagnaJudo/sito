@@ -7,3 +7,7 @@ menu = "corsi"
 +++
 
 # Corso Agonisti
+
+
+Orari:
+(link a palestra Lugo/Ravenna)
