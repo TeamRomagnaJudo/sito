@@ -1,9 +1,10 @@
 baseurl = "/"
 #baseurl = "https://example.org/"
 languageCode = "it-it"
-DefaultContentLanguage = "it"
+defaultContentLanguage = "it"
+# defaultContentLanguageInSubdir = true
 title = "Team Romagna Judo 2017"
-theme = "TRJ-theme"
+#theme = "TRJ-theme"
 
 #publishDir = "../dist"
 
@@ -27,9 +28,13 @@ paginate = 10
 paginatePath = "page"
 pluralizeListTitles = false
 
+[blackfriday]
+angledQuotes = true
+#hrefTargetBlank = true
 
 preserveTaxonomyNames = false
 [taxonomies]
+
 #  tag = "tags"
 #  category = "categories"
 #  series = "series"
@@ -37,8 +42,8 @@ preserveTaxonomyNames = false
 
 # Allows you to disable all page types and will render nothing related to 'kind';
 # values = "page", "home", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"
-# disableKinds = ["taxonomy", "taxonomyTerm"]
-disableKinds = []
+#disableKinds = ["taxonomy", "taxonomyTerm"]
+#disableKinds = []
 
 #sectionPagesMenu = "sections"
 
@@ -146,9 +151,9 @@ disableKinds = []
 #			title = "Lorem ipsum dolor."
 #			description = "Lorem ipsum dolor sit amet."
 
-	[params.recentposts]
-		hide  = false
-		title = "Recent blog posts"
+#	[params.recentposts]
+#		hide  = false
+#		title = "Recent blog posts"
 
 	[params.contact]
 		hide  = false
@@ -208,7 +213,7 @@ disableKinds = []
 [[menu.main]]
     name = "Palestre"
     url  = "palestre"
-    identifier = "sedi"
+    identifier = "palestre"
     weight = 2
 
 [[menu.main]]

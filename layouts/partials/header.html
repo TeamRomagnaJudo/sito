@@ -1,0 +1,30 @@
+{{ $currentPage := . }}
+
+<header>
+    <div class=carousel>
+        <ul class=panes>
+            <li><img src="images/header/01.jpg" alt=""></li>
+            <li><img src="images/header/02.jpg" alt=""></li>
+            <li><img src="images/header/03.jpg" alt=""></li>
+            <li><img src="images/header/04.jpg" alt=""></li>
+            <li><img src="images/header/05.jpg" alt=""></li>
+        </ul>
+    </div>
+
+    <a class="logo" href="{{- .Site.BaseURL -}}">
+        <img src="/images/logo.png">
+    </a>
+    
+    <nav>
+    	<ul>{{ with .Site.Menus.main }}
+            {{ range . }}
+                <li><a {{if eq $currentPage.Params.menu .Identifier }} class="active"{{end}} href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+            {{ end }}
+        {{ end }}</ul>
+	</nav>
+
+    <ul class="onorificenze">{{ range $.Site.Data.onorificenze }}
+        <li>{{ .descrizione }}</li>
+    {{ end }}</ul>
+    <ul>
+</header>

@@ -1,0 +1,165 @@
+$header-height: 800px;
+$logo-width: 800px;
+$logo-height: 471px;
+
+$blue: rgba(45, 65, 135, 1);
+$red: rgba(196, 45, 42, 1);
+
+$white: rgba(255, 255, 255, 1);
+$yellow: rgb(245, 243, 9);
+$orange: rgb(250, 175, 0);
+$green: rgb(30, 174, 6);
+$blue: rgb(30, 19, 106);
+$brown: rgb(55, 28, 6);
+$black: rgba(0, 0, 0, 1);
+
+
+@import "normalize";
+@import "sizes/_options";
+
+
+body {
+	margin: 0px;
+	font-family: sans-serif;
+}
+
+header {
+	overflow: hidden;
+	position: relative;
+
+	background-color: gray;
+	background-size: cover;
+	background-position: 50% 0%;
+	width: 100%;
+
+	.logo {
+		display: block;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		background-color: rgba(255, 255, 255, 0.6);
+	}
+
+	.carousel {
+		$numberOfImagesInHeaderCarousel: 5;
+		$carouselDuration: 10s;
+
+		overflow: hidden;
+		width: 100%;
+
+		.panes {
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+			position: relative;
+			width: 100% * $numberOfImagesInHeaderCarousel;
+
+			overflow: hidden; /* This is used solely to clear floats, it does not add functionality. */
+			
+			-moz-animation: carousel $carouselDuration infinite;
+			-webkit-animation: carousel $carouselDuration infinite;
+			animation: carousel $carouselDuration infinite;	
+			
+			& > li {
+				position: relative;
+				float: left;
+				width: 100% / $numberOfImagesInHeaderCarousel;
+
+				img {
+					display: block;
+					width: 100%;
+					max-width: 100%;
+				}				
+			}
+		}
+	}	
+
+	nav {
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		background-color: rgba(255, 255, 255, 0.3);
+
+		ul {
+			padding: 0px;
+			margin: 0px;
+
+			li {
+				display: inline-block;
+
+				a {
+					display: inline-block;
+					background-color: rgba(255, 255, 255, 0.5);
+					border-radius: 5px;
+					margin:5px;
+					padding: 10px;
+
+					color: $blue;
+					font-weight: bold;
+					text-decoration: none;
+
+					&:hover {
+						background-color: rgba(255, 255, 255, 0.8);
+					}
+
+					&.active {
+						background-color: $blue;
+						color: white;
+					}
+					
+				}
+			}
+		}
+	}
+
+	.onorificenze {
+		position: absolute;
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+
+		background-color: rgba(255, 255, 255, 0.3);
+		border-radius: 4px;
+		padding: 10px;
+
+		li {
+			color: white;
+			font-family: serif;
+			font-style: italic;
+			text-align: right;
+		}
+	}
+}
+
+footer {
+	background-color: gray;
+
+	.sponsor {
+		ul {
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+			li {
+				a {
+					img {
+						width: 300px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@keyframes carousel {
+	0%		{ left:0; }
+	18%		{ left:0; }
+	20%		{ left:-100%; }
+	38% 	{ left:-100%; }
+	40%		{ left:-200%; }
+	58%		{ left:-200%; }
+	60% 	{ left:-300%; }
+	78% 	{ left:-300%; }
+	80% 	{ left:-400%; }
+	98% 	{ left:-400%; }
+	100%	{ left:0; }
+}

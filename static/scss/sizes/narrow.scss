@@ -1,17 +1,17 @@
 body {
 	$offset: 10px;
-//	background-color: yellow;
+	$ratio: 5;
 
 	header {
-		height: 400px;
+		height: $header-height / $ratio;
 
 		.logo {
 			top: $offset;
 			left: $offset;
 			padding: $offset;
 			border-radius: $offset / 2;
-			height: $logo-height / 6;
-			width: $logo-width / 6;
+			height: $logo-height / $ratio / 1.5;
+			width: $logo-width / $ratio / 1.5;
 			
 			img {
 				width: inherit;
@@ -41,16 +41,6 @@ body {
 				padding-bottom: 2px;
 				font-size: 9pt;
 			}
-		}
-	}
-
-	&.home {
-		header {
-			height: 200px;
-		}
-
-		nav {
-			height: 50px;
 		}
 	}
 }

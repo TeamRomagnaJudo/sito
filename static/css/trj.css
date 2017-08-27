@@ -371,14 +371,14 @@ template {
 
 @media only screen and (min-width: 100px) and (max-width: 699px) {
   body header {
-    height: 400px; }
+    height: 160px; }
     body header .logo {
       top: 10px;
       left: 10px;
       padding: 10px;
       border-radius: 5px;
-      height: 78.5px;
-      width: 133.33333px; }
+      height: 62.8px;
+      width: 106.66667px; }
       body header .logo img {
         width: inherit; }
     body header .onorificenze {
@@ -388,21 +388,17 @@ template {
       body header .onorificenze li {
         font-weight: bold;
         padding-bottom: 2px;
-        font-size: 9pt; }
-  body.home header {
-    height: 200px; }
-  body.home nav {
-    height: 50px; } }
+        font-size: 9pt; } }
 @media only screen and (min-width: 700px) and (max-width: 1099px) {
   body header {
-    height: 300px; }
+    height: 200px; }
     body header .logo {
       top: 20px;
       left: 20px;
       padding: 20px;
       border-radius: 10px;
-      height: 117.75px;
-      width: 200px; }
+      height: 78.5px;
+      width: 133.33333px; }
       body header .logo img {
         width: inherit; }
     body header nav {
@@ -412,19 +408,17 @@ template {
       right: 20px; }
       body header .onorificenze li {
         padding-bottom: 4px;
-        font-size: 12pt; }
-  body.home header {
-    height: 400px; } }
+        font-size: 12pt; } }
 @media only screen and (min-width: 1100px) {
   body header {
-    height: 400px; }
+    height: 266.66667px; }
     body header .logo {
       top: 30px;
       left: 30px;
       padding: 30px;
-      border-radius: 15px;
-      height: 235.5px;
-      width: 400px; }
+      border-radius: 10px;
+      height: 104.66667px;
+      width: 177.77778px; }
       body header .logo img {
         width: inherit; }
     body header nav {
@@ -434,9 +428,7 @@ template {
       right: 30px; }
       body header .onorificenze li {
         padding-bottom: 6px;
-        font-size: 18pt; }
-  body.home header {
-    height: 700px; } }
+        font-size: 18pt; } }
 body {
   margin: 0px;
   font-family: sans-serif; }
@@ -444,14 +436,38 @@ body {
 header {
   overflow: hidden;
   position: relative;
-  background: url(../images/background.jpg) no-repeat;
+  background-color: gray;
   background-size: cover;
   background-position: 50% 0%;
   width: 100%; }
   header .logo {
     display: block;
-    position: relative;
+    position: absolute;
+    top: 0px;
+    left: 0px;
     background-color: rgba(255, 255, 255, 0.6); }
+  header .carousel {
+    overflow: hidden;
+    width: 100%; }
+    header .carousel .panes {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      position: relative;
+      width: 500%;
+      overflow: hidden;
+      /* This is used solely to clear floats, it does not add functionality. */
+      -moz-animation: carousel 10s infinite;
+      -webkit-animation: carousel 10s infinite;
+      animation: carousel 10s infinite; }
+      header .carousel .panes > li {
+        position: relative;
+        float: left;
+        width: 20%; }
+        header .carousel .panes > li img {
+          display: block;
+          width: 100%;
+          max-width: 100%; }
   header nav {
     position: absolute;
     width: 100%;
@@ -461,27 +477,29 @@ header {
       padding: 0px;
       margin: 0px; }
       header nav ul li {
-        display: inline-block;
-        cursor: pointer; }
-        header nav ul li:hover a {
-          background-color: rgba(255, 255, 255, 0.8); }
-        header nav ul li.active a {
-          background-color: #2d4187;
-          color: white; }
+        display: inline-block; }
         header nav ul li a {
           display: inline-block;
           background-color: rgba(255, 255, 255, 0.5);
           border-radius: 5px;
           margin: 5px;
           padding: 10px;
-          color: #2d4187;
+          color: #1e136a;
           font-weight: bold;
           text-decoration: none; }
+          header nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.8); }
+          header nav ul li a.active {
+            background-color: #1e136a;
+            color: white; }
   header .onorificenze {
     position: absolute;
     margin: 0px;
     padding: 0px;
-    list-style: none; }
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 10px; }
     header .onorificenze li {
       color: white;
       font-family: serif;
@@ -496,3 +514,37 @@ footer {
     list-style: none; }
     footer .sponsor ul li a img {
       width: 300px; }
+
+@keyframes carousel {
+  0% {
+    left: 0; }
+
+  18% {
+    left: 0; }
+
+  20% {
+    left: -100%; }
+
+  38% {
+    left: -100%; }
+
+  40% {
+    left: -200%; }
+
+  58% {
+    left: -200%; }
+
+  60% {
+    left: -300%; }
+
+  78% {
+    left: -300%; }
+
+  80% {
+    left: -400%; }
+
+  98% {
+    left: -400%; }
+
+  100% {
+    left: 0; } }
