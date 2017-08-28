@@ -1,5 +1,6 @@
 ---
 layout: gare
+menu: gare
 title: Nuova gara
 date: 08/30/2017 12:08 AM
 ---
