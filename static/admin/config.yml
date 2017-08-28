@@ -32,7 +32,7 @@ collections:
       - {label: "Menu",                  name: "menu",                  widget: "hidden", default: "gare"}
       - {label: "Titolo",                name: "title",                 widget: "string"}
       - {label: "Data di pubblicazione", name: "date",                  widget: "datetime"}
-      - {label: "Data gara",             name: "competition-date",      widget: "date"}
+      - {label: "Data gara",             name: "competition-date",      widget: "string"}
       - {label: "Luogo",                 name: "place",                 widget: "string"}
       - {label: "Categorie",             name: "categories",            widget: "string"}
       - {label: "Featured Image",        name: "thumbnail",             widget: "image"}
