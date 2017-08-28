@@ -33,7 +33,7 @@ collections:
       - {label: "Titolo",                name: "title",     widget: "string"}
       - {label: "Data della gara",       name: "date",      widget: "datetime"}
       - {label: "Luogo",                 name: "place",     widget: "string"}
-      - {label: "Categorie",             name: "place",     widget: "string"}
+      - {label: "Categorie",             name: "categories",widget: "string"}
       - {label: "Featured Image",        name: "thumbnail", widget: "image"}
 #     - {label: "Rating (scale of 1-5)", name: "rating",    widget: "number"}
       - {label: "Body",                  name: "body",      widget: "markdown"}
