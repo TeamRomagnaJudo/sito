@@ -15,12 +15,12 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Layout",                name: "layout",    widget: "hidden", default: "notizie"}
-      - {label: "Menu",                  name: "menu",      widget: "hidden", default: "notizie"}
-      - {label: "Titolo",                name: "title",     widget: "string"}
-      - {label: "Data di pubblicazione", name: "date",      widget: "datetime"}
-      - {label: "Featured Image",        name: "thumbnail", widget: "image"}
-      - {label: "Body",                  name: "body",      widget: "markdown"}
+      - {label: "Layout",                name: "layout",                widget: "hidden", default: "notizie"}
+      - {label: "Menu",                  name: "menu",                  widget: "hidden", default: "notizie"}
+      - {label: "Titolo",                name: "title",                 widget: "string"}
+      - {label: "Data di pubblicazione", name: "date",                  widget: "datetime"}
+      - {label: "Featured Image",        name: "thumbnail",             widget: "image"}
+      - {label: "Body",                  name: "body",                  widget: "markdown"}
 
   - name: "gare"
     label: "Gare"
@@ -28,15 +28,16 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Layout",                name: "layout",    widget: "hidden", default: "gare"}
-      - {label: "Menu",                  name: "menu",      widget: "hidden", default: "gare"}
-      - {label: "Titolo",                name: "title",     widget: "string"}
-      - {label: "Data della gara",       name: "date",      widget: "datetime"}
-      - {label: "Luogo",                 name: "place",     widget: "string"}
-      - {label: "Categorie",             name: "categories",widget: "string"}
-      - {label: "Featured Image",        name: "thumbnail", widget: "image"}
-#     - {label: "Rating (scale of 1-5)", name: "rating",    widget: "number"}
-      - {label: "Body",                  name: "body",      widget: "markdown"}
+      - {label: "Layout",                name: "layout",                widget: "hidden", default: "gare"}
+      - {label: "Menu",                  name: "menu",                  widget: "hidden", default: "gare"}
+      - {label: "Titolo",                name: "title",                 widget: "string"}
+      - {label: "Data di pubblicazione", name: "date",                  widget: "datetime"}
+      - {label: "Data gara",             name: "competition-date",      widget: "datetime"}
+      - {label: "Luogo",                 name: "place",                 widget: "string"}
+      - {label: "Categorie",             name: "categories",            widget: "string"}
+      - {label: "Featured Image",        name: "thumbnail",             widget: "image"}
+#     - {label: "Rating (scale of 1-5)", name: "rating",                widget: "number"}
+      - {label: "Body",                  name: "body",                  widget: "markdown"}
 #     - {label: "Language",              name: "language"}
 #   filter:
 #     field: language
