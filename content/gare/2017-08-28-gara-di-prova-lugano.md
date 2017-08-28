@@ -1,7 +1,8 @@
 ---
 layout: gare
 title: Gara di prova - Lugano
-date: 08/31/2017 12:00 PM
+date: 2017-08-28T20:12:47.799Z
+menu: gare
 ---
 # Gara a Lugano
 
