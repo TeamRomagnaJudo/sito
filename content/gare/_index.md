@@ -1,6 +1,5 @@
 +++
 menu = "gare"
-
 +++
 
 # Risultati

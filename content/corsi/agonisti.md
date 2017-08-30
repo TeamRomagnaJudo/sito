@@ -7,5 +7,11 @@ menu = "corsi"
 
 # Corso Agonisti
 
-Orari:
-(link a palestra Lugo/Ravenna)
+ Orario   |                | Palestra
+----------|----------------|-------------------------------------------------
+Lunedì    | 19:30 - 21:00  | [Palestra di Lugo](/palestre#lugo)
+Martedì   | 19:30 - 21:00  | [Palestra di Ravenna](/palestre#ravenna)
+Mercoledì | 19:30 - 21:00  | [Palestra di Lugo](/palestre#lugo)
+Giovedì   | 19:30 - 21:00  | [Palestra di Ravenna](/palestre#ravenna)
+Venerdì   | 19:30 - 21:00  | [Palestra di Lugo](/palestre#lugo)
+

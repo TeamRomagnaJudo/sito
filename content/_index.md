@@ -2,7 +2,9 @@
 title = "Risultati delle gare"
 +++
 
-## Per giocare e apprendere il Judo</h2>
+## Per giocare e apprendere il Judo
+
+Il Judo è:
 
 - Abilità
 - Equilibrio

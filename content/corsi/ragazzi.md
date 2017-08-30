@@ -8,21 +8,23 @@ menu = "corsi"
 # Corso Ragazzi
 
 
-## Lugo
-Palestra: (link a palestra Lugo)
-Orari:
+## [Lugo](/palestre#lugo)
+ Orario   | 
+----------|----------------
+Lunedì    | 18:00 - 19:30  
+Mercoledì | 18:00 - 19:30  
+Venerdì   | 18:00 - 19:30  
 
 
+## [Ravenna](/palestre#ravenna)
+ Orario   | 
+----------|----------------
+Martedì   | 18:00 - 19:30  
+Giovedì   | 18:00 - 19:30  
 
 
-## Ravenna
-Palestra: (link a palestra Ravenna)
-Orari:
-
-
-## Castel Bolognese
-Palestra: (link a palestra Castel Bolognese)
-Orari:
-
-
-
+## [Castel Bolognese](/palestre#castel-bolognese)
+ Orario   | 
+----------|----------------
+Martedì   | 18:00 - 19:30  
+Giovedì   | 18:00 - 19:30  

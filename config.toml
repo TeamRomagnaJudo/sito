@@ -79,17 +79,23 @@ preserveTaxonomyNames = false
     identifier = "palestre"
     weight = 2
 
-[[menu.main]]
-    name = "Gare"
-    url  = "gare"
-    identifier = "gare"
-    weight = 3
+#[[menu.main]]
+#    name = "Gare"
+#    url  = "gare"
+#    identifier = "gare"
+#    weight = 3
+#
+#[[menu.main]]
+#    name = "Campus"
+#    url  = "campus"
+#    identifier = "campus"
+#    weight = 4
 
 [[menu.main]]
-    name = "Campus"
-    url  = "campus"
-    identifier = "campus"
-    weight = 4
+    name = "Notizie"
+    url  = "notizie"
+    identifier = "notizie"
+	weight = 6
 
 [[menu.main]]
     name = "Materiale"

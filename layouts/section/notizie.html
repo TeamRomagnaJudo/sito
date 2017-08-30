@@ -1,0 +1,13 @@
+{{ define "main" }}
+	<h1>layouts/section/notizie.html</h1>
+	<main>
+		{{ .Content }}
+		<ul class="contents">{{ range .Paginator.Pages }}
+			<li>
+				{{.Title}}
+				<div>{{ partial "summary.html" . }}</div>
+			</li>
+		{{ end }}</ul>
+		{{ partial "pagination.html" . }}
+	</main>
+{{ end }}

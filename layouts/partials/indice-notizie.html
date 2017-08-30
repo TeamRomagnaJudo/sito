@@ -1,0 +1,8 @@
+<div class="indice-notizie">
+	<h5>Notizie</h5>
+	
+	{{ range $index, $element := $.Site.Data.prova }}
+		<div>{{ $index }} - {{ $element.url }}</div>
+	{{ end }}
+
+</h5>

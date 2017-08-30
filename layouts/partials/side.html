@@ -2,4 +2,6 @@
     {{ range $index, $element := $.Site.Data.prova }}
       <div>{{ $index }} - {{ $element.url }}</div>
     {{ end }}
+
+	{{ partial "indice-notizie" . }}
 </div>

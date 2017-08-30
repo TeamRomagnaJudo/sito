@@ -7,21 +7,23 @@ menu = "corsi"
 
 # Propedeutica
 
-## Lugo
-Palestra: (link a palestra Lugo)
-Orari:
+## [Lugo](/palestre#lugo)
+ Orario   | 
+----------|----------------
+Lunedì    | 16:30 - 18:00  
+Mercoledì | 16:30 - 18:00  
+Venerdì   | 16:30 - 18:00  
 
 
+## [Ravenna](/palestre#ravenna)
+ Orario   | 
+----------|----------------
+Martedì   | 16:30 - 18:00  
+Giovedì   | 16:30 - 18:00  
 
 
-## Ravenna
-Palestra: (link a palestra Ravenna)
-Orari:
-
-
-## Castel Bolognese
-Palestra: (link a palestra Castel Bolognese)
-Orari:
-
-
-
+## [Castel Bolognese](/palestre#castel-bolognese)
+ Orario   | 
+----------|----------------
+Martedì   | 16:30 - 18:00  
+Giovedì   | 16:30 - 18:00  

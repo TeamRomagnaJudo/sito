@@ -548,6 +548,8 @@ header {
         border-radius: 1em;
         width: 40%;
         max-width: 300px; }
+        header .header .top .logo:hover {
+          background-color: rgba(255, 255, 255, 0.8); }
         header .header .top .logo a {
           display: block; }
           header .header .top .logo a img {
@@ -565,13 +567,16 @@ header {
         -webkit-flex-direction: column;
         -moz-flex-direction: column;
         -ms-flex-direction: column;
-        flex-direction: column; }
+        flex-direction: column;
+        text-decoration: none; }
         header .header .top .onorificenze ul {
           background-color: rgba(255, 255, 255, 0.3);
           border-radius: 4px;
           margin: 0px;
           padding: 10px;
           list-style: none; }
+          header .header .top .onorificenze ul:hover {
+            background-color: rgba(255, 255, 255, 0.5); }
           header .header .top .onorificenze ul li {
             font-size: 2.5vw;
             text-align: right;

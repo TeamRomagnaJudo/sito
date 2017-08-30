@@ -6,37 +6,47 @@ menu =  "palestre"
 contentClass = "palestre"
 +++
 
-Il Team Romagna Judo svolge attività presso le seguenti palestre:
+Il Team Romagna Judo svolge attività presso le seguenti palestre
 
-- ### Lugo
-  ##### Via Emaldi, n° 20 - Lugo (RA)
-  <iframe width="auto" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.it/maps?f=q&amp;hl=it&amp;q=Via+Tommaso+Emaldi,+48022+Lugo+Ravenna,+Emilia+Romagna,+Italia&amp;sll=41.442726,12.392578&amp;sspn=15.303881,29.619141&amp;ie=UTF8&amp;cd=1&amp;geocode=0,44.418215,11.907379&amp;om=1&amp;s=AARTsJqaVOWeYoMMThQ0Kg5USl5OiWd3sQ&amp;ll=44.417168,11.907635&amp;spn=0.012261,0.046349&amp;z=14&amp;iwloc=addr&amp;output=embed"></iframe>
+---
 
+## Lugo
+[Via Emaldi, 20 - Lugo (RA)][mappa-lugo]
 
-  #### Corsi
+[![Via Emaldi, 20 - Lugo (RA)](/images/maps/lugo.png)][mappa-lugo]
 
-  - [agosinsti](/corsi/agonisti/)
-  - [ragazzi](/corsi/ragazzi/)
-  - [propedeutica](/corsi/propedeutica/)
+### Corsi disponibili presso la palestra di Lugo
+- [agosinsti](/corsi/agonisti/)
+- [ragazzi](/corsi/ragazzi/)
+- [propedeutica](/corsi/propedeutica/)
 
+---
 
-- ### Ravenna
-  #### Palestra Scuola Elementari Randi
-  ##### Via Marconi, n° 15 - Ravenna (RA)
-  <iframe width="auto" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.it/maps?f=q&amp;hl=it&amp;q=Via+Guglielmo+Marconi,+48100+Ravenna+Ravenna,+Emilia+Romagna,+Italia&amp;sll=44.277439,11.588066&amp;sspn=0.007144,0.014462&amp;ie=UTF8&amp;cd=2&amp;geocode=0,44.404309,12.190598&amp;om=1&amp;s=AARTsJq-ehw1ClV_V6QaJt2jFzGZ0WRcpw&amp;ll=44.406132,12.191734&amp;spn=0.012263,0.046349&amp;z=14&amp;iwloc=addr&amp;output=embed"></iframe>
+## Ravenna
+#### Palestra Scuola Elementari Randi
+[Via Marconi, 15 - Ravenna (RA)][mappa-ravenna]
 
-  ### Corsi
-  - [agosinsti](/corsi/agonisti/)
-  - [ragazzi](/corsi/ragazzi/)
-  - [propedeutica](/corsi/propedeutica/)
+[![Via Marconi, 15 - Ravenna (RA)](/images/maps/ravenna.png)][mappa-ravenna]
 
+### Corsi disponibili presso la palestra di Ravenna
+- [agosinsti](/corsi/agonisti/)
+- [ragazzi](/corsi/ragazzi/)
+- [propedeutica](/corsi/propedeutica/)
 
-- ### Castel Bolognese
-  #### Palazzetto dello Sport di Castel Bolognese
-  ##### Via Donati, n° 25 - Castel Bolognese (RA)
-  <iframe width="auto" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.it/maps?f=q&amp;hl=it&amp;geocode=&amp;q=Via+Donati+25,+Castel+Bolognese,+ravenna&amp;sll=44.418226,11.907377&amp;sspn=0.007127,0.014462&amp;ie=UTF8&amp;om=1&amp;s=AARTsJpwm8VopDNjhEr3WrbhMcV_WIi3XA&amp;ll=44.317769,11.792622&amp;spn=0.012282,0.046349&amp;z=14&amp;iwloc=cent&amp;output=embed"></iframe>
+---
 
-  ### Corsi
-  - [ragazzi](/corsi/ragazzi/)
-  - [propedeutica](/corsi/propedeutica/)
+## Castel Bolognese
+#### Palazzetto dello Sport di Castel Bolognese
+[Via Donati, 25 - Castel Bolognese (RA)][mappa-castelbolognese]
 
+[![Via Donati, 25 - Castel Bolognese (RA)](/images/maps/castelbolognese.png)][mappa-castelbolognese]
+
+### Corsi disponibili presso la palestra di Castel Bolognese
+- [ragazzi](/corsi/ragazzi/)
+- [propedeutica](/corsi/propedeutica/)
+
+---
+
+[mappa-lugo]: https://www.google.it/maps/place/Team+Romagna+Judo/@44.419297,11.9062121,17z/data=!3m1!4b1!4m5!3m4!1s0x477e032c9abcbe93:0xbc2a51c45a18ba47!8m2!3d44.419297!4d11.9084008?hl=it
+[mappa-ravenna]: https://www.google.it/maps/place/Team+Romagna+Judo/@44.405523,12.1885824,17z/data=!3m1!4b1!4m5!3m4!1s0x477df94ba8ab596f:0xdbc4c1c7f9299a20!8m2!3d44.405523!4d12.1907711?hl=it
+[mappa-castelbolognese]: https://www.google.it/maps/place/Team+Romagna+Judo/@44.3160906,11.7916364,17z/data=!3m1!4b1!4m5!3m4!1s0x132b4bfe5db06c95:0xbf0a2a6d635aa079!8m2!3d44.3160906!4d11.7938251?hl=it
