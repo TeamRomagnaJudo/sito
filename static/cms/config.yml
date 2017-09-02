@@ -9,7 +9,7 @@ media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  - name: "post"
+  - name: "notizie"
     label: "Notizie"
     folder: "content/notizie"
     create: true
