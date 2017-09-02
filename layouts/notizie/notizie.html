@@ -1,3 +1,13 @@
 {{ define "main" }}
-    {{ .Content }}
+    <article class="notizie">
+        <h1>{{ .Params.title }}</h1>
+        <div class="thumbnail">
+            <img src="{{ .Params.thumbnail }}" title="{{ .Params.thumbnail_description }}" />
+            <h5>{{ .Params.thumbnail_description }}</h5>
+        </div>
+
+        <div class="content">
+            {{ .Content }}
+        </div>
+    </article>
 {{ end }}

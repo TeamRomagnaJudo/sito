@@ -19,10 +19,15 @@
                 </a>
             </div>
             <div class="spacer"></div>
-            <a class="onorificenze" href="/onoreficenze/">
-                <ul>{{ range $.Site.Data.onorificenze }}
-                    <li>{{ .descrizione }}</li>
-                {{ end }}</ul>
+            <a class="onoreficenze" href="/onoreficenze/">
+                <div>
+                    <h3><span class="onoreficenza">Stella d'Argento</span> - C.O.N.I.</h3>
+                    <h5>Medaglia d'Onore al Merito Sportivo</h5>
+                </div>
+
+                <!-- ul>{ { range $.Site.Data.onorificenze } }
+                    <li>{ { .descrizione } }</li>
+                { { end } }</ul -->
             </a>
         </div>
 

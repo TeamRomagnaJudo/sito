@@ -1,8 +1,14 @@
 <div class="indice-notizie">
-	<h5>Notizie</h5>
+	<h3>Notizie</h3>
 	
-	{{ range $index, $element := $.Site.Data.prova }}
-		<div>{{ $index }} - {{ $element.url }}</div>
-	{{ end }}
+	<ul>{{ range first 5 (where .Data.Pages "Type" "notizie") }}
+		<li>
+			{{ $dayOfWeek := dateFormat "Monday" .Date }}
+			{{ $month := dateFormat "1" .Date }}
 
-</h5>
+			<a href="{{ .URL }}">{{ .Title }}</a>
+			<h5>{{ index $.Site.Data.date.giorniDellaSettimana $dayOfWeek }}, {{ dateFormat "2" .Date }} {{ index $.Site.Data.date.mesi $month }} {{ dateFormat "2006" .Date }}</h5>
+		</li>
+	{{ end }}</ul>
+
+</div>

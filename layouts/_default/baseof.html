@@ -1,10 +1,8 @@
 <html>
 {{ partial "meta" . }}
-<!-- body class="{ { .Page.Kind } }" -->
-<body>
+<body class="{{ .Page.Kind }}">
 {{ partial "header" . }}
 
-<!-- div id="main" { { if .Page.Params.contentClass } }class="{ { .Page.Params.contentClass } }"{ { end } } -->
 <div id="main" {{ if .Params.contentClass }}class="{{ .Params.contentClass }}"{{ end }}>
         {{ block "main" . }}{{ end }}
 </div>

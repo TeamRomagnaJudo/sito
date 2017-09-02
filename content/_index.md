@@ -1,10 +1,11 @@
 +++
-title = "Risultati delle gare"
+title = "Team Romagna Judo"
+contentClass = "home"
 +++
 
-## Per giocare e apprendere il Judo
+# Per giocare e apprendere il Judo
 
-Il Judo è:
+### Il Judo è
 
 - Abilità
 - Equilibrio

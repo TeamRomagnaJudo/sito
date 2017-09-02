@@ -478,13 +478,24 @@ template {
     		}
     	}
     */ } }
+h1, h2, h3, h4, h5, p {
+  margin: 0px;
+  padding: 0px; }
+
+ul, li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  border: 0px; }
+
 body {
   margin: 0px;
   font-family: sans-serif; }
 
 header {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: gray; }
   header .carousel {
     position: absolute;
     top: 0px;
@@ -540,12 +551,12 @@ header {
       -webkit-justify-content: space-between;
       -moz-justify-content: space-between;
       justify-content: space-between;
-      margin: 10px;
+      margin: 1em;
       margin-bottom: 2vw; }
       header .header .top .logo {
         background-color: rgba(255, 255, 255, 0.6);
         padding: 1em;
-        border-radius: 1em;
+        border-radius: 0.5em;
         width: 40%;
         max-width: 300px; }
         header .header .top .logo:hover {
@@ -555,8 +566,8 @@ header {
           header .header .top .logo a img {
             width: 100%; }
       header .header .top .spacer {
-        width: 50px; }
-      header .header .top .onorificenze {
+        width: 2em; }
+      header .header .top .onoreficenze {
         display: -webkit-box;
         display: -webkit-flex;
         display: -moz-flex;
@@ -569,16 +580,22 @@ header {
         -ms-flex-direction: column;
         flex-direction: column;
         text-decoration: none; }
-        header .header .top .onorificenze ul {
+        header .header .top .onoreficenze div {
           background-color: rgba(255, 255, 255, 0.3);
-          border-radius: 4px;
+          border-radius: 0.5em;
           margin: 0px;
-          padding: 10px;
-          list-style: none; }
-          header .header .top .onorificenze ul:hover {
+          padding: 1em; }
+          header .header .top .onoreficenze div:hover {
             background-color: rgba(255, 255, 255, 0.5); }
-          header .header .top .onorificenze ul li {
-            font-size: 2.5vw;
+          header .header .top .onoreficenze div h3 {
+            font-size: 1.5em;
+            text-align: right;
+            color: white;
+            font-family: serif; }
+            header .header .top .onoreficenze div h3 .onoreficenza {
+              font-style: italic; }
+          header .header .top .onoreficenze div h5 {
+            font-size: 1em;
             text-align: right;
             color: white;
             font-family: serif;
@@ -594,20 +611,13 @@ header {
         -webkit-flex-wrap: wrap;
         -moz-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        list-style: none;
-        padding: 0px;
-        margin: 0px;
-        border: 0px; }
+        flex-wrap: wrap; }
         header .header nav ul li {
           -webkit-box-flex: 1;
           -webkit-flex-grow: 1;
           -moz-flex-grow: 1;
           -ms-flex-positive: 1;
-          flex-grow: 1;
-          padding: 0px;
-          margin: 0px;
-          border: 0px; }
+          flex-grow: 1; }
           header .header nav ul li a {
             text-align: center;
             display: block;
@@ -622,6 +632,119 @@ header {
             header .header nav ul li a.active {
               background-color: #1e136a;
               color: white; }
+
+#main {
+  padding: 1em;
+  max-width: 100%;
+  overflow: hidden; }
+  #main h1 {
+    margin: 0.2em 0em; }
+  #main p {
+    margin-bottom: 0.5em; }
+
+#main.home {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row-reverse;
+  -moz-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0px; }
+  #main.home .mainContent {
+    -webkit-box-flex: 3;
+    -webkit-flex: 3;
+    -moz-box-flex: 3;
+    -moz-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    padding: 1em; }
+    #main.home .mainContent h1 {
+      font-size: 2.5em; }
+    #main.home .mainContent h3 {
+      font-size: 1.5em; }
+    #main.home .mainContent ul {
+      font-size: 1.3em; }
+      #main.home .mainContent ul li {
+        padding: 0.3em;
+        margin: 0.1em 0em;
+        background-image: url("/images/nodo.png");
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: top;
+        background-size: contain; }
+      #main.home .mainContent ul > li {
+        background-color: #f2f008;
+        color: white; }
+        #main.home .mainContent ul > li + li {
+          background-color: #f19416; }
+          #main.home .mainContent ul > li + li + li {
+            background-color: #1eae06; }
+            #main.home .mainContent ul > li + li + li + li {
+              background-color: #1e136a; }
+              #main.home .mainContent ul > li + li + li + li + li {
+                background-color: #371c06; }
+                #main.home .mainContent ul > li + li + li + li + li + li {
+                  background-color: black; }
+      #main.home .mainContent ul li {
+        font-size: 1.2em;
+        font-weight: bold; }
+  #main.home .side {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 1em; }
+
+table {
+  margin: 0.5em 0em 1em;
+  border-spacing: 0px;
+  border: outset 0pt;
+  border-collapse: collapse; }
+  table thead tr {
+    border-bottom: 1px solid gray;
+    text-align: left; }
+    table thead tr th {
+      font-size: 0.8em; }
+  table tbody tr > td {
+    width: 7em; }
+
+article.notizie .content {
+  margin: 0.5em 0em; }
+  article.notizie .content ul {
+    margin-top: -0.3em;
+    margin-bottom: 0.6em; }
+    article.notizie .content ul li {
+      list-style-type: disc;
+      margin-left: 1.5em; }
+
+.side .indice-notizie h3 {
+  font-size: 1.5em; }
+.side .indice-notizie ul {
+  margin-top: 0.5em; }
+  .side .indice-notizie ul li {
+    padding-bottom: 0.5em; }
+    .side .indice-notizie ul li a {
+      color: black; }
+      .side .indice-notizie ul li a::visited {
+        color: black; }
+    .side .indice-notizie ul li h5 {
+      margin: 0px; }
 
 footer {
   display: -webkit-box;
@@ -651,15 +774,16 @@ footer {
     display: -moz-inline-flex;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    padding: 5px;
+    padding: 1em;
     color: white;
-    font-size: 10pt; }
+    font-size: 0.8em; }
     footer .datiSocietari p {
       margin: 0px; }
     footer .datiSocietari .p-name {
-      font-size: 110%;
+      font-size: 1em;
       display: block;
-      text-decoration: none; }
+      text-decoration: none;
+      color: white; }
       footer .datiSocietari .p-name:visited {
         color: white; }
     footer .datiSocietari .p-street-address {
@@ -675,14 +799,10 @@ footer {
     display: -moz-inline-flex;
     display: -ms-inline-flexbox;
     display: inline-flex; }
-    footer .sponsor ul {
-      margin: 0px;
-      padding: 0px;
-      list-style: none; }
-      footer .sponsor ul li {
-        padding: 5px; }
-        footer .sponsor ul li a img {
-          width: 200px; }
+    footer .sponsor ul li {
+      padding: 1em; }
+      footer .sponsor ul li a img {
+        width: 200px; }
 
 @keyframes carousel {
   0% {

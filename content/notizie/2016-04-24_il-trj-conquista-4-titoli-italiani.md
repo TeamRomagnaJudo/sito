@@ -15,17 +15,21 @@ In occasione del primo evento, la società ha conquistato complessivamente **4 t
 - Simone Argnani (66 kg, Es. B)
 - Maia Rondinini (52 kg, Es. B)
 
-Il secondo posto invece è stato conquistato da:
+
+Il **secondo posto** invece è stato conquistato da:
+
 - Caterina Tafuno (57 kg, Es. A)
 - Francesco Camerani (66 kg, Es. B)
 - Giulia Alboni (40 kg, Es. B)
 
-Mentre bronzo per:
+Mentre **bronzo** per:
+
 - Andrea Monti (40 kg, Es. A)
 - Pietro Campana (50 kg, Es. A)
 - Francesco Furini (45 kg, Es. A)
 - Luca Monti (55 kg, Es. A)
 - Filippo Minoccheri (50 kg, Es. B)
+
 
 A Catania, il TRJ ha dimostrato per l’ennesima volta di essere molto competitivo a livello nazionale, conquistando una medaglia d’argento grazie alla meravigliosa performance di Alessandro Graziano (\+100 kg), un quinto posto conquistato brillantemente da Sergio Pyzh (66 kg), che per un soffio ha mancato il podio, senza dimenticare la partecipazione di Andrea Segurini (81 kg).
 

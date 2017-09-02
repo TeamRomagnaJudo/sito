@@ -1,4 +1,5 @@
 +++
+title = "Gare"
 menu = "gare"
 +++
 
