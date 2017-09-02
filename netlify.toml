@@ -2,12 +2,10 @@
   HUGO_VERSION = "0.26"
 
 [build]
-# command = "hugo_0.19"
   command = "hugo"
   publish = "public"
 
 [context.deploy-preview]
-# command = "hugo_0.19 --buildDrafts --buildFuture"
   command = "hugo --buildDrafts --buildFuture"
 
 [context.deploy-preview.environment]
