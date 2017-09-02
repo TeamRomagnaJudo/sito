@@ -234,7 +234,7 @@ header {
 			font-size: 1.3em;
 	
 			li {
-				padding: 0.3em;
+				padding: 0.5em 1em;
 				margin: 0.1em 0em;
 				background-image: url("/images/nodo.png");
 				background-repeat: no-repeat;
@@ -243,9 +243,6 @@ header {
 				background-size: contain;
 
 				color: white;
-				// $shadow-color: #ccc;
-				// $shadow-size: 0.5px;
-				// text-shadow: -$shadow-size -$shadow-size 0 $shadow-color, $shadow-size -$shadow-size 0 $shadow-color, -$shadow-size $shadow-size 0 $shadow-color, $shadow-size $shadow-size 0 $shadow-color;
 			}
 	
 			& > li {

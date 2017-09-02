@@ -680,7 +680,7 @@ header {
     #main.home .mainContent ul {
       font-size: 1.3em; }
       #main.home .mainContent ul li {
-        padding: 0.3em;
+        padding: 0.5em 1em;
         margin: 0.1em 0em;
         background-image: url("/images/nodo.png");
         background-repeat: no-repeat;
