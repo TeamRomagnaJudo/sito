@@ -9,11 +9,11 @@ Il Team Romagna Judo è stato insignito delle seguenti onoreficenze
 ## Stella d'Argento - C.O.N.I.
 ##### Mediaglia d'Onore al Merito Sportivo
 
-[![Stella d'Argento - C.O.N.I.](/images/onoreficenze/stella-argento.png)](http://www.coni.it/it/attivita-istituzionali/onorificenze/home/onoreficenze-societ%C3%A0/societa.html?anno=2015&nominativo=A.S.D.%20TEAM%20ROMAGNA%20JUDO&tipo=14)
+[![Stella d'Argento - C.O.N.I.](/images/onoreficenze/stella-argento.png)](http://www.coni.it/it/attivita-istituzionali/onorificenze/home/onoreficenze-societ%C3%A0.html?start=927)
 
 
 ## Stella di Bronzo - C.O.N.I.
 ##### Mediaglia d'Onore al Merito Sportivo
 
-[![Stella di Bronzo - C.O.N.I.](/images/onoreficenze/stella-bronzo.png)](http://www.coni.it/it/attivita-istituzionali/onorificenze/home/onoreficenze-societ%C3%A0.html?start=920)
+[![Stella di Bronzo - C.O.N.I.](/images/onoreficenze/stella-bronzo.png)](http://www.coni.it/it/attivita-istituzionali/onorificenze/home/onoreficenze-societ%C3%A0.html?start=927)
 

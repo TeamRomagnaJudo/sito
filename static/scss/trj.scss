@@ -12,7 +12,7 @@ $orange: rgb(241, 148, 22);
 $green: rgb(30, 174, 6);
 $blue: rgb(30, 19, 106);
 $brown: rgb(55, 28, 6);
-$black: rgba(0, 0, 0, 1);
+$black: rgba(20, 20, 20, 1);
 
 
 @import "normalize";
@@ -210,84 +210,150 @@ header {
 
 }
 
-#main {
-	&.home {
-		@include flexbox;
-		@include flex-direction(row-reverse);
-		@include justify-content(flex-start);
-		@include flex-wrap(wrap);
-		padding: 0px;
-		
-		.mainContent {
-			@include flex(3);
-			padding: 1em;
-			// min-width: 10em;
+#main.home {
+	@include flexbox;
+	@include flex-direction(row-reverse);
+	@include justify-content(flex-start);
+	@include flex-wrap(wrap);
+	padding: 0px;
+	
+	.mainContent {
+		@include flex(3);
+		padding: 1em;
+		// min-width: 10em;
 
-			h1 {
-				font-size: 2.5em;
+		h1 {
+			font-size: 2.5em;
+		}
+	
+		h3 {
+			font-size: 1.5em;
+		}
+	
+		ul {
+			font-size: 1.3em;
+	
+			li {
+				padding: 0.3em;
+				margin: 0.1em 0em;
+				background-image: url("/images/nodo.png");
+				background-repeat: no-repeat;
+				background-position-x: right;
+				background-position-y: top;
+				background-size: contain;
+
+				color: white;
+				// $shadow-color: #ccc;
+				// $shadow-size: 0.5px;
+				// text-shadow: -$shadow-size -$shadow-size 0 $shadow-color, $shadow-size -$shadow-size 0 $shadow-color, -$shadow-size $shadow-size 0 $shadow-color, $shadow-size $shadow-size 0 $shadow-color;
 			}
-		
-			h3 {
-				font-size: 1.5em;
-			}
-		
-			ul {
-				font-size: 1.3em;
-		
-				li {
-					padding: 0.3em;
-					margin: 0.1em 0em;
-					background-image: url("/images/nodo.png");
-					background-repeat: no-repeat;
-					background-position-x: right;
-					background-position-y: top;
-					background-size: contain;
-				}
-		
-				& > li {
-					background-color: $yellow;
-					color: white;
-		
+	
+			& > li {
+				background-color: $yellow;
+
+				& + li {
+					background-color: $orange;
+	
 					& + li {
-						background-color: $orange;
-		
+						background-color: $green;
+	
 						& + li {
-							background-color: $green;
-		
+							background-color: $blue;
+	
 							& + li {
-								background-color: $blue;
-		
+								background-color: $brown;
+	
 								& + li {
-									background-color: $brown;
-		
-									& + li {
-										background-color: $black;
-									}
+									background-color: $black;
 								}
 							}
 						}
 					}
 				}
+			}
+	
+			li {
+				font-size: 1.2em;
+				font-weight: bold;
+	
+	
+			}
+		}
+	
+	}
+
+	.side {
+		@include flex(1);
+		padding: 1em;
+		// min-width: 10em;
+	}
+}
+
+.pagination {
+	border-top: 1px dotted gray;
+	padding: 0.5em 0em;
+	margin: 0.5em 0em;
+
+	li {
+		display: inline-block;
+		width: 1.5em;
+		height: 1.5em;
+		border-radius: 0.8em;
+		text-align: center;
+		line-height: 1.4em;
 		
-				li {
+		&.active {
+			background-color: $blue;
+			a {
+				color: white;
+			}
+		}
+		a {
+			text-decoration: none;
+
+			&[aria-label="First"] {
+				visibility: hidden;
+				
+				&:before {
 					font-size: 1.2em;
-					font-weight: bold;
-		
-		
+					visibility: visible;
+					content: "«";
 				}
 			}
-		
-		}
 
-		.side {
-			@include flex(1);
-			padding: 1em;
-			// min-width: 10em;
-		}
+			&[aria-label="Previous"] {
+				visibility: hidden;
+				
+				&:before {
+					font-size: 1.2em;
+					visibility: visible;
+					content: "‹";
+				}
+			}
 
+			&[aria-label="Next"] {
+				visibility: hidden;
+				
+				&:before {
+					font-size: 1.2em;
+					visibility: visible;
+					content: "›";
+				}
+			}
+
+			&[aria-label="Last"] {
+				visibility: hidden;
+				
+				&:before {
+					font-size: 1.2em;
+					visibility: visible;
+					content: "»";
+				}
+			}
+		}
 	}
-	
 }
+
 table {
 	margin: 0.5em 0em 1em;
 	border-spacing: 0px;
@@ -314,6 +380,36 @@ table {
 
 }
 
+#main div.notizie {
+	& > h1 {
+		border-bottom: 1px dotted gray;
+	}
+	ul.notizie {
+		li {
+			@include flexbox;
+			@include flex-direction(vertical);
+			margin-left: -0.5em;
+
+			.thumbnail {
+				padding: 0.5em;
+				@include flex(1);
+			}
+
+			.title {
+				padding: 0.5em;
+				@include flex(4);
+
+				a {
+					margin: 0px;
+					h1 {
+						font-size: 1.5em;
+						margin-top: 0px;
+					}
+				}
+			}
+		}
+	}
+}
 article.notizie {
 	.content {
 		margin: 0.5em 0em;

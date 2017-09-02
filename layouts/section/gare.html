@@ -1,13 +1,13 @@
 {{ define "main" }}
-	<h1>layouts/section/gare.html</h1>
-	<main>
+	<div class="gare">
 		{{ .Content }}
-		<ul class="contents">{{ range .Paginator.Pages }}
+		<ul class="gare">{{ range .Paginator.Pages }}
 			<li>
 				{{.Title}}
 				<div>{{ partial "summary.html" . }}</div>
 			</li>
 		{{ end }}</ul>
-		{{ partial "pagination.html" . }}
-	</main>
+
+		{{ template "_internal/pagination.html" . }}
+	</div>
 {{ end }}

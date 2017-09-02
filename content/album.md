@@ -5,4 +5,3 @@ layout = "album"
 
 +++
 
-# un po' di foto

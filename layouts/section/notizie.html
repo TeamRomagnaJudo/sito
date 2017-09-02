@@ -1,13 +1,22 @@
 {{ define "main" }}
-	<h1>layouts/section/notizie.html</h1>
-	<main>
+	<div class="notizie">
 		{{ .Content }}
-		<ul class="contents">{{ range .Paginator.Pages }}
+
+		<ul class="notizie">{{ range .Paginator.Pages }}
 			<li>
-				{{.Title}}
-				<div>{{ partial "summary.html" . }}</div>
+				<div class="thumbnail">
+					<img width="200" src="{{ .Params.thumbnail }}" title="{{ .Params.thumbnail_description }}" />
+				</div>
+				<div class="title">
+					{{ $dayOfWeek := dateFormat "Monday" .Date }}
+					{{ $month := dateFormat "1" .Date }}
+			
+					<a href="{{ .URL }}" title="{{ .Title }}"><h1>{{ .Title }}</h1></a>
+					<h5 class="date">{{ index $.Site.Data.date.giorniDellaSettimana $dayOfWeek }}, {{ dateFormat "2" .Date }} {{ index $.Site.Data.date.mesi $month }} {{ dateFormat "2006" .Date }}</h5>
+				</div>
 			</li>
 		{{ end }}</ul>
-		{{ partial "pagination.html" . }}
-	</main>
+
+		{{ template "_internal/pagination.html" . }}
+	</div>
 {{ end }}

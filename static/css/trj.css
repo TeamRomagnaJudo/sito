@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -685,10 +686,10 @@ header {
         background-repeat: no-repeat;
         background-position-x: right;
         background-position-y: top;
-        background-size: contain; }
-      #main.home .mainContent ul > li {
-        background-color: #f2f008;
+        background-size: contain;
         color: white; }
+      #main.home .mainContent ul > li {
+        background-color: #f2f008; }
         #main.home .mainContent ul > li + li {
           background-color: #f19416; }
           #main.home .mainContent ul > li + li + li {
@@ -698,7 +699,7 @@ header {
               #main.home .mainContent ul > li + li + li + li + li {
                 background-color: #371c06; }
                 #main.home .mainContent ul > li + li + li + li + li + li {
-                  background-color: black; }
+                  background-color: #141414; }
       #main.home .mainContent ul li {
         font-size: 1.2em;
         font-weight: bold; }
@@ -710,6 +711,48 @@ header {
     -ms-flex: 1;
     flex: 1;
     padding: 1em; }
+
+.pagination {
+  border-top: 1px dotted gray;
+  padding: 0.5em 0em;
+  margin: 0.5em 0em; }
+  .pagination li {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 0.8em;
+    text-align: center;
+    line-height: 1.4em; }
+    .pagination li.active {
+      background-color: #1e136a; }
+      .pagination li.active a {
+        color: white; }
+    .pagination li a {
+      text-decoration: none; }
+      .pagination li a[aria-label="First"] {
+        visibility: hidden; }
+        .pagination li a[aria-label="First"]:before {
+          font-size: 1.2em;
+          visibility: visible;
+          content: "«"; }
+      .pagination li a[aria-label="Previous"] {
+        visibility: hidden; }
+        .pagination li a[aria-label="Previous"]:before {
+          font-size: 1.2em;
+          visibility: visible;
+          content: "‹"; }
+      .pagination li a[aria-label="Next"] {
+        visibility: hidden; }
+        .pagination li a[aria-label="Next"]:before {
+          font-size: 1.2em;
+          visibility: visible;
+          content: "›"; }
+      .pagination li a[aria-label="Last"] {
+        visibility: hidden; }
+        .pagination li a[aria-label="Last"]:before {
+          font-size: 1.2em;
+          visibility: visible;
+          content: "»"; }
 
 table {
   margin: 0.5em 0em 1em;
@@ -723,6 +766,43 @@ table {
       font-size: 0.8em; }
   table tbody tr > td {
     width: 7em; }
+
+#main div.notizie > h1 {
+  border-bottom: 1px dotted gray; }
+#main div.notizie ul.notizie li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: vertical;
+  -moz-flex-direction: vertical;
+  -ms-flex-direction: vertical;
+  flex-direction: vertical;
+  margin-left: -0.5em; }
+  #main div.notizie ul.notizie li .thumbnail {
+    padding: 0.5em;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+  #main div.notizie ul.notizie li .title {
+    padding: 0.5em;
+    -webkit-box-flex: 4;
+    -webkit-flex: 4;
+    -moz-box-flex: 4;
+    -moz-flex: 4;
+    -ms-flex: 4;
+    flex: 4; }
+    #main div.notizie ul.notizie li .title a {
+      margin: 0px; }
+      #main div.notizie ul.notizie li .title a h1 {
+        font-size: 1.5em;
+        margin-top: 0px; }
 
 article.notizie .content {
   margin: 0.5em 0em; }

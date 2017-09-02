@@ -16,9 +16,13 @@ Il Team Romagna Judo svolge attività presso le seguenti palestre
 [![Via Emaldi, 20 - Lugo (RA)](/images/maps/lugo.png)][mappa-lugo]
 
 ### Corsi disponibili presso la palestra di Lugo
-- [agosinsti](/corsi/agonisti/)
-- [ragazzi](/corsi/ragazzi/)
-- [propedeutica](/corsi/propedeutica/)
+ Orario   | 16:30 - 18:00                       | 18:00 - 19:30             | 19:30 - 21:00
+----------|-------------------------------------|---------------------------|----------------------
+Lunedì    | [propedeutica](/corsi/propedeutica) | [ragazzi](/corsi/ragazzi) | [agonisti](/corsi/agonisti)
+Martedì   | --                                  | --                        | --
+Mercoledì | [propedeutica](/corsi/propedeutica) | [ragazzi](/corsi/ragazzi) | [agonisti](/corsi/agonisti)
+Giovedì   | --                                  | --                        | --
+Venerdì   | [propedeutica](/corsi/propedeutica) | [ragazzi](/corsi/ragazzi) | [agonisti](/corsi/agonisti)
 
 ---
 
@@ -29,9 +33,13 @@ Il Team Romagna Judo svolge attività presso le seguenti palestre
 [![Via Marconi, 15 - Ravenna (RA)](/images/maps/ravenna.png)][mappa-ravenna]
 
 ### Corsi disponibili presso la palestra di Ravenna
-- [agosinsti](/corsi/agonisti/)
-- [ragazzi](/corsi/ragazzi/)
-- [propedeutica](/corsi/propedeutica/)
+ Orario   | 16:30 - 18:00                       | 18:00 - 19:30             | 19:30 - 21:00
+----------|-------------------------------------|---------------------------|----------------------
+Lunedì    | --                                  | --                        | --
+Martedì   | [propedeutica](/corsi/propedeutica) | [ragazzi](/corsi/ragazzi) | [agonisti](/corsi/agonisti)
+Mercoledì | --                                  | --                        | --
+Giovedì   | [propedeutica](/corsi/propedeutica) | [ragazzi](/corsi/ragazzi) | [agonisti](/corsi/agonisti)
+Venerdì   | --                                  | --                        | --
 
 ---
 
@@ -42,8 +50,13 @@ Il Team Romagna Judo svolge attività presso le seguenti palestre
 [![Via Donati, 25 - Castel Bolognese (RA)](/images/maps/castelbolognese.png)][mappa-castelbolognese]
 
 ### Corsi disponibili presso la palestra di Castel Bolognese
-- [ragazzi](/corsi/ragazzi/)
-- [propedeutica](/corsi/propedeutica/)
+ Orario   | 16:30 - 18:00                       | 18:00 - 19:30             | 19:30 - 21:00
+----------|-------------------------------------|---------------------------|----------------------
+Lunedì    | --                                  | --                        | --
+Martedì   | [propedeutica](/corsi/propedeutica) | [ragazzi](/corsi/ragazzi) | --
+Mercoledì | --                                  | --                        | --
+Giovedì   | [propedeutica](/corsi/propedeutica) | [ragazzi](/corsi/ragazzi) | --
+Venerdì   | --                                  | --                        | --
 
 ---
 
