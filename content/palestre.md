@@ -16,7 +16,7 @@ Il Team Romagna Judo svolge attività presso le seguenti palestre
 [![Via Emaldi, 20 - Lugo (RA)](/images/maps/lugo.png)][mappa-lugo]
 
 ### Corsi disponibili presso la palestra di Lugo
- Orario   | 16:30 - 18:00                       | 18:00 - 19:30             | 19:30 - 21:00
+ Orario   | 16:30 - 18:00                       | 18:00 - 19:30             | 19:30 - 21:30
 ----------|-------------------------------------|---------------------------|----------------------
 Lunedì    | [propedeutica](/corsi/propedeutica) | [ragazzi](/corsi/ragazzi) | [agonisti](/corsi/agonisti)
 Martedì   | --                                  | --                        | --
@@ -33,7 +33,7 @@ Venerdì   | [propedeutica](/corsi/propedeutica) | [ragazzi](/corsi/ragazzi) | [
 [![Via Marconi, 15 - Ravenna (RA)](/images/maps/ravenna.png)][mappa-ravenna]
 
 ### Corsi disponibili presso la palestra di Ravenna
- Orario   | 16:30 - 18:00                       | 18:00 - 19:30             | 19:30 - 21:00
+ Orario   | 17:00 - 18:00                       | 18:00 - 19:30             | 19:30 - 21:30
 ----------|-------------------------------------|---------------------------|----------------------
 Lunedì    | --                                  | --                        | --
 Martedì   | [propedeutica](/corsi/propedeutica) | [ragazzi](/corsi/ragazzi) | [agonisti](/corsi/agonisti)
@@ -50,13 +50,13 @@ Venerdì   | --                                  | --                        | -
 [![Via Donati, 25 - Castel Bolognese (RA)](/images/maps/castelbolognese.png)][mappa-castelbolognese]
 
 ### Corsi disponibili presso la palestra di Castel Bolognese
- Orario   | 16:30 - 18:00                       | 18:00 - 19:30             | 19:30 - 21:00
-----------|-------------------------------------|---------------------------|----------------------
-Lunedì    | --                                  | --                        | --
-Martedì   | [propedeutica](/corsi/propedeutica) | [ragazzi](/corsi/ragazzi) | --
-Mercoledì | --                                  | --                        | --
-Giovedì   | [propedeutica](/corsi/propedeutica) | [ragazzi](/corsi/ragazzi) | --
-Venerdì   | --                                  | --                        | --
+ Orario   | 18:00 - 19:15                       | 19:15 - 21:00
+----------|-------------------------------------|---------------------------
+Lunedì    | [propedeutica](/corsi/propedeutica) | [ragazzi](/corsi/ragazzi) 
+Martedì   | [ragazzi](/corsi/ragazzi)<br><span style="font-size:0.7em">fino alle 20:00</span> |
+Mercoledì | --                                  | --                        
+Giovedì   | [propedeutica](/corsi/propedeutica) | [ragazzi](/corsi/ragazzi) 
+Venerdì   | --                                  | --                        
 
 ---
 
