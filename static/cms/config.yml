@@ -18,7 +18,7 @@ collections:
       - {label: "Layout",                   name: "layout",                widget: "hidden", default: "notizie"}
       - {label: "Menu",                     name: "menu",                  widget: "hidden", default: "notizie"}
       - {label: "Titolo",                   name: "title",                 widget: "string"}
-      - {label: "Data di pubblicazione",    name: "date",                  widget: "datetime"}
+      - {label: "Data di pubblicazione",    name: "date",                  widget: "date"}
       - {label: "Immagine di riferimento",  name: "thumbnail",             widget: "image",  required: false}
       - {label: "Descrizione immagine",     name: "thumbnail_description", widget: "string", required: false}
       - {label: "Testo",                    name: "body",                  widget: "markdown"}
@@ -32,7 +32,7 @@ collections:
       - {label: "Layout",                name: "layout",                widget: "hidden", default: "gare"}
       - {label: "Menu",                  name: "menu",                  widget: "hidden", default: "gare"}
       - {label: "Titolo",                name: "title",                 widget: "string"}
-      - {label: "Data di pubblicazione", name: "date",                  widget: "datetime"}
+      - {label: "Data di pubblicazione", name: "date",                  widget: "date"}
       - {label: "Data gara",             name: "competition-date",      widget: "string"}
       - {label: "Luogo",                 name: "place",                 widget: "string",   required: false}
       - {label: "Categorie",             name: "categories",            widget: "list",     required: false}
