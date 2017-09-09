@@ -2,7 +2,7 @@
 {{ .Content }}
 
 {{ $album := sort $.Site.Data.album "date" "desc" }}
-<ul>{{ range $album }}
+<ul class="album">{{ range $album }}
     <li>
         {{ $dayOfWeek := dateFormat "Monday" .date }}
         {{ $month := dateFormat "01" .date }}
@@ -12,5 +12,5 @@
 
     </li>
 
-{{ end }}</li>
+{{ end }}</ul>
 {{ end }}

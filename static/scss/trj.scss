@@ -115,19 +115,17 @@ header {
 			}
 			
 			.spacer {
-				width: 2em;
+				width: 3em;
 			}
+
 			.onoreficenze {
 				@include flexbox;
 				@include flex-direction(column);
-			//	width: 50%;
-			//	max-width: 500px;
 
 				text-decoration: none;
 				div {
+					font-size: 3vw;
 					background-color: rgba(255, 255, 255, 0.3);
-					// background-image: url("/images/stella-argento.png");
-					// background-repeat: no-repeat;
 					border-radius: 0.5em;
 					margin: 0px;
 					padding: 1em;
@@ -136,7 +134,7 @@ header {
 						background-color: rgba(255, 255, 255, 0.5);
 					};
 					h3 {
-						font-size: 1.5em;
+						font-size: 1em;
 						text-align: right;
 						color: white;
 						font-family: serif;
@@ -146,7 +144,7 @@ header {
 						}
 					}
 					h5 {
-						font-size: 1em;
+						font-size: 0.8em;
 						text-align: right;
 						color: white;
 						font-family: serif;
@@ -220,7 +218,7 @@ header {
 	.mainContent {
 		@include flex(3);
 		padding: 1em;
-		// min-width: 10em;
+		// min-width: 25em;
 
 		h1 {
 			font-size: 2.5em;
@@ -288,7 +286,7 @@ header {
 	.side {
 		@include flex(1);
 		padding: 1em;
-		// min-width: 10em;
+		// min-width: 400px;
 	}
 }
 
@@ -358,6 +356,8 @@ header {
 }
 
 table {
+	$table-padding: 5px;
+
 	margin: 0.5em 0em 1em;
 	border-spacing: 0px;
 	border: outset 0pt;
@@ -368,6 +368,7 @@ table {
 			border-bottom: 1px solid gray;
 			text-align: left;
 			th {
+				padding: 0px $table-padding;
 				font-size: 0.8em;
 			}
 		}
@@ -376,7 +377,7 @@ table {
 	tbody {
 		tr {
 			& > td {
-				padding: 0.3em;
+				padding: $table-padding;
 				width: 7em;
 			}
 			&:nth-child(even) {
@@ -433,6 +434,23 @@ article.notizie {
 	}
 }
 
+ul.album {
+	li {
+		margin-bottom: 1em;
+	}
+}
+
+h5.date {
+	font-weight: normal;
+	color: gray;
+}
+
+hr {
+//	border-top: 3px double #ccc;
+	background-color: #fff;
+	border-top: 2px dashed #cccccc;
+}
+
 .side {
 	.indice-notizie {
 		h3 {
@@ -464,7 +482,9 @@ footer {
 	@include justify-content(space-between);
 	@include flex-wrap(wrap);
 
-	background-color: gray;
+	$footer-color: gray;
+
+	border-top: 1px solid gray;
 
 	.datiSocietari {
 		@include inline-flex;
@@ -474,16 +494,16 @@ footer {
 			margin: 0px;
 		}
 
-		color: white;
+		color: $footer-color;
 		font-size: 0.8em;
 
 		.p-name {
 			font-size: 1em;
 			display: block;
 			text-decoration: none;
-			color: white;
+			color: $footer-color;
 			&:visited {
-				color: white;
+				color: $footer-color;
 			}
 		}
 
@@ -497,7 +517,7 @@ footer {
 
 		.u-email {
 			text-decoration: none;
-			color: white;
+			color: $footer-color;
 		}
 	}
 

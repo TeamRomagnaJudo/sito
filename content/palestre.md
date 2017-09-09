@@ -8,7 +8,6 @@ contentClass = "palestre"
 
 Il Team Romagna Judo svolge attività presso le seguenti palestre
 
----
 
 ## Lugo
 [Via Emaldi, 20 - Lugo (RA)][mappa-lugo]
@@ -58,7 +57,8 @@ Mercoledì | --                                  | --
 Giovedì   | [propedeutica](/corsi/propedeutica) | [ragazzi](/corsi/ragazzi) 
 Venerdì   | --                                  | --                        
 
----
+
+
 
 [mappa-lugo]: https://www.google.it/maps/place/Team+Romagna+Judo/@44.419297,11.9062121,17z/data=!3m1!4b1!4m5!3m4!1s0x477e032c9abcbe93:0xbc2a51c45a18ba47!8m2!3d44.419297!4d11.9084008?hl=it
 [mappa-ravenna]: https://www.google.it/maps/place/Team+Romagna+Judo/@44.405523,12.1885824,17z/data=!3m1!4b1!4m5!3m4!1s0x477df94ba8ab596f:0xdbc4c1c7f9299a20!8m2!3d44.405523!4d12.1907711?hl=it

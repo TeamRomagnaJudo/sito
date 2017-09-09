@@ -567,7 +567,7 @@ header {
           header .header .top .logo a img {
             width: 100%; }
       header .header .top .spacer {
-        width: 2em; }
+        width: 3em; }
       header .header .top .onoreficenze {
         display: -webkit-box;
         display: -webkit-flex;
@@ -582,6 +582,7 @@ header {
         flex-direction: column;
         text-decoration: none; }
         header .header .top .onoreficenze div {
+          font-size: 3vw;
           background-color: rgba(255, 255, 255, 0.3);
           border-radius: 0.5em;
           margin: 0px;
@@ -589,14 +590,14 @@ header {
           header .header .top .onoreficenze div:hover {
             background-color: rgba(255, 255, 255, 0.5); }
           header .header .top .onoreficenze div h3 {
-            font-size: 1.5em;
+            font-size: 1em;
             text-align: right;
             color: white;
             font-family: serif; }
             header .header .top .onoreficenze div h3 .onoreficenza {
               font-style: italic; }
           header .header .top .onoreficenze div h5 {
-            font-size: 1em;
+            font-size: 0.8em;
             text-align: right;
             color: white;
             font-family: serif;
@@ -768,9 +769,10 @@ table {
     border-bottom: 1px solid gray;
     text-align: left; }
     table thead tr th {
+      padding: 0px 5px;
       font-size: 0.8em; }
   table tbody tr > td {
-    padding: 0.3em;
+    padding: 5px;
     width: 7em; }
   table tbody tr:nth-child(even) {
     background: #eee; }
@@ -821,6 +823,17 @@ article.notizie .content {
       list-style-type: disc;
       margin-left: 1.5em; }
 
+ul.album li {
+  margin-bottom: 1em; }
+
+h5.date {
+  font-weight: normal;
+  color: gray; }
+
+hr {
+  background-color: #fff;
+  border-top: 2px dashed #cccccc; }
+
 .side .indice-notizie h3 {
   font-size: 1.5em; }
 .side .indice-notizie ul {
@@ -855,7 +868,7 @@ footer {
   -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  background-color: gray; }
+  border-top: 1px solid gray; }
   footer .datiSocietari {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
@@ -863,7 +876,7 @@ footer {
     display: -ms-inline-flexbox;
     display: inline-flex;
     padding: 1em;
-    color: white;
+    color: gray;
     font-size: 0.8em; }
     footer .datiSocietari p {
       margin: 0px; }
@@ -871,16 +884,16 @@ footer {
       font-size: 1em;
       display: block;
       text-decoration: none;
-      color: white; }
+      color: gray; }
       footer .datiSocietari .p-name:visited {
-        color: white; }
+        color: gray; }
     footer .datiSocietari .p-street-address {
       display: block; }
     footer .datiSocietari .p-region {
       display: block; }
     footer .datiSocietari .u-email {
       text-decoration: none;
-      color: white; }
+      color: gray; }
   footer .sponsor {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
