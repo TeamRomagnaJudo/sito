@@ -2,7 +2,7 @@
 layout: notizie
 menu: notizie
 title: Grand Prix Genova
-date: 02/26/2017 12:00 PM
+date: 2017-02-26T12:00:00+02:00
 thumbnail: null
 thumbnail_description: null
 ---

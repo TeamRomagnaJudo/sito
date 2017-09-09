@@ -680,14 +680,19 @@ header {
     #main.home .mainContent ul {
       font-size: 1.3em; }
       #main.home .mainContent ul li {
-        padding: 0.5em 1em;
         margin: 0.1em 0em;
         background-image: url("/images/nodo.png");
         background-repeat: no-repeat;
         background-position-x: right;
         background-position-y: top;
-        background-size: contain;
-        color: white; }
+        background-size: contain; }
+        #main.home .mainContent ul li:hover {
+          filter: brightness(135%); }
+        #main.home .mainContent ul li a {
+          padding: 0.5em 1em;
+          display: block;
+          color: white;
+          text-decoration: none; }
       #main.home .mainContent ul > li {
         background-color: #f2f008; }
         #main.home .mainContent ul > li + li {
@@ -765,7 +770,10 @@ table {
     table thead tr th {
       font-size: 0.8em; }
   table tbody tr > td {
+    padding: 0.3em;
     width: 7em; }
+  table tbody tr:nth-child(even) {
+    background: #eee; }
 
 #main div.notizie > h1 {
   border-bottom: 1px dotted gray; }

@@ -2,7 +2,7 @@
 layout: notizie
 menu: notizie
 title: Lignano Sabbiadoro - Gran Prix Juniores Alpe Adria
-date: 01/29/2017 12:00 PM
+date: 2017-01-29T12:00:00+02:00
 thumbnail: null
 thumbnail_description: null
 ---

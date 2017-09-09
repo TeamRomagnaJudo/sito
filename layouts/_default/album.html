@@ -1,12 +1,14 @@
 {{ define "main" }}
 {{ .Content }}
 
-{{ $album := sort $.Site.Data.album "data" "desc" }}
+{{ $album := sort $.Site.Data.album "date" "desc" }}
 <ul>{{ range $album }}
     <li>
-        {{ $dayOfWeek := dateFormat "Monday" .data }}
-        {{ $month := dateFormat "01" .data }}
-        <a data-flickr-embed="true"  href="{{ .album }}" title="Prova"><img src="{{ .cover }}" width="640" height="427" alt="{{ .titolo }}"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+        {{ $dayOfWeek := dateFormat "Monday" .date }}
+        {{ $month := dateFormat "01" .date }}
+        <a data-flickr-embed="true"  href="{{ .album }}" title="{{ .title }}"><img src="{{ .cover }}" width="640" height="427" alt="{{ .titolo }}"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+        <h3>{{ .title }}</h3>
+        <h5 class="date">{{ index $.Site.Data.date.giorniDellaSettimana $dayOfWeek }}, {{ dateFormat "2" .date }} {{ index $.Site.Data.date.mesi $month }} {{ dateFormat "2006" .date }}</h5>
 
     </li>
 

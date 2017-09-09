@@ -53,7 +53,7 @@ Venerdì   | --                                  | --                        | -
  Orario   | 18:00 - 19:15                       | 19:15 - 21:00
 ----------|-------------------------------------|---------------------------
 Lunedì    | [propedeutica](/corsi/propedeutica) | [ragazzi](/corsi/ragazzi) 
-Martedì   | [ragazzi](/corsi/ragazzi)<br><span style="font-size:0.7em">fino alle 20:00</span> |
+Martedì   | [ragazzi](/corsi/ragazzi)<br><span style="font-size:0.7em">fino alle 20:00</span> | --
 Mercoledì | --                                  | --                        
 Giovedì   | [propedeutica](/corsi/propedeutica) | [ragazzi](/corsi/ragazzi) 
 Venerdì   | --                                  | --                        

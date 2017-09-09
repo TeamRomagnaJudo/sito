@@ -22,19 +22,27 @@ Tutte queste caratteristiche vengono da subito recepite dal bambino e riportate 
  Orario   | 
 ----------|----------------
 Lunedì    | 16:30 - 18:00  
+Martedì   | --
 Mercoledì | 16:30 - 18:00  
+Giovedì   | --
 Venerdì   | 16:30 - 18:00  
 
 
 ## [Ravenna](/palestre#ravenna)
  Orario   | 
 ----------|----------------
+Lunedì    | --
 Martedì   | 17:00 - 18:00  
+Mercoledì | --
 Giovedì   | 17:00 - 18:00  
+Venerdì   | --
 
 
 ## [Castel Bolognese](/palestre#castel-bolognese)
  Orario   | 
 ----------|----------------
 Lunedì    | 18:00 - 19:15  
+Martedì   | --
+Mercoledì | --
 Giovedì   | 18:00 - 19:15  
+Venerdì   | --

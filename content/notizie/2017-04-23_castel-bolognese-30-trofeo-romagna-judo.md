@@ -2,7 +2,7 @@
 layout: notizie
 menu: notizie
 title: Castel Bolognese - 30 Trofeo Romagna Judo
-date: 04/23/2017 12:00 PM
+date: 2017-04-23T12:00:00+02:00
 thumbnail: null
 thumbnail_description: null
 ---

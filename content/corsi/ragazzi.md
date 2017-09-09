@@ -24,15 +24,20 @@ Questi risultati, ottenuti sul “tatami” (la materassina del dojo), ci accomp
  Orario   | 
 ----------|----------------
 Lunedì    | 18:00 - 19:30  
+Martedì   | --
 Mercoledì | 18:00 - 19:30  
+Giovedì   | --
 Venerdì   | 18:00 - 19:30  
 
 
 ## [Ravenna](/palestre#ravenna)
  Orario   | 
 ----------|----------------
+Lunedì    | --
 Martedì   | 18:00 - 19:30  
+Mercoledì | --
 Giovedì   | 18:00 - 19:30  
+Venerdì   | --
 
 
 ## [Castel Bolognese](/palestre#castel-bolognese)
@@ -40,4 +45,6 @@ Giovedì   | 18:00 - 19:30
 ----------|----------------
 Lunedì    | 19:15 - 21:00  
 Martedì   | 18:00 - 20:00  
+Mercoledì | --
 Giovedì   | 19:15 - 21:00  
+Venerdì   | --

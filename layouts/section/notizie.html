@@ -4,15 +4,16 @@
 
 		<ul class="notizie">{{ range .Paginator.Pages }}
 			<li>
-				<div class="thumbnail">
+				<!-- div class="thumbnail">
 					<img width="200" src="{{ .Params.thumbnail }}" title="{{ .Params.thumbnail_description }}" />
-				</div>
+				</div -->
 				<div class="title">
 					{{ $dayOfWeek := dateFormat "Monday" .Date }}
 					{{ $month := dateFormat "1" .Date }}
 			
 					<a href="{{ .URL }}" title="{{ .Title }}"><h1>{{ .Title }}</h1></a>
 					<h5 class="date">{{ index $.Site.Data.date.giorniDellaSettimana $dayOfWeek }}, {{ dateFormat "2" .Date }} {{ index $.Site.Data.date.mesi $month }} {{ dateFormat "2006" .Date }}</h5>
+					<!-- p>{{ .Summary }}</p -->
 				</div>
 			</li>
 		{{ end }}</ul>
