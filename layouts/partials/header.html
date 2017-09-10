@@ -1,6 +1,6 @@
 {{ $currentPage := . }}
 
-<header>
+<header {{if .Params.menu }}class="{{ .Params.menu }}"{{ end}}>
     <div class="carousel">
         <ul class="panes">
             <li><img src="/images/header/01.jpg" alt=""></li>
