@@ -21,11 +21,11 @@ Tutte queste caratteristiche vengono da subito recepite dal bambino e riportate 
 ## [Lugo](/palestre#lugo)
  Orario   | 
 ----------|----------------
-Lunedì    | 16:30 - 18:00  
+Lunedì    | 16:45 - 18:00  
 Martedì   | --
-Mercoledì | 16:30 - 18:00  
+Mercoledì | --
 Giovedì   | --
-Venerdì   | 16:30 - 18:00  
+Venerdì   | 16:45 - 18:00  
 
 
 ## [Ravenna](/palestre#ravenna)

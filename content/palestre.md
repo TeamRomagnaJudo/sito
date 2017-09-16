@@ -15,11 +15,11 @@ Il Team Romagna Judo svolge attività presso le seguenti palestre
 [![Via Emaldi, 20 - Lugo (RA)](/images/maps/lugo.png)][mappa-lugo]
 
 ### Corsi disponibili presso la palestra di Lugo
- Orario   | 16:30 - 18:00                       | 18:00 - 19:30             | 19:30 - 21:30
+ Orario   | 16:45 - 18:00                       | 18:00 - 19:30             | 19:30 - 21:30
 ----------|-------------------------------------|---------------------------|----------------------
 Lunedì    | [propedeutica](/corsi/propedeutica) | [ragazzi](/corsi/ragazzi) | [agonisti](/corsi/agonisti)
 Martedì   | --                                  | --                        | --
-Mercoledì | [propedeutica](/corsi/propedeutica) | [ragazzi](/corsi/ragazzi) | [agonisti](/corsi/agonisti)
+Mercoledì | --                                  | [ragazzi](/corsi/ragazzi) | [agonisti](/corsi/agonisti)
 Giovedì   | --                                  | --                        | --
 Venerdì   | [propedeutica](/corsi/propedeutica) | [ragazzi](/corsi/ragazzi) | [agonisti](/corsi/agonisti)
 
