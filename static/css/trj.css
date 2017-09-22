@@ -509,9 +509,9 @@ header {
       list-style: none;
       position: relative;
       width: 500%;
-      -moz-animation: carousel 10s infinite;
-      -webkit-animation: carousel 10s infinite;
-      animation: carousel 10s infinite; }
+      -moz-animation: carousel 20s infinite;
+      -webkit-animation: carousel 20s infinite;
+      animation: carousel 20s infinite; }
       header .carousel .panes li {
         position: relative;
         float: left;
@@ -643,6 +643,8 @@ header {
     margin: 0.2em 0em; }
   #main p {
     margin-bottom: 0.5em; }
+    #main p img {
+      width: 80vw; }
 
 #main.home {
   display: -webkit-box;
@@ -909,31 +911,31 @@ footer {
   0% {
     left: 0; }
 
-  18% {
+  15% {
     left: 0; }
 
   20% {
     left: -100%; }
 
-  38% {
+  35% {
     left: -100%; }
 
   40% {
     left: -200%; }
 
-  58% {
+  55% {
     left: -200%; }
 
   60% {
     left: -300%; }
 
-  78% {
+  75% {
     left: -300%; }
 
   80% {
     left: -400%; }
 
-  98% {
+  95% {
     left: -400%; }
 
   100% {

@@ -14,6 +14,9 @@ $blue: rgb(30, 19, 106);
 $brown: rgb(55, 28, 6);
 $black: rgba(20, 20, 20, 1);
 
+$numberOfImagesInHeaderCarousel: 5;
+$carouselDuration: 20s;
+
 
 @import "normalize";
 @import "_flex";
@@ -48,10 +51,6 @@ header {
 		width: 100%;
 		overflow: hidden;
 		
-		$numberOfImagesInHeaderCarousel: 5;
-		$carouselDuration: 10s;
-
-
 		.panes {
 			margin: 0px;
 			padding: 0px;
@@ -204,6 +203,10 @@ header {
 
 	p {
 		margin-bottom: 0.5em;
+
+		img {
+			width: 80vw;
+		}
 	}
 
 }
@@ -538,14 +541,14 @@ footer {
 
 @keyframes carousel {
 	0%		{ left:0; }
-	18%		{ left:0; }
+	15%		{ left:0; }
 	20%		{ left:-100%; }
-	38% 	{ left:-100%; }
+	35% 	{ left:-100%; }
 	40%		{ left:-200%; }
-	58%		{ left:-200%; }
+	55%		{ left:-200%; }
 	60% 	{ left:-300%; }
-	78% 	{ left:-300%; }
+	75% 	{ left:-300%; }
 	80% 	{ left:-400%; }
-	98% 	{ left:-400%; }
+	95% 	{ left:-400%; }
 	100%	{ left:0; }
 }
