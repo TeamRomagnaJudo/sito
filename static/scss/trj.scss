@@ -81,9 +81,11 @@ header {
 		position: relative;
 		top: 0px;
 		left: 0px;
+		height: 66vw;
 
 		@include flexbox;
 		@include flex-direction(column);
+		@include justify-content(space-between);
 
 		.top {
 			@include flexbox;
@@ -92,8 +94,9 @@ header {
 
 			margin: 1em;
 			margin-bottom: 2vw;
-			
+
 			.logo {
+				@include align-self(flex-start);
 				background-color: rgba(255, 255, 255, 0.6);
 				padding: 1em;
 				border-radius: 0.5em;

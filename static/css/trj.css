@@ -524,6 +524,7 @@ header {
     position: relative;
     top: 0px;
     left: 0px;
+    height: 66vw;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-flex;
@@ -534,7 +535,12 @@ header {
     -webkit-flex-direction: column;
     -moz-flex-direction: column;
     -ms-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between; }
     header .header .top {
       display: -webkit-box;
       display: -webkit-flex;
@@ -555,6 +561,10 @@ header {
       margin: 1em;
       margin-bottom: 2vw; }
       header .header .top .logo {
+        -webkit-align-self: flex-start;
+        -moz-align-self: flex-start;
+        -ms-flex-item-align: start;
+        align-self: flex-start;
         background-color: rgba(255, 255, 255, 0.6);
         padding: 1em;
         border-radius: 0.5em;
