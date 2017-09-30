@@ -7,7 +7,9 @@ $blue: rgba(45, 65, 135, 1);
 $red: rgba(196, 45, 42, 1);
 
 $white: rgba(255, 255, 255, 1);
-$yellow: rgb(242, 240, 8);
+//$yellow: rgb(242, 240, 8);
+$yellow: rgb(222, 220, 8);
+
 $orange: rgb(241, 148, 22);
 $green: rgb(31, 150, 12);
 $blue: rgb(30, 19, 106);
@@ -239,41 +241,69 @@ header {
 	
 			li {
 				margin: 0.1em 0em;
-				background-image: url("/images/nodo.png");
-				background-repeat: no-repeat;
-				background-position-x: right;
-				background-position-y: top;
-				background-size: contain;
-
-				&:hover {
-					filter: brightness(135%);
-				}
 
 				a {
+					background-image: url("/images/nodo.png");
+					background-repeat: no-repeat;
+					background-position-x: right;
+					background-position-y: top;
+					background-size: contain;
 					padding: 0.5em 1em;
 					display: block;
 					color: white;
 					text-decoration: none;
 				}
 			}
-	
+
+			& > li:first-child > a {
+				color: #ffffff;
+			}
+
 			& > li {
+				background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAK0lEQVQoU2NkIBIwEqmOgU4K/////x/kJEZGRriNdLIaW0gQbzU2h2MzEQAiZQgLCVxH+wAAAABJRU5ErkJggg==);
 				background-color: $yellow;
 
+				&:hover {
+					filter: brightness(105%);
+				}
+				
 				& + li {
+					background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAK0lEQVQoU2NkIBIwEqmOgU4Kz5w58x/kJBMTE7iNdLIaW0gQbzU2h2MzEQAY1QgLU4ZE3AAAAABJRU5ErkJggg==);
 					background-color: $orange;
-	
+
+					&:hover {
+						filter: brightness(110%);
+					}
+						
 					& + li {
 						background-color: $green;
-	
+
+						&:hover {
+							filter: brightness(115%);
+						}
+							
 						& + li {
+							background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAK0lEQVQoU2NkIBIwEqmOgU4Ka2tr/4Oc1NzcDLeRTlZjCwnircbmcGwmAgAKBQgLyPD56gAAAABJRU5ErkJggg==);
 							background-color: $blue;
-	
+
+							&:hover {
+								filter: brightness(120%);
+							}
+									
 							& + li {
 								background-color: $brown;
-	
+
+								&:hover {
+									filter: brightness(125%);
+								}
+											
 								& + li {
+									background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAK0lEQVQoU2NkIBIwEqmOgU4KQ0ND/4OctHr1ariNdLIaW0gQbzU2h2MzEQAChQgL7/se4AAAAABJRU5ErkJggg==);
 									background-color: $black;
+
+									&:hover {
+										filter: brightness(130%);
+									}
 								}
 							}
 						}

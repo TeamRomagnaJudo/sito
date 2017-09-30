@@ -693,31 +693,47 @@ header {
     #main.home .mainContent ul {
       font-size: 1.3em; }
       #main.home .mainContent ul li {
-        margin: 0.1em 0em;
-        background-image: url("/images/nodo.png");
-        background-repeat: no-repeat;
-        background-position-x: right;
-        background-position-y: top;
-        background-size: contain; }
-        #main.home .mainContent ul li:hover {
-          filter: brightness(135%); }
+        margin: 0.1em 0em; }
         #main.home .mainContent ul li a {
+          background-image: url("/images/nodo.png");
+          background-repeat: no-repeat;
+          background-position-x: right;
+          background-position-y: top;
+          background-size: contain;
           padding: 0.5em 1em;
           display: block;
           color: white;
           text-decoration: none; }
+      #main.home .mainContent ul > li:first-child > a {
+        color: #ffffff; }
       #main.home .mainContent ul > li {
-        background-color: #f2f008; }
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAK0lEQVQoU2NkIBIwEqmOgU4K/////x/kJEZGRriNdLIaW0gQbzU2h2MzEQAiZQgLCVxH+wAAAABJRU5ErkJggg==);
+        background-color: #dedc08; }
+        #main.home .mainContent ul > li:hover {
+          filter: brightness(105%); }
         #main.home .mainContent ul > li + li {
+          background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAK0lEQVQoU2NkIBIwEqmOgU4Kz5w58x/kJBMTE7iNdLIaW0gQbzU2h2MzEQAY1QgLU4ZE3AAAAABJRU5ErkJggg==);
           background-color: #f19416; }
+          #main.home .mainContent ul > li + li:hover {
+            filter: brightness(110%); }
           #main.home .mainContent ul > li + li + li {
             background-color: #1f960c; }
+            #main.home .mainContent ul > li + li + li:hover {
+              filter: brightness(115%); }
             #main.home .mainContent ul > li + li + li + li {
+              background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAK0lEQVQoU2NkIBIwEqmOgU4Ka2tr/4Oc1NzcDLeRTlZjCwnircbmcGwmAgAKBQgLyPD56gAAAABJRU5ErkJggg==);
               background-color: #1e136a; }
+              #main.home .mainContent ul > li + li + li + li:hover {
+                filter: brightness(120%); }
               #main.home .mainContent ul > li + li + li + li + li {
                 background-color: #371c06; }
+                #main.home .mainContent ul > li + li + li + li + li:hover {
+                  filter: brightness(125%); }
                 #main.home .mainContent ul > li + li + li + li + li + li {
+                  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAK0lEQVQoU2NkIBIwEqmOgU4KQ0ND/4OctHr1ariNdLIaW0gQbzU2h2MzEQAChQgL7/se4AAAAABJRU5ErkJggg==);
                   background-color: #141414; }
+                  #main.home .mainContent ul > li + li + li + li + li + li:hover {
+                    filter: brightness(130%); }
       #main.home .mainContent ul li {
         font-size: 1.2em;
         font-weight: bold; }
