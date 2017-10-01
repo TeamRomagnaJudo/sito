@@ -279,7 +279,6 @@ header {
 		& > ul {
 			@include flexbox;
 			@include flex-direction(row);
-//			@include justify-content(flex-start);
 			@include flex-wrap(wrap);
 
 			& > li {
@@ -288,8 +287,6 @@ header {
 				& > ul {
 					@include flexbox;
 					@include flex-direction(column);
-//					@include justify-content(flex-start);
-//					@include flex-wrap(wrap);
 							
 					& > li {
 						@include flex(1);
@@ -311,6 +308,8 @@ header {
 						a {
 							padding-left: 2.3em;
 							text-decoration: none;
+							font-variant: small-caps;
+							
 							color: black;
 							&:visited {
 								color: black;
@@ -439,6 +438,64 @@ header {
 	}
 }
 
+.abilità {
+	h1 {
+		display: none;
+		visibility: hidden;
+	}
+
+	ul.navigazioneAbilità {
+		overflow: hidden;
+		@include flexbox;
+		@include justify-content(flex-start);
+		@include flex-wrap(wrap);
+
+		margin-bottom: 1.5em;
+		li {
+			@include flex(1);
+			// &:before {
+			// 	font-size: 0.5em;
+			// 	vertical-align: middle;
+			// 	content: " > ";
+			// }
+			// &:first-child:before {
+			// 	content: "";
+			// }
+
+			a {
+				display: block;
+				color: black;
+				text-align: center;
+				text-decoration: none;
+				font-variant: small-caps;
+				margin-right: 1em;
+				margin-bottom: 0.5em;
+				padding: 0.5em 1em;
+
+				background-color: #f2f2f2;
+				border-radius: 0.3em;
+
+				&:hover {
+					background-color: #cccccc;
+				}
+				&:visited {
+					color: black;
+				}
+			}
+
+			&.selected {
+				a {
+					color: white;
+					background-color: $blue;
+				}
+			}
+		}
+	}
+	img {
+		width: 90vw;
+	}
+
+}
 .pagination {
 	border-top: 1px dotted gray;
 	padding: 0.5em 0em;
