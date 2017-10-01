@@ -1,7 +1,7 @@
 {{ define "main" }}
     <article class="notizie">
         {{ $dayOfWeek := dateFormat "Monday" .Date }}
-        {{ $month := dateFormat "1" .Date }}
+        {{ $month := dateFormat "01" .Date }}
 
         <h5 class="date">{{ index $.Site.Data.date.giorniDellaSettimana $dayOfWeek }}, {{ dateFormat "2" .Date }} {{ index $.Site.Data.date.mesi $month }} {{ dateFormat "2006" .Date }}</h5>
         <h1>{{ .Params.title }}</h1>
