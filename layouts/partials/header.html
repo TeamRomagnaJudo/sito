@@ -1,15 +1,19 @@
 {{ $currentPage := . }}
 
-<header {{if .Params.menu }}class="{{ .Params.menu }}"{{ end}}>
-    <div class="carousel">
-        <ul class="panes">
-            <li><img src="/images/header/01.jpg" alt=""></li>
-            <li><img src="/images/header/02.jpg" alt=""></li>
-            <li><img src="/images/header/03.jpg" alt=""></li>
-            <li><img src="/images/header/04.jpg" alt=""></li>
-            <li><img src="/images/header/05.jpg" alt=""></li>
-        </ul>
-    </div>
+<header {{ if .Params.menu }}class="{{ .Params.menu }}"{{ end }}>
+
+
+    {{ if eq .Params.contentClass "home" }}
+        <div class="carousel">
+            <ul class="panes">
+                <li><img src="/images/header/home/01.jpg" alt=""></li>
+                <li><img src="/images/header/home/02.jpg" alt=""></li>
+                <li><img src="/images/header/home/03.jpg" alt=""></li>
+                <li><img src="/images/header/home/04.jpg" alt=""></li>
+                <li><img src="/images/header/home/05.jpg" alt=""></li>
+            </ul>
+        </div>
+    {{ end }}
 
     <div class="header">
         <div class="top">

@@ -1,12 +1,9 @@
 baseurl = "/"
-#baseurl = "https://example.org/"
 languageCode = "it-it"
 defaultContentLanguage = "it"
 # defaultContentLanguageInSubdir = true
 title = "Team Romagna Judo 1972"
 #theme = "TRJ-theme"
-
-#publishDir = "../dist"
 
 contentDir = "content"
 dataDir = "data"

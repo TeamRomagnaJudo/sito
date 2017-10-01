@@ -39,13 +39,26 @@ ul, li {
 body {
 	margin: 0px;
 	font-family: sans-serif;
+
+	&.home {
+		header {
+			.header {
+				height: 66vw;
+			}
+		}
+	}
 }
 
 header {
 	position: relative;
 	overflow: hidden;
-	background-color: gray;
 
+	background-color: gray;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("/images/header/_.jpg");
+	background-position-y: bottom;
+	
 	.carousel {
 		position: absolute;
 		top: 0px;
@@ -79,11 +92,36 @@ header {
 		}
 	}	
 
+	&.palestre {
+		background-image: url("/images/header/palestre.jpg");
+		background-position-y: top;
+	}
+
+	&.corsi {
+		background-image: url("/images/header/corsi.jpg");
+		background-position-y: top;
+	}
+
+	&.notizie {
+		background-image: url("/images/header/notizie.jpg");
+		background-position-y: top;
+	}
+
+	&.materiale {
+		background-image: url("/images/header/materiale.jpg");
+		background-position-y: top;
+	}
+
+	&.album {
+		background-image: url("/images/header/album.jpg");
+		background-position-y: top;
+	}
+	
 	.header {
 		position: relative;
 		top: 0px;
 		left: 0px;
-		height: 66vw;
+//		height: 66vw;
 
 		@include flexbox;
 		@include flex-direction(column);
@@ -173,7 +211,8 @@ header {
 						display: block;
 					//	border-radius: 5px;
 					//	margin:5px;
-						padding: 10px;
+						font-size: 2.5vw;
+						padding: 1.5em;
 						border-right: 1px solid white;
 						border-bottom: 1px solid white;
 						
@@ -182,7 +221,7 @@ header {
 						text-decoration: none;
 
 						&:hover {
-							background-color: rgba(255, 255, 255, 0.8);
+							background-color: rgba(255, 255, 255, 0.7);
 						}
 
 						&.active {
@@ -224,19 +263,92 @@ header {
 	padding: 0px;
 	
 	.mainContent {
+		font-size: 2.5vw;
 		@include flex(3);
 		padding: 1em;
 		// min-width: 25em;
 
 		h1 {
-			font-size: 2.5em;
+			font-size: 2em;
 		}
 	
 		h3 {
 			font-size: 1.5em;
 		}
 	
-		ul {
+		& > ul {
+			@include flexbox;
+			@include flex-direction(row);
+//			@include justify-content(flex-start);
+			@include flex-wrap(wrap);
+
+			& > li {
+				@include flex(1);
+
+				& > ul {
+					@include flexbox;
+					@include flex-direction(column);
+//					@include justify-content(flex-start);
+//					@include flex-wrap(wrap);
+							
+					& > li {
+						@include flex(1);
+
+						$padding: 0.2em;
+						
+						font-size: 2.5em;
+						font-weight: bolder;
+						text-align: left;
+						padding: $padding;
+						height: 10vw;
+		
+						background-image: url("/images/cinture/bianca.png");
+						background-repeat: no-repeat;
+						background-position-x: $padding;
+						background-position-y: $padding;
+						background-size: 2em;
+		
+						a {
+							padding-left: 2.3em;
+							text-decoration: none;
+							color: black;
+							&:visited {
+								color: black;
+							}
+						}
+
+						&:hover {
+							background-color: #f5f5f5;
+							border-radius: 0.1em;
+						}
+						
+						& + li {
+							background-image: url("/images/cinture/gialla.png");
+
+							& + li {
+								background-image: url("/images/cinture/arancione.png");
+							}							
+						}							
+					}
+				}
+
+				& + li {
+					& > ul {
+						& > li {
+							background-image: url("/images/cinture/verde.png");
+
+							& + li {
+								background-image: url("/images/cinture/blue.png");
+	
+								& + li {
+									background-image: url("/images/cinture/marrone.png");
+								}							
+							}							
+						}
+					}
+				}
+			}
+/*			
 			font-size: 1.3em;
 	
 			li {
@@ -315,6 +427,7 @@ header {
 				font-size: 1.2em;
 				font-weight: bold;
 			}
+*/			 
 		}
 	
 	}

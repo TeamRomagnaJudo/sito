@@ -492,11 +492,17 @@ ul, li {
 body {
   margin: 0px;
   font-family: sans-serif; }
+  body.home header .header {
+    height: 66vw; }
 
 header {
   position: relative;
   overflow: hidden;
-  background-color: gray; }
+  background-color: gray;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/images/header/_.jpg");
+  background-position-y: bottom; }
   header .carousel {
     position: absolute;
     top: 0px;
@@ -520,11 +526,25 @@ header {
           display: block;
           width: 100%;
           max-width: 100%; }
+  header.palestre {
+    background-image: url("/images/header/palestre.jpg");
+    background-position-y: top; }
+  header.corsi {
+    background-image: url("/images/header/corsi.jpg");
+    background-position-y: top; }
+  header.notizie {
+    background-image: url("/images/header/notizie.jpg");
+    background-position-y: top; }
+  header.materiale {
+    background-image: url("/images/header/materiale.jpg");
+    background-position-y: top; }
+  header.album {
+    background-image: url("/images/header/album.jpg");
+    background-position-y: top; }
   header .header {
     position: relative;
     top: 0px;
     left: 0px;
-    height: 66vw;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-flex;
@@ -633,14 +653,15 @@ header {
           header .header nav ul li a {
             text-align: center;
             display: block;
-            padding: 10px;
+            font-size: 2.5vw;
+            padding: 1.5em;
             border-right: 1px solid white;
             border-bottom: 1px solid white;
             color: #1e136a;
             font-weight: bold;
             text-decoration: none; }
             header .header nav ul li a:hover {
-              background-color: rgba(255, 255, 255, 0.8); }
+              background-color: rgba(255, 255, 255, 0.7); }
             header .header nav ul li a.active {
               background-color: #1e136a;
               color: white; }
@@ -679,6 +700,7 @@ header {
   flex-wrap: wrap;
   padding: 0px; }
   #main.home .mainContent {
+    font-size: 2.5vw;
     -webkit-box-flex: 3;
     -webkit-flex: 3;
     -moz-box-flex: 3;
@@ -687,56 +709,160 @@ header {
     flex: 3;
     padding: 1em; }
     #main.home .mainContent h1 {
-      font-size: 2.5em; }
+      font-size: 2em; }
     #main.home .mainContent h3 {
       font-size: 1.5em; }
-    #main.home .mainContent ul {
-      font-size: 1.3em; }
-      #main.home .mainContent ul li {
-        margin: 0.1em 0em; }
-        #main.home .mainContent ul li a {
-          background-image: url("/images/nodo.png");
-          background-repeat: no-repeat;
-          background-position-x: right;
-          background-position-y: top;
-          background-size: contain;
-          padding: 0.5em 1em;
-          display: block;
-          color: white;
-          text-decoration: none; }
-      #main.home .mainContent ul > li:first-child > a {
-        color: #ffffff; }
-      #main.home .mainContent ul > li {
-        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAK0lEQVQoU2NkIBIwEqmOgU4K/////x/kJEZGRriNdLIaW0gQbzU2h2MzEQAiZQgLCVxH+wAAAABJRU5ErkJggg==);
-        background-color: #dedc08; }
-        #main.home .mainContent ul > li:hover {
-          filter: brightness(105%); }
-        #main.home .mainContent ul > li + li {
-          background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAK0lEQVQoU2NkIBIwEqmOgU4Kz5w58x/kJBMTE7iNdLIaW0gQbzU2h2MzEQAY1QgLU4ZE3AAAAABJRU5ErkJggg==);
-          background-color: #f19416; }
-          #main.home .mainContent ul > li + li:hover {
-            filter: brightness(110%); }
-          #main.home .mainContent ul > li + li + li {
-            background-color: #1f960c; }
-            #main.home .mainContent ul > li + li + li:hover {
-              filter: brightness(115%); }
-            #main.home .mainContent ul > li + li + li + li {
-              background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAK0lEQVQoU2NkIBIwEqmOgU4Ka2tr/4Oc1NzcDLeRTlZjCwnircbmcGwmAgAKBQgLyPD56gAAAABJRU5ErkJggg==);
-              background-color: #1e136a; }
-              #main.home .mainContent ul > li + li + li + li:hover {
-                filter: brightness(120%); }
-              #main.home .mainContent ul > li + li + li + li + li {
-                background-color: #371c06; }
-                #main.home .mainContent ul > li + li + li + li + li:hover {
-                  filter: brightness(125%); }
-                #main.home .mainContent ul > li + li + li + li + li + li {
-                  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAK0lEQVQoU2NkIBIwEqmOgU4KQ0ND/4OctHr1ariNdLIaW0gQbzU2h2MzEQAChQgL7/se4AAAAABJRU5ErkJggg==);
-                  background-color: #141414; }
-                  #main.home .mainContent ul > li + li + li + li + li + li:hover {
-                    filter: brightness(130%); }
-      #main.home .mainContent ul li {
-        font-size: 1.2em;
-        font-weight: bold; }
+    #main.home .mainContent > ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-direction: normal;
+      -webkit-box-orient: horizontal;
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      /*			
+      			font-size: 1.3em;
+      	
+      			li {
+      				margin: 0.1em 0em;
+      
+      				a {
+      					background-image: url("/images/nodo.png");
+      					background-repeat: no-repeat;
+      					background-position-x: right;
+      					background-position-y: top;
+      					background-size: contain;
+      					padding: 0.5em 1em;
+      					display: block;
+      					color: white;
+      					text-decoration: none;
+      				}
+      			}
+      
+      			& > li:first-child > a {
+      				color: #ffffff;
+      			}
+      
+      			& > li {
+      				background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAK0lEQVQoU2NkIBIwEqmOgU4K/////x/kJEZGRriNdLIaW0gQbzU2h2MzEQAiZQgLCVxH+wAAAABJRU5ErkJggg==);
+      				background-color: $yellow;
+      
+      				&:hover {
+      					filter: brightness(105%);
+      				}
+      				
+      				& + li {
+      					background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAK0lEQVQoU2NkIBIwEqmOgU4Kz5w58x/kJBMTE7iNdLIaW0gQbzU2h2MzEQAY1QgLU4ZE3AAAAABJRU5ErkJggg==);
+      					background-color: $orange;
+      
+      					&:hover {
+      						filter: brightness(110%);
+      					}
+      						
+      					& + li {
+      						background-color: $green;
+      
+      						&:hover {
+      							filter: brightness(115%);
+      						}
+      							
+      						& + li {
+      							background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAK0lEQVQoU2NkIBIwEqmOgU4Ka2tr/4Oc1NzcDLeRTlZjCwnircbmcGwmAgAKBQgLyPD56gAAAABJRU5ErkJggg==);
+      							background-color: $blue;
+      
+      							&:hover {
+      								filter: brightness(120%);
+      							}
+      									
+      							& + li {
+      								background-color: $brown;
+      
+      								&:hover {
+      									filter: brightness(125%);
+      								}
+      											
+      								& + li {
+      									background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAK0lEQVQoU2NkIBIwEqmOgU4KQ0ND/4OctHr1ariNdLIaW0gQbzU2h2MzEQAChQgL7/se4AAAAABJRU5ErkJggg==);
+      									background-color: $black;
+      
+      									&:hover {
+      										filter: brightness(130%);
+      									}
+      								}
+      							}
+      						}
+      					}
+      				}
+      			}
+      	
+      			li {
+      				font-size: 1.2em;
+      				font-weight: bold;
+      			}
+      */ }
+      #main.home .mainContent > ul > li {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -moz-box-flex: 1;
+        -moz-flex: 1;
+        -ms-flex: 1;
+        flex: 1; }
+        #main.home .mainContent > ul > li > ul {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-direction: normal;
+          -webkit-box-orient: vertical;
+          -webkit-flex-direction: column;
+          -moz-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column; }
+          #main.home .mainContent > ul > li > ul > li {
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            -moz-box-flex: 1;
+            -moz-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            font-size: 2.5em;
+            font-weight: bolder;
+            text-align: left;
+            padding: 0.2em;
+            height: 10vw;
+            background-image: url("/images/cinture/bianca.png");
+            background-repeat: no-repeat;
+            background-position-x: 0.2em;
+            background-position-y: 0.2em;
+            background-size: 2em; }
+            #main.home .mainContent > ul > li > ul > li a {
+              padding-left: 2.3em;
+              text-decoration: none;
+              color: black; }
+              #main.home .mainContent > ul > li > ul > li a:visited {
+                color: black; }
+            #main.home .mainContent > ul > li > ul > li:hover {
+              background-color: #f5f5f5;
+              border-radius: 0.1em; }
+            #main.home .mainContent > ul > li > ul > li + li {
+              background-image: url("/images/cinture/gialla.png"); }
+              #main.home .mainContent > ul > li > ul > li + li + li {
+                background-image: url("/images/cinture/arancione.png"); }
+        #main.home .mainContent > ul > li + li > ul > li {
+          background-image: url("/images/cinture/verde.png"); }
+          #main.home .mainContent > ul > li + li > ul > li + li {
+            background-image: url("/images/cinture/blue.png"); }
+            #main.home .mainContent > ul > li + li > ul > li + li + li {
+              background-image: url("/images/cinture/marrone.png"); }
   #main.home .side {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
