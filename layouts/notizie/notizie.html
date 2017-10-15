@@ -5,10 +5,12 @@
 
         <h5 class="date">{{ index $.Site.Data.date.giorniDellaSettimana $dayOfWeek }}, {{ dateFormat "2" .Date }} {{ index $.Site.Data.date.mesi $month }} {{ dateFormat "2006" .Date }}</h5>
         <h1>{{ .Params.title }}</h1>
+        {{ if .Params.thumbnail }}
         <div class="thumbnail">
             <img src="{{ .Params.thumbnail }}" title="{{ .Params.thumbnail_description }}" />
             <h5>{{ .Params.thumbnail_description }}</h5>
         </div>
+        {{ end }}
 
         <div class="content">
             {{ .Content }}

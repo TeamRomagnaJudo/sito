@@ -9,7 +9,7 @@ Netlify usa la versione 0.19 di Hugo, quindi occorre fare le prove con questa ve
 > hugo --cleanDestinationDir --verbose --watch
 
 #### 'server' (con 'watch')
-> hugo server --cleanDestinationDir --baseURL homer.local --bind 0.0.0.0 --verbose --watch
+> hugo server --cleanDestinationDir --baseURL localhost --bind 0.0.0.0 --verbose --watch
 
 
 ## Parametri extra per vedere 

@@ -1017,6 +1017,11 @@ table {
         font-size: 1.5em;
         margin-top: 0px; }
 
+article.notizie .thumbnail img {
+  border: 1px solid #dddddd;
+  padding: 10px;
+  width: 80%;
+  margin-bottom: 10px; }
 article.notizie .content {
   margin: 0.5em 0em; }
   article.notizie .content ul {
