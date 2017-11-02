@@ -2,7 +2,7 @@
 layout: notizie
 menu: notizie
 title: "Trofeo Criterium, Bologna e Trofeo Guido Sieni, Sassari"
-date: 2017-10-22T12:00:00+02:00
+date: 2017-10-29T12:00:00+02:00
 thumbnail: /images/uploads/2017-10-29_Gabelli.jpg
 ---
 
