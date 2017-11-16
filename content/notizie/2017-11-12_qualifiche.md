@@ -17,7 +17,7 @@ Si qualificano per i Campionati Italiani, vincendo le loro categorie:
  - **Andrea Gabelli** (66 kg)
 
 
-Questi atleti parteciperanno alla **Finale dei Campionati Italiani** che si svolgeranno il 02-03/12/2017 presso il Pala Pellicone di Lido di Ostia insieme a Francesco Camerani, qualificato di diritto.
+Questi atleti parteciperanno alla **Finale dei Campionati Italiani** che si svolgeranno il 02-03/12/2017 presso il Pala Pellicone di Lido di Ostia insieme a **Francesco Camerani**, qualificato di diritto.
 
 Merita di essere evidenziata la bella prestazione di **Pietro Campana** anche se non qualificatosi alla finale di tale campionato.
 
