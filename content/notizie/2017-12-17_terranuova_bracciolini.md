@@ -2,7 +2,7 @@
 layout: notizie
 menu: notizie
 title: "Trofeo W.MALATESTI e Coppa CERRACHINI"
-date: 2017-12-07T12:00:00+02:00
+date: 2017-12-17T12:00:00+02:00
 thumbnail: "/images/uploads/Maia Rondinini a Bracciolini.jpg"
 ---
 
