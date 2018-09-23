@@ -16,5 +16,5 @@ Una volta acquisite le abilità necessarie per potersi confrontare in sicurezza 
 Per i più grandi ci sono anche i corsi per agonisti, dove vengono sviluppate le tecniche ed abilità per affrontare i combattimenti nelle gare.
 
 ### [Difesa personale](/corsi/difesa-personale)
-Quest'autunno (2017) si terrà anche il corso di difesa personale, presso la palestra di [Lugo](/palestre#lugo); le lezioni si terranno tutti i Lunedì (dalle 20.30 alle 21.30) a partire dal 2 ottobre fino al 18 dicembre.
+Quest'autunno (2018) si terrà anche il corso di difesa personale, presso la palestra di [Lugo](/palestre#lugo); le lezioni si terranno tutti i Lunedì (dalle 20.45 alle 21.45) a partire dal 1 Ottobre fino al 28 Gennaio 2019.
 Il corso sarà svolto in collaborazione con l'associazione [DEMETRA](http://www.demetradonne.it/).

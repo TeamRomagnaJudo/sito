@@ -6,6 +6,9 @@ menu = "corsi"
 +++
 
 
+# Corso di difesa personale
+
+
 Scopo della difesa personale o autodifesa è quello di evitare una situazione pericolosa o sapersi difendere e reagire se ci si trova in una situazione che lo richiede.
 
 I principali benefici delle lezioni di difesa personale sono i seguenti:
