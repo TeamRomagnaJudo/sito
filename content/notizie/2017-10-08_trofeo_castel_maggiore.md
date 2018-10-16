@@ -1,7 +1,7 @@
 ---
 layout: notizie
 menu: notizie
-title: "Trofeo di Judo Città di Castel Maggiore"
+title: "Trofeo di Judo Città di Castel Maggiore (2017)"
 date: 2017-10-08T12:00:00+02:00
 thumbnail: /images/uploads/2017-10-08_Francesco_Camerani.jpg
 ---
