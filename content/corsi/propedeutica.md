@@ -28,16 +28,6 @@ Giovedì   | --
 Venerdì   | 16:45 - 18:00  
 
 
-## [Ravenna](/palestre#ravenna)
- Orario   | 
-----------|----------------
-Lunedì    | --
-Martedì   | 17:00 - 18:00  
-Mercoledì | --
-Giovedì   | 17:00 - 18:00  
-Venerdì   | --
-
-
 ## [Castel Bolognese](/palestre#castel-bolognese)
  Orario   | 
 ----------|----------------

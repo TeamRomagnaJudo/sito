@@ -21,8 +21,6 @@ Tanti altri sono i risultati, frutto del lavoro e dell’impegno di tutta la squ
  Orario   |                | Palestra
 ----------|----------------|-------------------------------------------------
 Lunedì    | 19:30 - 21:30  | [Lugo](/palestre#lugo)
-Martedì   | 19:30 - 21:30  | [Ravenna](/palestre#ravenna)
 Mercoledì | 19:30 - 21:30  | [Lugo](/palestre#lugo)
-Giovedì   | 19:30 - 21:30  | [Ravenna](/palestre#ravenna)
 Venerdì   | 19:30 - 21:30  | [Lugo](/palestre#lugo)
 
