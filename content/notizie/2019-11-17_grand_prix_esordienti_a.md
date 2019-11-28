@@ -8,7 +8,7 @@ thumbnail: /images/uploads/2019-11-17_riccardo_casella.jpg
 
 **DA CORREGGERE**
 
-La performance dell'atleta del Team Romagna Judo appartenente alla categoria Es. A preparato dall Maestro Paolo Berretti 7 Dan che ha  preso parte al “ Grand Prix Es. A 2019 – IV Prova ” svoltasi domenica 17 Novembre al palazzetto dello sport di Castelfranco Emilia, brilla, nel contesto, la medaglia d’oro messa al collo a  Riccardo Casella autore di una ottima prestazione che ha visto il portacolori romagnolo superare uno dopo l’altro gli avversari incontrati.
+La performance dell'atleta del Team Romagna Judo appartenente alla categoria Es. A preparato dall Maestro Paolo Berretti 7 Dan che ha  preso parte al “ Grand Prix Es. A 2019 – IV Prova ” svoltasi domenica 17 Novembre al palazzetto dello sport di Castelfranco Emilia, brilla, nel contesto, la medaglia d’oro messa al collo a  🥇**Riccardo Casella** autore di una ottima prestazione che ha visto il portacolori romagnolo superare uno dopo l’altro gli avversari incontrati.
 
 Qui Riccardo ha dimostrato anche grande capacità nella gestione degli incontri.
 
