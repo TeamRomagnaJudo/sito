@@ -6,7 +6,7 @@
 			{{ $dayOfWeek := dateFormat "Monday" .Date }}
 			{{ $month := dateFormat "01" .Date }}
 
-			<a href="{{ .URL }}">{{ .Title }}</a>
+			<a href="{{ .RelPermalink }}">{{ .Title }}</a>
 			<h5>{{ index $.Site.Data.date.giorniDellaSettimana $dayOfWeek }}, {{ dateFormat "2" .Date }} {{ index $.Site.Data.date.mesi $month }} {{ dateFormat "2006" .Date }}</h5>
 		</li>
 	{{ end }}</ul>
