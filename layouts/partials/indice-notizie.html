@@ -1,7 +1,7 @@
 <div class="indice-notizie">
 	<h3>Notizie</h3>
 	
-	<ul>{{ range first 5 (where .Data.Pages "Type" "notizie") }}
+	<ul>{{ range first 5 (after 1  (where .Site.Pages "Type" "notizie")) }}
 		<li>
 			{{ $dayOfWeek := dateFormat "Monday" .Date }}
 			{{ $month := dateFormat "01" .Date }}
