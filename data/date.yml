@@ -12,11 +12,21 @@ mesi:
   "11": Novembre
   "12": Dicembre
 
+# giorniDellaSettimana:
+#   Monday:    Lunedì
+#   Tuesday:   Martedì
+#   Wednesday: Mercoledì
+#   Thursday:  Giovedì
+#   Friday:    Venerdì
+#   Saturday:  Sabato
+#   Sunday:    Domenica
+
+
 giorniDellaSettimana:
-  Monday:    Lunedì
-  Tuesday:   Martedì
-  Wednesday: Mercoledì
-  Thursday:  Giovedì
-  Friday:    Venerdì
-  Saturday:  Sabato
-  Sunday:    Domenica
+  lunedì:    Lunedì
+  martedì:   Martedì
+  mercoledì: Mercoledì
+  giovedì:   Giovedì
+  venerdì:   Venerdì
+  sabato:    Sabato
+  domenica:  Domenica
