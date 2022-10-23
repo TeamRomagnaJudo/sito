@@ -1,14 +1,17 @@
 <div class="indice-notizie">
 	<h3>Notizie</h3>
 	
-	<ul>{{ range first 5 (after 1  (where .Site.Pages "Type" "notizie")) }}
+	<!-- <ul>{ { range first 5 (after 1  (where .Site.Pages "Type" "notizie")) } } -->
+	<ul>{{ range $index, $value := (first 6 (where .Site.Pages "Type" "notizie")) }}
+        {{ if (ne $index 1) }}  <!-- skip item 1 as is just a link to the list of all news, with the same date of item 0. 🤷‍♂️ -->
 		<li>
-			{{ $dayOfWeek := dateFormat "Monday" .Date }}
+            {{ $dayOfWeek := dateFormat "Monday" .Date }}
 			{{ $month := dateFormat "01" .Date }}
-
+            
 			<a href="{{ .RelPermalink }}">{{ .Title }}</a>
 			<h5>{{ index $.Site.Data.date.giorniDellaSettimana $dayOfWeek }}, {{ dateFormat "2" .Date }} {{ index $.Site.Data.date.mesi $month }} {{ dateFormat "2006" .Date }}</h5>
 		</li>
+        {{ end }}
 	{{ end }}</ul>
 
 </div>
