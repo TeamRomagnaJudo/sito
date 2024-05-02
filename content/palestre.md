@@ -43,5 +43,5 @@ Venerdì   | --                                  | --
 
 
 
-[mappa-lugo]: https://www.google.it/maps/place/Team+Romagna+Judo/@44.419297,11.9062121,17z/data=!3m1!4b1!4m5!3m4!1s0x477e032c9abcbe93:0xbc2a51c45a18ba47!8m2!3d44.419297!4d11.9084008?hl=it
+[mappa-lugo]: https://maps.app.goo.gl/DRyebYqbNd8X5dz17
 [mappa-castelbolognese]: https://www.google.it/maps/place/Team+Romagna+Judo/@44.3160906,11.7916364,17z/data=!3m1!4b1!4m5!3m4!1s0x132b4bfe5db06c95:0xbf0a2a6d635aa079!8m2!3d44.3160906!4d11.7938251?hl=it
