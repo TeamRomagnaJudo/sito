@@ -14,15 +14,6 @@ Il Team Romagna Judo svolge attività presso le seguenti palestre
 
 [![Via Di Giù, 10 - Lugo (RA)](/images/maps/lugo.png)][mappa-lugo]
 
-### Corsi disponibili presso la palestra di Lugo
- Orario   | 16:45 - 18:00                       | 18:00 - 19:30             | 19:30 - 21:30
-----------|-------------------------------------|---------------------------|----------------------
-Lunedì    | [propedeutica](/corsi/propedeutica) | [ragazzi](/corsi/ragazzi) | [agonisti](/corsi/agonisti)
-Martedì   | --                                  | --                        | --
-Mercoledì | --                                  | [ragazzi](/corsi/ragazzi) | [agonisti](/corsi/agonisti)
-Giovedì   | --                                  | --                        | --
-Venerdì   | [propedeutica](/corsi/propedeutica) | [ragazzi](/corsi/ragazzi) | [agonisti](/corsi/agonisti)
-
 ---
 
 ## Castel Bolognese
@@ -30,15 +21,6 @@ Venerdì   | [propedeutica](/corsi/propedeutica) | [ragazzi](/corsi/ragazzi) | [
 [Via Donati, 25 - Castel Bolognese (RA)][mappa-castelbolognese]
 
 [![Via Donati, 25 - Castel Bolognese (RA)](/images/maps/castelbolognese.png)][mappa-castelbolognese]
-
-### Corsi disponibili presso la palestra di Castel Bolognese
- Orario   | 18:00 - 19:15                       | 19:15 - 21:00
-----------|-------------------------------------|---------------------------
-Lunedì    | [propedeutica](/corsi/propedeutica) | [ragazzi](/corsi/ragazzi) 
-Martedì   | [ragazzi](/corsi/ragazzi)<br><span style="font-size:0.7em">fino alle 20:00</span> | --
-Mercoledì | --                                  | --                        
-Giovedì   | [propedeutica](/corsi/propedeutica) | [ragazzi](/corsi/ragazzi) 
-Venerdì   | --                                  | --                        
 
 
 

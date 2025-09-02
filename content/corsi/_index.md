@@ -3,18 +3,19 @@ title = "Corsi"
 menu = "corsi"
 +++
 
-
 Il Team Romagna Judo organizza corsi di Judo per ragazze e ragazzi a partire dai sei anni di età.
 
-### [Propedeutica](/corsi/propedeutica)
-I più piccoli possono divertirsi con i corsi propedeutici.
+*I corsi sono attivi da lunedì 15 settembre!*
 
-### [Ragazzi](/corsi/ragazzi)
-Una volta acquisite le abilità necessarie per potersi confrontare in sicurezza con i propri compagni, le ragazze ed i ragazzi possono proseguire il loro apprendimento del Judo nei corsi per ragazzi.
+# [Lugo](/palestre#lugo)
 
-### [Agonisti](/corsi/agonisti)
-Per i più grandi ci sono anche i corsi per agonisti, dove vengono sviluppate le tecniche ed abilità per affrontare i combattimenti nelle gare.
+- Corso **6-9 anni**: dalle 17:00-18:00, lunedì e venerdì
+- Corso **9-13 anni**: dalle 18:00-19:30, lunedì e venerdì
+-⁠ ⁠Corso **adulti**: dalle 19:30-21:00, lunedi e venerdi
+- **Agonisti**: dalle 19:30-21:00, lunedì, mercoledì e venerdì
 
-### [Difesa personale](/corsi/difesa-personale)
-Quest'autunno (2018) si terrà anche il corso di difesa personale, presso la palestra di [Lugo](/palestre#lugo); le lezioni si terranno tutti i Lunedì (dalle 20.45 alle 21.45) a partire dal 1 Ottobre fino al 28 Gennaio 2019.
-Il corso sarà svolto in collaborazione con l'associazione [DEMETRA](http://www.demetradonne.it/).
+
+# [Castel Bolognese](/palestre#castel-bolognese)
+- Corso **6-10 anni**: dalle 18:00-19:15, lunedì e giovedì
+- Corso **adulti** e **agonisti**: dalle 19:15-21:00, lunedì e giovedì
+
