@@ -11,7 +11,7 @@ Il Team Romagna Judo organizza corsi di Judo per ragazze e ragazzi a partire dai
 
 - Corso **6-9 anni**: dalle 17:00-18:00, lunedì e venerdì
 - Corso **9-13 anni**: dalle 18:00-19:30, lunedì e venerdì
--⁠ ⁠Corso **adulti**: dalle 19:30-21:00, lunedi e venerdi
+- ⁠Corso **adulti**: dalle 19:30-21:00, lunedi e venerdi
 - **Agonisti**: dalle 19:30-21:00, lunedì, mercoledì e venerdì
 
 
