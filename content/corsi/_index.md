@@ -5,7 +5,7 @@ menu = "corsi"
 
 Il Team Romagna Judo organizza corsi di Judo per ragazze e ragazzi a partire dai sei anni di età.
 
-*I corsi sono attivi da lunedì 15 settembre!*
+*I corsi per la stagione 2025/26 sono attivi da lunedì 15 settembre!*
 
 # [Lugo](/palestre#lugo)
 
