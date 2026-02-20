@@ -1,4 +1,11 @@
 franco-system:
-  image: /images/franco-system.jpg
+  image: /images/sponsor/franco-system.jpg
   url:   http://www.francosystem.it/
 
+ravaglia-iveco:
+  image: /images/sponsor/ravaglia-iveco.jpg
+  url:   https://www.offravaglia.it
+
+SAL-group:
+  image: /images/sponsor/SAL-GROUP.png
+  url:   https://www.autoscuolesal.it

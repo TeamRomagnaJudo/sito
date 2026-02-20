@@ -375,10 +375,10 @@ template {
     /*
     	$offset: 10px;
     	$ratio: 5;
-    
+
     	header {
     		height: $header-height / $ratio;
-    
+
     		.logo {
     			top: $offset;
     			left: $offset;
@@ -386,22 +386,22 @@ template {
     			border-radius: $offset / 2;
     			height: $logo-height / $ratio / 1.5;
     			width: $logo-width / $ratio / 1.5;
-    			
+
     			img {
     				width: inherit;
     			}
     		}
-    	
+
     		.onorificenze {
     			max-width: 40%;
     			top: $offset;
     			right: $offset;
-    
+
     			li {
     				font-weight: bold;
     				padding-bottom: 2px;
     				font-size: 9pt;
-    
+
     				color: red;
     			}
     		}
@@ -409,27 +409,27 @@ template {
     */ } }
 @media only screen and (min-width: 700px) and (max-width: 1099px) {
   body {
-    /*	
+    /*
     	$offset: 20px;
     	$ratio: 4;
-    
+
     	header {
     		height: $header-height / $ratio;
-    		
+
     		.logo {
     			top: $offset;
     			left: $offset;
     			padding: $offset;
     			border-radius: $offset / 2;
-    
+
     			height: $logo-height / $ratio / 1.5;
     			width: $logo-width / $ratio / 1.5;
-    			
+
     			img {
     				width: inherit;
     			}
     		}
-    	
+
     		.onorificenze {
     			top: $offset;
     			right: $offset;
@@ -446,32 +446,32 @@ template {
     /*
     	$ratio: 3;
     	$offset: 30px;
-    
+
     	header {
     		height: $header-height / $ratio;
-    
+
     		.logo {
     			top: $offset;
     			left: $offset;
     			padding: $offset;
     			border-radius: $offset / $ratio;
-    
+
     			height: $logo-height / $ratio / 1.5;
     			width: $logo-width / $ratio / 1.5;
-    			
+
     			img {
     				width: inherit;
     			}
     		}
-    
+
     		nav {
     			height: 50px;
     		}
-    
+
     		.onorificenze {
     			top: $offset;
     			right: $offset;
-    			
+
     			li {
     				padding-bottom: 6px;
     				font-size: 18pt;
@@ -728,12 +728,12 @@ header {
       -moz-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-      /*			
+      /*
       			font-size: 1.3em;
-      	
+
       			li {
       				margin: 0.1em 0em;
-      
+
       				a {
       					background-image: url("/images/nodo.png");
       					background-repeat: no-repeat;
@@ -746,53 +746,53 @@ header {
       					text-decoration: none;
       				}
       			}
-      
+
       			& > li:first-child > a {
       				color: #ffffff;
       			}
-      
+
       			& > li {
       				background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAK0lEQVQoU2NkIBIwEqmOgU4K/////x/kJEZGRriNdLIaW0gQbzU2h2MzEQAiZQgLCVxH+wAAAABJRU5ErkJggg==);
       				background-color: $yellow;
-      
+
       				&:hover {
       					filter: brightness(105%);
       				}
-      				
+
       				& + li {
       					background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAK0lEQVQoU2NkIBIwEqmOgU4Kz5w58x/kJBMTE7iNdLIaW0gQbzU2h2MzEQAY1QgLU4ZE3AAAAABJRU5ErkJggg==);
       					background-color: $orange;
-      
+
       					&:hover {
       						filter: brightness(110%);
       					}
-      						
+
       					& + li {
       						background-color: $green;
-      
+
       						&:hover {
       							filter: brightness(115%);
       						}
-      							
+
       						& + li {
       							background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAK0lEQVQoU2NkIBIwEqmOgU4Ka2tr/4Oc1NzcDLeRTlZjCwnircbmcGwmAgAKBQgLyPD56gAAAABJRU5ErkJggg==);
       							background-color: $blue;
-      
+
       							&:hover {
       								filter: brightness(120%);
       							}
-      									
+
       							& + li {
       								background-color: $brown;
-      
+
       								&:hover {
       									filter: brightness(125%);
       								}
-      											
+
       								& + li {
       									background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAK0lEQVQoU2NkIBIwEqmOgU4KQ0ND/4OctHr1ariNdLIaW0gQbzU2h2MzEQAChQgL7/se4AAAAABJRU5ErkJggg==);
       									background-color: $black;
-      
+
       									&:hover {
       										filter: brightness(130%);
       									}
@@ -802,7 +802,7 @@ header {
       					}
       				}
       			}
-      	
+
       			li {
       				font-size: 1.2em;
       				font-weight: bold;
@@ -1109,6 +1109,8 @@ footer {
     display: -ms-inline-flexbox;
     display: inline-flex; }
     footer .sponsor ul li {
+      display: inline-block;
+      vertical-align: top;
       padding: 1em; }
       footer .sponsor ul li a img {
         width: 200px; }
