@@ -1,6 +1,14 @@
-franco-system:
-  image: /images/sponsor/franco-system.jpg
-  url:   http://www.francosystem.it/
+labcc:
+  image: /images/sponsor/la-bcc.jpg
+  url:   https://www.labcc.it
+
+idrotecnica:
+  image: /images/sponsor/idrotecnica.jpg
+  url:   https://www.idrotecnica-srl.it
+
+# franco-system:
+#   image: /images/sponsor/franco-system.jpg
+#   url:   http://www.francosystem.it/
 
 ravaglia-iveco:
   image: /images/sponsor/ravaglia-iveco.jpg
