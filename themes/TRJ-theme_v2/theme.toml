@@ -1,0 +1,8 @@
+name = "TRJ-theme_v2"
+license = "MIT"
+description = "Nuovo layout sperimentale per il sito Team Romagna Judo 1972 (v2)."
+homepage = "https://www.teamromagnajudo.it/"
+min_version = "0.101.0"
+
+[author]
+  name = "Team Romagna Judo 1972"

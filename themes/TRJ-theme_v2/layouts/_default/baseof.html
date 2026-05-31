@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "it" }}">
+{{ partial "head.html" . }}
+<body class="kind-{{ .Page.Kind }}{{ with .Params.menu }} menu-{{ . }}{{ end }}">
+    {{ partial "header.html" . }}
+    <main id="content">
+        {{ block "main" . }}{{ end }}
+    </main>
+    {{ partial "footer.html" . }}
+</body>
+</html>

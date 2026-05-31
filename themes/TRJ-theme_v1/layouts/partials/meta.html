@@ -4,7 +4,8 @@
     <meta name="description" content="Team Romagna Judo">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="/css/trj.css" rel="stylesheet" />
+    {{ $css := resources.Get "scss/trj.scss" | toCSS (dict "targetPath" "css/trj.css" "outputStyle" "compressed") | fingerprint }}
+    <link href="{{ $css.RelPermalink }}" rel="stylesheet" />
     <!-- script type="text/javascript" src="js/main.js"></script -->
     <!-- title>{{ if .IsNode}}{{ .Title }} &middot; {{end}}{{ .Site.Title }}</title -->
     <title>{{ .Site.Title }}</title>

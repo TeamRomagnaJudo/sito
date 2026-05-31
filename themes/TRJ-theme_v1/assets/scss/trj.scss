@@ -738,6 +738,8 @@ footer {
 		@include inline-flex;
 		ul {
 			li {
+				display: inline-block;
+				vertical-align: top;
 				padding: 1em;
 				a {
 					img {

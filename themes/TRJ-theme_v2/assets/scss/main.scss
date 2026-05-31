@@ -1,0 +1,162 @@
+// ==========================================================================
+//  TRJ-theme_v2 — nuovo layout sperimentale
+//  Punto di partenza pulito e moderno; modifica liberamente.
+// ==========================================================================
+
+// --- Brand (ereditati dalla v1) -------------------------------------------
+$blue:  rgb(30, 19, 106);
+$red:   rgb(196, 45, 42);
+$ink:   #1a1a1a;
+$muted: #6b7280;
+$line:  #e5e7eb;
+$bg:    #ffffff;
+$bg-alt:#f7f7f9;
+
+$wrap-width: 980px;
+$radius: 12px;
+
+// --- Reset minimale --------------------------------------------------------
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    color: $ink;
+    background: $bg;
+    line-height: 1.6;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: $blue; text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1, h2, h3 { line-height: 1.2; font-weight: 700; }
+
+.wrap {
+    width: 100%;
+    max-width: $wrap-width;
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+}
+
+// --- Header / nav ----------------------------------------------------------
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: saturate(180%) blur(8px);
+    border-bottom: 1px solid $line;
+}
+.site-header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    min-height: 64px;
+}
+.site-header__brand img { height: 40px; width: auto; }
+
+.site-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.site-nav a {
+    display: block;
+    padding: 0.5rem 0.85rem;
+    border-radius: 999px;
+    color: $ink;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+.site-nav a:hover { background: $bg-alt; text-decoration: none; }
+.site-nav a.is-active { background: $blue; color: #fff; }
+
+// --- Hero (home) -----------------------------------------------------------
+.hero {
+    color: #fff;
+    background: linear-gradient(135deg, $blue 0%, darken($blue, 6%) 55%, $red 160%);
+}
+.hero__inner { padding-block: 4.5rem; }
+.hero__title { margin: 0; font-size: clamp(2rem, 6vw, 3.5rem); }
+.hero__tagline { margin: 0.5rem 0 0; font-size: clamp(1.05rem, 2.5vw, 1.4rem); opacity: 0.9; }
+
+// --- Contenuto -------------------------------------------------------------
+#content { padding-block: 2.5rem 3.5rem; }
+
+.prose {
+    max-width: 70ch;
+    h1 { font-size: 2rem; margin: 0 0 1rem; }
+    h2 { font-size: 1.4rem; margin: 2rem 0 0.75rem; }
+    h3 { font-size: 1.15rem; margin: 1.5rem 0 0.5rem; }
+    p, ul, ol { margin: 0 0 1rem; }
+    ul, ol { padding-left: 1.25rem; }
+    img { border-radius: $radius; margin: 1rem 0; }
+    table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+    th, td { padding: 0.5rem 0.75rem; border-bottom: 1px solid $line; text-align: left; }
+    hr { border: 0; border-top: 1px solid $line; margin: 2rem 0; }
+}
+.page-meta { color: $muted; font-size: 0.9rem; margin-top: -0.5rem; }
+
+// --- Liste a card ----------------------------------------------------------
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.25rem;
+    margin-top: 2rem;
+}
+.card {
+    display: block;
+    padding: 1.25rem;
+    background: $bg;
+    border: 1px solid $line;
+    border-radius: $radius;
+    color: inherit;
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+    &:hover {
+        text-decoration: none;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+}
+.card__date { display: block; color: $red; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; }
+.card__title { margin: 0.35rem 0 0.5rem; font-size: 1.15rem; }
+.card__summary { margin: 0; color: $muted; font-size: 0.95rem; }
+
+// --- Footer ----------------------------------------------------------------
+.site-footer {
+    border-top: 1px solid $line;
+    background: $bg-alt;
+    font-size: 0.9rem;
+}
+.site-footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    padding-block: 2.5rem;
+}
+.site-footer__org {
+    color: $muted;
+    .h-card { margin: 0; display: flex; flex-direction: column; gap: 0.15rem; }
+    .p-name { color: $ink; font-weight: 700; font-size: 1rem; margin-bottom: 0.35rem; }
+    .credits { margin-top: 0.75rem; font-size: 0.8rem; }
+}
+.site-footer__sponsor ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.25rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.site-footer__sponsor img { height: 48px; width: auto; opacity: 0.85; }
+.site-footer__sponsor a:hover img { opacity: 1; }
+
+@media (max-width: 640px) {
+    .site-header__inner { flex-direction: column; align-items: stretch; gap: 0.5rem; padding-block: 0.75rem; }
+    .site-nav ul { justify-content: center; }
+}

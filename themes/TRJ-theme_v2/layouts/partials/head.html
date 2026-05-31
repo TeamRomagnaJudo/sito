@@ -1,0 +1,12 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}Team Romagna Judo 1972 — Judo a Lugo dal 1972{{ end }}">
+
+    {{ $opts := dict "targetPath" "css/main.css" "outputStyle" "compressed" }}
+    {{ $css := resources.Get "scss/main.scss" | toCSS $opts | fingerprint }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
+</head>

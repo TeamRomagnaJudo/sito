@@ -1,0 +1,22 @@
+<footer class="site-footer">
+    <div class="wrap site-footer__inner">
+        <div class="site-footer__org">
+            <p class="h-card">
+                <a class="p-name u-url" href="https://teamromagnajudo.it">Team Romagna Judo 1972</a>
+                <span class="p-street-address">Via Di Giù, 10</span>
+                <span><span class="p-postal-code">48022</span> <span class="p-locality">Lugo</span> (<span class="p-region">Ravenna</span>)</span>
+                <span>email: <a class="u-email" href="mailto:teamromagnajudo1972@libero.it">teamromagnajudo1972@libero.it</a></span>
+                <span class="credits">Fotografie a cura di Lorenzo Drei –
+                    <a href="https://500px.com/lorenzodrei">500px</a> /
+                    <a href="https://www.instagram.com/drloren_/">Instagram</a></span>
+            </p>
+        </div>
+        <div class="site-footer__sponsor">
+            <ul>
+                {{ range $.Site.Data.sponsor }}
+                    <li><a href="{{ .url }}"><img src="{{ .image }}" alt=""></a></li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+</footer>

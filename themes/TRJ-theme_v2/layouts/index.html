@@ -1,0 +1,13 @@
+{{ define "main" }}
+    <section class="hero">
+        <div class="wrap hero__inner">
+            <h1 class="hero__title">{{ .Site.Title }}</h1>
+            <p class="hero__tagline">Vieni in palestra per giocare e apprendere il Judo</p>
+        </div>
+    </section>
+    <div class="wrap">
+        <div class="prose">
+            {{ .Content }}
+        </div>
+    </div>
+{{ end }}
