@@ -1,0 +1,17 @@
+{{- /* Avviso stagione + orario dei corsi.
+       Dati: data/corsi.yml (calendario) + data/sedi.yml (nome sede, per id).
+       Riproduce il markup storico della pagina Corsi. */ -}}
+{{- $corsi := $.Site.Data.corsi -}}
+{{- with $corsi.avviso }}
+<p><em>{{ . }}</em></p>
+{{- end }}
+{{- range $corsi.calendario }}
+{{- $sede := index (where $.Site.Data.sedi "id" .sede) 0 }}
+<h1 id="{{ .sede }}"><a href="/palestre#{{ .sede }}">{{ $sede.nome }}</a></h1>
+<ul>
+{{- range .corsi }}
+{{- $n := len .giorni }}
+<li>Corso <strong>{{ .fascia }}</strong>: dalle {{ .orario }}, {{ if gt $n 1 }}{{ delimit (first (sub $n 1) .giorni) ", " }} e {{ index .giorni (sub $n 1) }}{{ else }}{{ index .giorni 0 }}{{ end }}</li>
+{{- end }}
+</ul>
+{{- end }}

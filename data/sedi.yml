@@ -1,0 +1,16 @@
+# Sedi (palestre): dove si svolge l'attività.
+# Gli orari dei corsi sono in data/corsi.yml (riferiti a queste sedi tramite "id").
+# L'id è usato come ancora HTML e per il collegamento Corsi -> Palestre.
+
+- id: lugo
+  nome: Lugo
+  indirizzo: "Via Di Giù, 10 - Lugo (RA)"
+  mappa_url: https://maps.app.goo.gl/DRyebYqbNd8X5dz17
+  mappa_img: /images/maps/lugo.png
+
+- id: castel-bolognese
+  nome: Castel Bolognese
+  struttura: "Palazzetto dello Sport di Castel Bolognese"
+  indirizzo: "Via Donati, 25 - Castel Bolognese (RA)"
+  mappa_url: https://www.google.it/maps/place/Team+Romagna+Judo/@44.3160906,11.7916364,17z/data=!3m1!4b1!4m5!3m4!1s0x132b4bfe5db06c95:0xbf0a2a6d635aa079!8m2!3d44.3160906!4d11.7938251?hl=it
+  mappa_img: /images/maps/castelbolognese.png

@@ -1,0 +1,13 @@
+{{- /* Sedi (indirizzo + mappa) da data/sedi.yml — riproduce il markup storico. */ -}}
+{{- $last := sub (len $.Site.Data.sedi) 1 -}}
+{{- range $i, $sede := $.Site.Data.sedi }}
+<h2 id="{{ .id }}">{{ .nome }}</h2>
+{{- with .struttura }}
+<h4>{{ . }}</h4>
+{{- end }}
+<p><a href="{{ .mappa_url }}">{{ .indirizzo }}</a></p>
+<p><a href="{{ .mappa_url }}"><img src="{{ .mappa_img }}" alt="{{ .indirizzo }}"></a></p>
+{{- if ne $i $last }}
+<hr>
+{{- end }}
+{{- end }}

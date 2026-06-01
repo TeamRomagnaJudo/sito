@@ -1,0 +1,32 @@
+# Calendario dei corsi, raggruppato per sede.
+# Le sedi sono definite in data/sedi.yml e qui referenziate tramite "sede: <id>".
+
+# Stagione in corso e avviso mostrato in cima alla pagina Corsi.
+# Lasciare "avviso" vuoto ("") per non mostrare alcun avviso.
+stagione: "2025/26"
+avviso: "I corsi per la stagione 2025/26 sono attivi da lunedì 15 settembre!"
+
+calendario:
+  - sede: lugo
+    corsi:
+      - fascia: "6-9 anni"
+        orario: "17:00-18:00"
+        giorni: [lunedì, venerdì]
+      - fascia: "9-13 anni"
+        orario: "18:00-19:30"
+        giorni: [lunedì, venerdì]
+      - fascia: "adulti"
+        orario: "19:30-21:00"
+        giorni: [lunedì, venerdì]
+      - fascia: "Agonisti"
+        orario: "19:30-21:00"
+        giorni: [lunedì, mercoledì, venerdì]
+
+  - sede: castel-bolognese
+    corsi:
+      - fascia: "6-10 anni"
+        orario: "18:00-19:15"
+        giorni: [lunedì, giovedì]
+      - fascia: "adulti e agonisti"
+        orario: "19:15-21:00"
+        giorni: [lunedì, giovedì]
