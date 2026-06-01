@@ -27,7 +27,7 @@
         <p class="section__lead">Molto più di uno sport: un percorso di crescita fisica ed educativa.</p>
         <div class="benefit-grid">
             {{ range $benefici }}
-                <a class="benefit" href="/{{ .id }}/">
+                <div class="benefit">
                     <span class="benefit__img">
                         {{- $photo := resources.Get (printf "images/skills/%s.jpeg" .id) -}}
                         {{- if $photo }}{{ $photo = $photo.Fill "640x400" }}<img src="{{ $photo.RelPermalink }}" alt="{{ .nome }}" width="640" height="400" loading="lazy">
@@ -35,7 +35,7 @@
                     </span>
                     <h3 class="benefit__title">{{ .nome }}</h3>
                     <p class="benefit__text">{{ .testo }}</p>
-                </a>
+                </div>
             {{ end }}
         </div>
     </div>
