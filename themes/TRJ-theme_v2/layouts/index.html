@@ -1,13 +1,171 @@
 {{ define "main" }}
-    <section class="hero">
-        <div class="wrap hero__inner">
-            <h1 class="hero__title">{{ .Site.Title }}</h1>
-            <p class="hero__tagline">Vieni in palestra per giocare e apprendere il Judo</p>
-        </div>
-    </section>
+{{ $logo := resources.Get "images/trj_logo.jpg" }}
+
+{{/* ---------- 1. HERO ---------- */}}
+<section class="hero" id="top">
+    <div class="wrap hero__inner">
+        {{ with $logo }}<div class="hero__logo"><img src="{{ .RelPermalink }}" alt="Team Romagna Judo 1972"></div>{{ end }}
+        <h1 class="hero__title">Team Romagna Judo <span>1972</span></h1>
+        <p class="hero__tagline">Judo a Lugo e Castel Bolognese — per bambini, ragazzi e adulti</p>
+        {{ with .Site.Data.corsi.avviso }}<p class="hero__notice">{{ . }}</p>{{ end }}
+        <a class="btn btn--primary btn--lg" href="#contatti">Contattaci</a>
+    </div>
+</section>
+
+{{/* ---------- 2. BENEFICI (abilità) ---------- */}}
+{{ $benefici := slice
+    (dict "id" "agilita"    "nome" "Agilità"    "testo" "Coordinazione, prontezza e controllo del corpo nello spazio.")
+    (dict "id" "equilibrio" "nome" "Equilibrio" "testo" "Stabilità e padronanza dei movimenti, in piedi e a terra.")
+    (dict "id" "forza"      "nome" "Forza"      "testo" "Sviluppo armonico della forza, in sicurezza e gradualità.")
+    (dict "id" "rispetto"   "nome" "Rispetto"   "testo" "Rispetto del compagno, dell’avversario e delle regole.")
+    (dict "id" "sicurezza"  "nome" "Sicurezza"  "testo" "Imparare a cadere e a difendersi, dentro e fuori dal tatami.")
+    (dict "id" "tecnica"    "nome" "Tecnica"    "testo" "Le tecniche del judo trasmesse con metodo e pazienza.")
+}}
+<section class="section section--alt" id="benefici">
     <div class="wrap">
-        <div class="prose">
-            {{ .Content }}
+        <h2 class="section__title">Perché il judo</h2>
+        <p class="section__lead">Molto più di uno sport: un percorso di crescita fisica ed educativa.</p>
+        <div class="benefit-grid">
+            {{ range $benefici }}
+                <a class="benefit" href="/{{ .id }}/">
+                    <span class="benefit__img"><img src="/images/abilita/{{ .id }}/01.jpg" alt="{{ .nome }}" loading="lazy"></span>
+                    <h3 class="benefit__title">{{ .nome }}</h3>
+                    <p class="benefit__text">{{ .testo }}</p>
+                </a>
+            {{ end }}
         </div>
     </div>
+</section>
+
+{{/* ---------- 3. CORSI ---------- */}}
+<section class="section" id="corsi">
+    <div class="wrap">
+        <h2 class="section__title">I corsi</h2>
+        {{ with .Site.Data.corsi.avviso }}<p class="section__lead">{{ . }}</p>{{ end }}
+        <div class="schedule-grid">
+            {{ range .Site.Data.corsi.calendario }}
+                {{ $sede := index (where $.Site.Data.sedi "id" .sede) 0 }}
+                <div class="schedule">
+                    <h3 class="schedule__sede"><a href="#{{ .sede }}">{{ $sede.nome }}</a></h3>
+                    <ul class="schedule__list">
+                        {{ range .corsi }}
+                            <li class="schedule__row">
+                                <span class="schedule__fascia">{{ .fascia }}</span>
+                                <span class="schedule__when">{{ .orario }}<br><small>{{ partial "giorni.html" .giorni }}</small></span>
+                            </li>
+                        {{ end }}
+                    </ul>
+                </div>
+            {{ end }}
+        </div>
+        <p class="section__cta"><a class="btn" href="/materiale/">Moduli per l’iscrizione</a></p>
+    </div>
+</section>
+
+{{/* ---------- 4. DOVE SIAMO (sedi) ---------- */}}
+<section class="section section--alt" id="dove">
+    <div class="wrap">
+        <h2 class="section__title">Dove siamo</h2>
+        <div class="sedi-grid">
+            {{ range .Site.Data.sedi }}
+                <div class="sede" id="{{ .id }}">
+                    <a class="sede__map" href="{{ .mappa_url }}" target="_blank" rel="noopener">
+                        <img src="{{ .mappa_img }}" alt="Mappa {{ .nome }}" loading="lazy">
+                    </a>
+                    <div class="sede__body">
+                        <h3 class="sede__nome">{{ .nome }}</h3>
+                        {{ with .struttura }}<p class="sede__struttura">{{ . }}</p>{{ end }}
+                        <p class="sede__indirizzo">{{ .indirizzo }}</p>
+                        <a class="link" href="{{ .mappa_url }}" target="_blank" rel="noopener">Apri in Google Maps →</a>
+                    </div>
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+{{/* ---------- 5. CHI SIAMO ---------- */}}
+<section class="section" id="chi-siamo">
+    <div class="wrap chi">
+        <div class="chi__text">
+            <h2 class="section__title">Chi siamo</h2>
+            <p>Il Team Romagna Judo nasce nel <strong>1972</strong> dalla passione del
+            <strong>Maestro Paolo Berretti</strong>, cintura nera 7° Dan, fondatore e presidente della società.</p>
+            <p>Negli anni il TRJ è diventato una delle principali realtà agonistiche dell’Emilia-Romagna —
+            con titoli regionali, nazionali ed europei e oltre 60 cinture nere formate.</p>
+            <a class="btn" href="/allenatori/paolo-berretti/">La storia del Maestro</a>
+        </div>
+        <div class="chi__media">
+            <img src="/images/logo-squared.jpg" alt="Team Romagna Judo" loading="lazy">
+        </div>
+    </div>
+</section>
+
+{{/* ---------- 6. NOTIZIE ---------- */}}
+<section class="section section--alt" id="notizie">
+    <div class="wrap">
+        <h2 class="section__title">Ultime notizie</h2>
+        <div class="news-grid">
+            {{ range first 3 ((where .Site.RegularPages "Section" "notizie").ByDate.Reverse) }}
+                <a class="news" href="{{ .RelPermalink }}">
+                    <time class="news__date">{{ .Date.Format "02.01.2006" }}</time>
+                    <h3 class="news__title">{{ .Title }}</h3>
+                    <p class="news__summary">{{ .Summary | plainify | truncate 140 }}</p>
+                </a>
+            {{ end }}
+        </div>
+        <p class="section__cta"><a class="btn" href="/notizie/">Tutte le notizie</a></p>
+    </div>
+</section>
+
+{{/* ---------- 7. SEGUICI (social) ---------- */}}
+<section class="section section--social" id="seguici">
+    <div class="wrap">
+        <h2 class="section__title">Seguici</h2>
+        <p class="section__lead">Gare, foto e novità del Team le trovi ogni settimana sui nostri canali.</p>
+        <div class="social-buttons">
+            {{ range $k, $v := .Site.Data.social }}
+                <a class="social-btn social-btn--{{ $k }}" href="{{ $v.url }}" target="_blank" rel="noopener">
+                    {{ if eq $k "instagram" }}
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2c2.72 0 3.06.01 4.12.06 1.07.05 1.8.22 2.43.47.65.25 1.2.59 1.75 1.14.55.55.89 1.1 1.14 1.75.25.63.42 1.36.47 2.43.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.07-.22 1.8-.47 2.43-.25.65-.59 1.2-1.14 1.75-.55.55-1.1.89-1.75 1.14-.63.25-1.36.42-2.43.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-1.07-.05-1.8-.22-2.43-.47-.65-.25-1.2-.59-1.75-1.14-.55-.55-.89-1.1-1.14-1.75-.25-.63-.42-1.36-.47-2.43C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.07.22-1.8.47-2.43.25-.65.59-1.2 1.14-1.75.55-.55 1.1-.89 1.75-1.14.63-.25 1.36-.42 2.43-.47C8.94 2.01 9.28 2 12 2Zm0 1.8c-2.67 0-2.99.01-4.04.06-.98.04-1.51.21-1.86.35-.47.18-.8.4-1.15.75-.35.35-.57.68-.75 1.15-.14.35-.31.88-.35 1.86-.05 1.05-.06 1.37-.06 4.04s.01 2.99.06 4.04c.04.98.21 1.51.35 1.86.18.47.4.8.75 1.15.35.35.68.57 1.15.75.35.14.88.31 1.86.35 1.05.05 1.37.06 4.04.06s2.99-.01 4.04-.06c.98-.04 1.51-.21 1.86-.35.47-.18.8-.4 1.15-.75.35-.35.57-.68.75-1.15.14-.35.31-.88.35-1.86.05-1.05.06-1.37.06-4.04s-.01-2.99-.06-4.04c-.04-.98-.21-1.51-.35-1.86-.18-.47-.4-.8-.75-1.15-.35-.35-.68-.57-1.15-.75-.35-.14-.88-.31-1.86-.35-1.05-.05-1.37-.06-4.04-.06Zm0 3.06A5.14 5.14 0 1 1 6.86 12 5.14 5.14 0 0 1 12 6.86Zm0 1.8A3.34 3.34 0 1 0 15.34 12 3.34 3.34 0 0 0 12 8.66Zm5.34-3.24a1.2 1.2 0 1 1-1.2 1.2 1.2 1.2 0 0 1 1.2-1.2Z"/></svg>
+                    {{ else if eq $k "facebook" }}
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94Z"/></svg>
+                    {{ end }}
+                    <span>{{ title $k }}</span>
+                </a>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+{{/* ---------- 8. SPONSOR & FEDERAZIONI ---------- */}}
+<section class="section" id="sponsor">
+    <div class="wrap">
+        <h2 class="section__title">I nostri sponsor</h2>
+        <ul class="sponsor-strip">
+            {{ range .Site.Data.sponsor }}
+                <li><a href="{{ .url }}" target="_blank" rel="noopener"><img src="{{ .image }}" alt="" loading="lazy"></a></li>
+            {{ end }}
+        </ul>
+        <p class="federazioni">Società affiliata <strong>FIJLKAM</strong> · Insignita della
+        <strong>Stella d’Argento al Merito Sportivo</strong> del C.O.N.I.</p>
+    </div>
+</section>
+
+{{/* ---------- 9. CONTATTI ---------- */}}
+<section class="section section--alt section--contatti" id="contatti">
+    <div class="wrap contatti">
+        <h2 class="section__title">Contattaci</h2>
+        <p class="section__lead">Vuoi provare il judo o avere informazioni sui corsi? Scrivici, ti rispondiamo volentieri.</p>
+        <div class="contatti__actions">
+            <a class="btn btn--primary btn--lg" href="mailto:teamromagnajudo1972@libero.it">Scrivici via email</a>
+            {{/* TODO: sostituire con il numero WhatsApp reale della società */}}
+            <a class="btn btn--whatsapp btn--lg" href="https://wa.me/393330000000" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <div class="contatti__info">
+            <p><a href="mailto:teamromagnajudo1972@libero.it">teamromagnajudo1972@libero.it</a></p>
+            <p>Sede principale: Via Di Giù, 10 — 48022 Lugo (RA)</p>
+        </div>
+    </div>
+</section>
 {{ end }}

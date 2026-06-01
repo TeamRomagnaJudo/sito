@@ -1,23 +1,23 @@
 // ==========================================================================
-//  TRJ-theme_v2 — nuovo layout sperimentale
-//  Punto di partenza pulito e moderno; modifica liberamente.
+//  TRJ-theme_v2 — home single-page mockup
+//  Palette ereditata dalla v1 (blu / rosso / giallo). Iterabile.
 // ==========================================================================
 
-// --- Brand (ereditati dalla v1) -------------------------------------------
-$blue:  rgb(30, 19, 106);
-$red:   rgb(196, 45, 42);
-$ink:   #1a1a1a;
-$muted: #6b7280;
-$line:  #e5e7eb;
-$bg:    #ffffff;
-$bg-alt:#f7f7f9;
+$blue:   rgb(30, 19, 106);
+$red:    rgb(196, 45, 42);
+$yellow: rgb(222, 220, 8);
+$ink:    #181826;
+$muted:  #5b5b6b;
+$line:   #e6e6ee;
+$bg:     #ffffff;
+$bg-alt: #f6f6fb;
+$wa:     #25d366;
 
-$wrap-width: 980px;
-$radius: 12px;
+$wrap: 1080px;
+$radius: 14px;
 
-// --- Reset minimale --------------------------------------------------------
 *, *::before, *::after { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 80px; }
 body {
     margin: 0;
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -28,135 +28,179 @@ body {
 img { max-width: 100%; height: auto; display: block; }
 a { color: $blue; text-decoration: none; }
 a:hover { text-decoration: underline; }
-h1, h2, h3 { line-height: 1.2; font-weight: 700; }
+h1, h2, h3 { line-height: 1.15; font-weight: 800; }
 
-.wrap {
-    width: 100%;
-    max-width: $wrap-width;
-    margin-inline: auto;
-    padding-inline: 1.25rem;
+.wrap { width: 100%; max-width: $wrap; margin-inline: auto; padding-inline: 1.25rem; }
+
+// --- Buttons ---------------------------------------------------------------
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1.3rem;
+    border-radius: 999px;
+    background: #eef0f7;
+    color: $ink;
+    font-weight: 700;
+    line-height: 1;
+    border: 1px solid transparent;
+    transition: transform .12s ease, background .12s ease, box-shadow .12s ease;
+    &:hover { text-decoration: none; transform: translateY(-1px); }
+    &--primary { background: $red; color: #fff; }
+    &--primary:hover { background: darken($red, 6%); box-shadow: 0 8px 22px rgba($red, .35); }
+    &--whatsapp { background: $wa; color: #fff; }
+    &--whatsapp:hover { background: darken($wa, 6%); }
+    &--lg { padding: 0.95rem 1.8rem; font-size: 1.05rem; }
 }
 
-// --- Header / nav ----------------------------------------------------------
+// --- Header ----------------------------------------------------------------
 .site-header {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    background: rgba(255, 255, 255, 0.92);
+    position: sticky; top: 0; z-index: 20;
+    background: rgba(255,255,255,.92);
     backdrop-filter: saturate(180%) blur(8px);
     border-bottom: 1px solid $line;
 }
-.site-header__inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    min-height: 64px;
-}
-.site-header__brand img { height: 40px; width: auto; }
-
-.site-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.25rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
+.site-header__inner { display: flex; align-items: center; gap: 1rem; min-height: 64px; }
+.site-header__brand { display: flex; align-items: center; }
+.site-header__brand img { height: 42px; width: auto; }
+.site-nav { margin-left: auto; }
+.site-nav ul { display: flex; flex-wrap: wrap; gap: .15rem; list-style: none; margin: 0; padding: 0; }
 .site-nav a {
-    display: block;
-    padding: 0.5rem 0.85rem;
-    border-radius: 999px;
-    color: $ink;
-    font-weight: 600;
-    font-size: 0.95rem;
+    display: block; padding: .5rem .85rem; border-radius: 999px;
+    color: $ink; font-weight: 600; font-size: .95rem;
 }
 .site-nav a:hover { background: $bg-alt; text-decoration: none; }
-.site-nav a.is-active { background: $blue; color: #fff; }
+.site-header__cta { padding: .55rem 1.1rem; }
 
-// --- Hero (home) -----------------------------------------------------------
+// --- Hero ------------------------------------------------------------------
 .hero {
     color: #fff;
-    background: linear-gradient(135deg, $blue 0%, darken($blue, 6%) 55%, $red 160%);
+    background: linear-gradient(135deg, $blue 0%, darken($blue, 5%) 60%, $red 175%);
+    text-align: center;
 }
-.hero__inner { padding-block: 4.5rem; }
-.hero__title { margin: 0; font-size: clamp(2rem, 6vw, 3.5rem); }
-.hero__tagline { margin: 0.5rem 0 0; font-size: clamp(1.05rem, 2.5vw, 1.4rem); opacity: 0.9; }
+.hero__inner { padding-block: 4rem 4.5rem; display: flex; flex-direction: column; align-items: center; gap: 1rem; }
+.hero__logo {
+    background: #fff; padding: 1rem 1.25rem; border-radius: $radius;
+    box-shadow: 0 14px 40px rgba(0,0,0,.25);
+}
+.hero__logo img { max-height: 130px; width: auto; }
+.hero__title { margin: .5rem 0 0; font-size: clamp(2rem, 6vw, 3.4rem); letter-spacing: -.5px; }
+.hero__title span { color: $yellow; }
+.hero__tagline { margin: 0; font-size: clamp(1.05rem, 2.5vw, 1.35rem); opacity: .92; }
+.hero__notice {
+    margin: .25rem 0 .5rem; padding: .5rem 1rem; border-radius: 999px;
+    background: rgba(255,255,255,.15); font-weight: 600;
+}
 
-// --- Contenuto -------------------------------------------------------------
-#content { padding-block: 2.5rem 3.5rem; }
+// --- Section scaffolding ---------------------------------------------------
+.section { padding-block: 3.75rem; }
+.section--alt { background: $bg-alt; }
+.section__title { font-size: clamp(1.6rem, 4vw, 2.2rem); margin: 0 0 .35rem; }
+.section__lead { color: $muted; font-size: 1.1rem; margin: 0 0 2rem; max-width: 60ch; }
+.section__cta { margin-top: 2rem; }
 
-.prose {
-    max-width: 70ch;
-    h1 { font-size: 2rem; margin: 0 0 1rem; }
-    h2 { font-size: 1.4rem; margin: 2rem 0 0.75rem; }
-    h3 { font-size: 1.15rem; margin: 1.5rem 0 0.5rem; }
-    p, ul, ol { margin: 0 0 1rem; }
-    ul, ol { padding-left: 1.25rem; }
-    img { border-radius: $radius; margin: 1rem 0; }
-    table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
-    th, td { padding: 0.5rem 0.75rem; border-bottom: 1px solid $line; text-align: left; }
-    hr { border: 0; border-top: 1px solid $line; margin: 2rem 0; }
+// --- Benefici --------------------------------------------------------------
+.benefit-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; }
+.benefit {
+    display: block; background: $bg; border: 1px solid $line; border-radius: $radius;
+    overflow: hidden; color: inherit;
+    transition: transform .12s ease, box-shadow .12s ease;
+    &:hover { text-decoration: none; transform: translateY(-3px); box-shadow: 0 12px 30px rgba(0,0,0,.10); }
 }
-.page-meta { color: $muted; font-size: 0.9rem; margin-top: -0.5rem; }
+.benefit__img { display: block; aspect-ratio: 16 / 10; overflow: hidden; background: $bg-alt; }
+.benefit__img img { width: 100%; height: 100%; object-fit: cover; }
+.benefit__title { margin: 1rem 1.1rem .25rem; font-size: 1.2rem; }
+.benefit__title::before { content: ""; display: inline-block; width: .6rem; height: .6rem; margin-right: .5rem; border-radius: 2px; background: $red; vertical-align: middle; }
+.benefit__text { margin: 0 1.1rem 1.2rem; color: $muted; font-size: .95rem; }
 
-// --- Liste a card ----------------------------------------------------------
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 1.25rem;
-    margin-top: 2rem;
+// --- Corsi (schedule) ------------------------------------------------------
+.schedule-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+.schedule { background: $bg; border: 1px solid $line; border-radius: $radius; padding: 1.5rem; }
+.section--alt .schedule { background: $bg; }
+.schedule__sede { margin: 0 0 1rem; font-size: 1.35rem; }
+.schedule__sede a { color: $blue; }
+.schedule__list { list-style: none; margin: 0; padding: 0; }
+.schedule__row {
+    display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+    padding: .7rem 0; border-top: 1px solid $line;
 }
-.card {
-    display: block;
-    padding: 1.25rem;
-    background: $bg;
-    border: 1px solid $line;
-    border-radius: $radius;
-    color: inherit;
-    transition: transform 0.12s ease, box-shadow 0.12s ease;
-    &:hover {
-        text-decoration: none;
-        transform: translateY(-2px);
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-    }
+.schedule__row:first-child { border-top: 0; }
+.schedule__fascia { font-weight: 700; }
+.schedule__when { text-align: right; color: $muted; font-size: .9rem; }
+.schedule__when small { color: $muted; }
+
+// --- Sedi ------------------------------------------------------------------
+.sedi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+.sede { background: $bg; border: 1px solid $line; border-radius: $radius; overflow: hidden; }
+.sede__map { display: block; }
+.sede__map img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.sede__body { padding: 1.25rem 1.4rem 1.5rem; }
+.sede__nome { margin: 0 0 .2rem; font-size: 1.3rem; }
+.sede__struttura { margin: 0 0 .4rem; color: $muted; font-weight: 600; }
+.sede__indirizzo { margin: 0 0 .8rem; color: $muted; }
+.link { font-weight: 700; }
+
+// --- Chi siamo -------------------------------------------------------------
+.chi { display: grid; grid-template-columns: 1.4fr 1fr; gap: 2.5rem; align-items: center; }
+.chi__text p { margin: 0 0 1rem; }
+.chi__media img { border-radius: $radius; box-shadow: 0 12px 30px rgba(0,0,0,.10); }
+
+// --- Notizie ---------------------------------------------------------------
+.news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
+.news {
+    display: block; background: $bg; border: 1px solid $line; border-radius: $radius;
+    padding: 1.3rem; color: inherit;
+    transition: transform .12s ease, box-shadow .12s ease;
+    &:hover { text-decoration: none; transform: translateY(-3px); box-shadow: 0 12px 30px rgba(0,0,0,.10); }
 }
-.card__date { display: block; color: $red; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; }
-.card__title { margin: 0.35rem 0 0.5rem; font-size: 1.15rem; }
-.card__summary { margin: 0; color: $muted; font-size: 0.95rem; }
+.news__date { display: block; color: $red; font-size: .8rem; font-weight: 800; text-transform: uppercase; letter-spacing: .04em; }
+.news__title { margin: .35rem 0 .5rem; font-size: 1.1rem; }
+.news__summary { margin: 0; color: $muted; font-size: .92rem; }
+
+// --- Seguici (social) ------------------------------------------------------
+.section--social { text-align: center; background: $blue; color: #fff; }
+.section--social .section__title { color: #fff; }
+.section--social .section__lead { color: rgba(255,255,255,.85); margin-inline: auto; }
+.social-buttons { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+.social-btn {
+    display: inline-flex; align-items: center; gap: .6rem;
+    padding: .85rem 1.6rem; border-radius: 999px; font-weight: 700; color: #fff;
+    transition: transform .12s ease, opacity .12s ease;
+    &:hover { text-decoration: none; transform: translateY(-2px); }
+    svg { width: 24px; height: 24px; }
+}
+.social-btn--instagram { background: linear-gradient(45deg, #f09433, #e6683c 30%, #dc2743 50%, #cc2366 75%, #bc1888); }
+.social-btn--facebook { background: #1877f2; }
+
+// --- Sponsor ---------------------------------------------------------------
+.sponsor-strip {
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+    gap: 2.5rem; list-style: none; margin: 0; padding: 0;
+}
+.sponsor-strip img { height: 60px; width: auto; filter: grayscale(1); opacity: .75; transition: filter .15s ease, opacity .15s ease; }
+.sponsor-strip a:hover img { filter: none; opacity: 1; }
+.federazioni { text-align: center; color: $muted; margin-top: 2rem; font-size: .95rem; }
+
+// --- Contatti --------------------------------------------------------------
+.section--contatti { text-align: center; }
+.contatti .section__lead { margin-inline: auto; }
+.contatti__actions { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-bottom: 1.5rem; }
+.contatti__info { color: $muted; }
+.contatti__info p { margin: .2rem 0; }
 
 // --- Footer ----------------------------------------------------------------
-.site-footer {
-    border-top: 1px solid $line;
-    background: $bg-alt;
-    font-size: 0.9rem;
-}
-.site-footer__inner {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: space-between;
-    padding-block: 2.5rem;
-}
-.site-footer__org {
-    color: $muted;
-    .h-card { margin: 0; display: flex; flex-direction: column; gap: 0.15rem; }
-    .p-name { color: $ink; font-weight: 700; font-size: 1rem; margin-bottom: 0.35rem; }
-    .credits { margin-top: 0.75rem; font-size: 0.8rem; }
-}
-.site-footer__sponsor ul {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1.25rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.site-footer__sponsor img { height: 48px; width: auto; opacity: 0.85; }
-.site-footer__sponsor a:hover img { opacity: 1; }
+.site-footer { border-top: 1px solid $line; background: $bg-alt; font-size: .9rem; color: $muted; }
+.site-footer__inner { display: flex; flex-wrap: wrap; gap: 1.5rem 2.5rem; justify-content: space-between; padding-block: 2.25rem 1rem; }
+.site-footer__name { color: $ink; font-weight: 800; font-size: 1rem; margin: 0 0 .3rem; }
+.site-footer__org p { margin: .1rem 0; }
+.site-footer__social { display: flex; gap: 1.25rem; align-items: flex-start; }
+.site-footer__social a { color: $blue; font-weight: 700; }
+.site-footer__bottom { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; justify-content: space-between; padding-block: 1rem 1.75rem; border-top: 1px solid $line; }
 
-@media (max-width: 640px) {
-    .site-header__inner { flex-direction: column; align-items: stretch; gap: 0.5rem; padding-block: 0.75rem; }
+// --- Responsive ------------------------------------------------------------
+@media (max-width: 760px) {
+    .site-header__inner { flex-wrap: wrap; min-height: 0; padding-block: .6rem; }
+    .site-nav { order: 3; width: 100%; margin-left: 0; }
     .site-nav ul { justify-content: center; }
+    .site-header__cta { margin-left: auto; }
+    .chi { grid-template-columns: 1fr; }
+    .chi__media { order: -1; max-width: 320px; }
 }

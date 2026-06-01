@@ -1,0 +1,8 @@
+{{- /* Formatta una lista di giorni: ["a"] -> "a"; ["a","b"] -> "a e b"; ["a","b","c"] -> "a, b e c" */ -}}
+{{- $g := . -}}
+{{- $n := len $g -}}
+{{- if gt $n 1 -}}
+{{- delimit (first (sub $n 1) $g) ", " }} e {{ index $g (sub $n 1) -}}
+{{- else -}}
+{{- index $g 0 -}}
+{{- end -}}

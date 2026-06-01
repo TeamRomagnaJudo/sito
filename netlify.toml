@@ -10,3 +10,11 @@
 
 [context.deploy-preview.environment]
   HUGO_VERSION = "0.101.0"
+
+# Branch deploy "theme-v2": anteprima del nuovo tema su URL dedicato
+# (es. theme-v2--<sito>.netlify.app). La produzione (master) resta su TRJ-theme_v1.
+[context."theme-v2"]
+  command = "hugo --theme TRJ-theme_v2 --buildFuture"
+
+[context."theme-v2".environment]
+  HUGO_VERSION = "0.101.0"

@@ -124,14 +124,44 @@ were baked into the old hand-written Markdown:
 
 Visible content and layout are otherwise identical to the previous output.
 
-## Open decisions (need your input)
+## v2 layout — single page (inspired by starjudo.it)
 
-**Layout / IA — gates the v2 mockup**
-- one-pager vs multi-page?
-- which v1 sections to drop: `Materiale`, `Album`, `Gare/risultati`, the "abilità"
-  pages (agilità, equilibrio, forza, rispetto, sicurezza, tecnica), `allenatori`,
-  `stage`, `campus`, `team`, `onoreficenze`?
-- primary call-to-action: follow on social, see the schedule, or enrol?
+v2 is a **single scrolling page** with a sticky top nav of in-page anchors, in the
+spirit of https://starjudo.it/. Sections top to bottom, each backed by existing
+content or data:
+
+1. **Hero** — new logo (`assets/images/trj_logo.jpg`), club name, short tagline,
+   the season notice (`data/corsi.yml` → `avviso`), and one CTA button
+   **"Contattaci"** that scrolls to the Contatti section.
+2. **Perché il judo / I benefici** — icon cards reusing the existing *abilità*
+   content (Agilità, Equilibrio, Forza, Rispetto, Sicurezza, Tecnica) and the
+   images in `static/images/abilita/`.
+3. **I corsi** — schedule cards per gym (`data/corsi.yml`).
+4. **Dove siamo** — locations + maps (`data/sedi.yml`).
+5. **Chi siamo** — short about/coach block reusing `content/allenatori/` and
+   `content/team.md` (rough first pass; to iterate).
+6. **Notizie** — latest 3 teasers (`content/notizie/`), linking to a full archive
+   page (the only multi-page exception).
+7. **Seguici** — prominent Instagram/Facebook call-out (`data/social.yml`): the
+   primary "drive to social" goal.
+8. **Sponsor & federazioni** — sponsor logos (`data/sponsor.yml`) + FIJLKAM /
+   honours (`onoreficenze`).
+9. **Contatti** — email and/or WhatsApp link (no form) + address. Target of the hero CTA.
+10. **Footer** — società data, social, credits.
+
+Top nav anchors (proposed): **Corsi · Dove siamo · Chi siamo · Notizie · Contatti**
+plus the **Contattaci** button.
+
+### Decisions taken
+- Single page (multi-page only for the full Notizie archive).
+- Primary CTA: a neutral **"Contattaci"** anchor — no trial-booking funnel.
+- Contact via **email and/or WhatsApp links**, no form (skips Hugo/Netlify form
+  detection; Netlify Forms remains a free option if wanted later).
+- *abilità* and *allenatori/team* are **folded in** (sections 2 and 5), not dropped.
+- Off the main nav: `Materiale` (surfaced as "iscrizioni" from Corsi), `Album`,
+  `Gare/risultati`, `stage`, `campus`.
+
+## Still open
 
 **Brand**
 - a transparent **PNG/SVG** logo (the current one is a JPG, no transparency);
@@ -139,10 +169,14 @@ Visible content and layout are otherwise identical to the previous output.
 - typography; are web fonts (e.g. Google Fonts) acceptable?
 - tone: playful (kids) vs clean/competitive (agonistic)?
 
+**Contact details to display**
+- email is known (`teamromagnajudo1972@libero.it`); is there a **WhatsApp / phone
+  number** to show? (`data/social.yml` has only Instagram/Facebook today.)
+
 **Content modelling**
-- once `data/sedi.yml` covers them, keep the old `corsi.md`/`palestre.md` prose or retire it?
+- once `data/sedi.yml` + `data/corsi.yml` cover them, keep the old
+  `corsi.md`/`palestre.md` prose or retire it?
 - day format: full names ("lunedì") or abbreviations ("lun")?
-- social: any networks beyond Instagram/Facebook (YouTube, TikTok, WhatsApp)?
 
 **Technical niceties (cheap to add)**
 - Open Graph / share cards + favicon;
