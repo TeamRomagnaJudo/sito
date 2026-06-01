@@ -1,11 +1,11 @@
 {{ define "main" }}
-{{ $logo := resources.Get "images/trj_logo.jpg" }}
+{{ $logo := resources.Get "images/1.png" }}
 
 {{/* ---------- 1. HERO ---------- */}}
 <section class="hero" id="top">
     <div class="wrap hero__inner">
-        {{ with $logo }}<div class="hero__logo"><img src="{{ .RelPermalink }}" alt="Team Romagna Judo 1972"></div>{{ end }}
-        <h1 class="hero__title">Team Romagna Judo <span>1972</span></h1>
+        {{ with $logo }}{{ $r := .Resize "1000x" }}<div class="hero__logo"><img src="{{ $r.RelPermalink }}" alt="Team Romagna Judo 1972" width="{{ $r.Width }}" height="{{ $r.Height }}"></div>{{ end }}
+        <h1 class="sr-only">Team Romagna Judo 1972</h1>
         <p class="hero__tagline">Judo a Lugo e Castel Bolognese — per bambini, ragazzi e adulti</p>
         {{ with .Site.Data.corsi.avviso }}<p class="hero__notice">{{ . }}</p>{{ end }}
         <a class="btn btn--primary btn--lg" href="#contatti">Contattaci</a>
@@ -28,7 +28,11 @@
         <div class="benefit-grid">
             {{ range $benefici }}
                 <a class="benefit" href="/{{ .id }}/">
-                    <span class="benefit__img"><img src="/images/abilita/{{ .id }}/01.jpg" alt="{{ .nome }}" loading="lazy"></span>
+                    <span class="benefit__img">
+                        {{- $photo := resources.Get (printf "images/skills/%s.jpeg" .id) -}}
+                        {{- if $photo }}{{ $photo = $photo.Fill "640x400" }}<img src="{{ $photo.RelPermalink }}" alt="{{ .nome }}" width="640" height="400" loading="lazy">
+                        {{- else }}<img src="/images/abilita/{{ .id }}/01.jpg" alt="{{ .nome }}" loading="lazy">{{ end -}}
+                    </span>
                     <h3 class="benefit__title">{{ .nome }}</h3>
                     <p class="benefit__text">{{ .testo }}</p>
                 </a>

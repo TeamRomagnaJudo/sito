@@ -1,8 +1,7 @@
-{{- $logo := resources.Get "images/trj_logo.jpg" -}}
 <header class="site-header">
     <div class="wrap site-header__inner">
-        <a class="site-header__brand" href="#top">
-            {{- with $logo }}<img src="{{ .RelPermalink }}" alt="Team Romagna Judo 1972">{{ end -}}
+        <a class="site-header__brand" href="#top" aria-label="Team Romagna Judo — home">
+            <span class="brand__name">Team Romagna</span>&nbsp;<span class="brand__judo">Judo</span>
         </a>
         <nav class="site-nav" aria-label="Menu principale">
             <ul>

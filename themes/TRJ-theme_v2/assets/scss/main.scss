@@ -59,8 +59,10 @@ h1, h2, h3 { line-height: 1.15; font-weight: 800; }
     border-bottom: 1px solid $line;
 }
 .site-header__inner { display: flex; align-items: center; gap: 1rem; min-height: 64px; }
-.site-header__brand { display: flex; align-items: center; }
-.site-header__brand img { height: 42px; width: auto; }
+.site-header__brand { display: flex; align-items: center; font-weight: 800; font-size: 1.2rem; letter-spacing: -.3px; white-space: nowrap; }
+.site-header__brand:hover { text-decoration: none; }
+.brand__name { color: $blue; }
+.brand__judo { color: $red; }
 .site-nav { margin-left: auto; }
 .site-nav ul { display: flex; flex-wrap: wrap; gap: .15rem; list-style: none; margin: 0; padding: 0; }
 .site-nav a {
@@ -72,22 +74,26 @@ h1, h2, h3 { line-height: 1.15; font-weight: 800; }
 
 // --- Hero ------------------------------------------------------------------
 .hero {
-    color: #fff;
-    background: linear-gradient(135deg, $blue 0%, darken($blue, 5%) 60%, $red 175%);
+    background: linear-gradient(180deg, #fff 0%, $bg-alt 100%);
     text-align: center;
 }
-.hero__inner { padding-block: 4rem 4.5rem; display: flex; flex-direction: column; align-items: center; gap: 1rem; }
-.hero__logo {
-    background: #fff; padding: 1rem 1.25rem; border-radius: $radius;
-    box-shadow: 0 14px 40px rgba(0,0,0,.25);
+.hero__inner {
+    min-height: 84vh;
+    padding-block: 2.5rem 3rem;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 1.25rem;
 }
-.hero__logo img { max-height: 130px; width: auto; }
-.hero__title { margin: .5rem 0 0; font-size: clamp(2rem, 6vw, 3.4rem); letter-spacing: -.5px; }
-.hero__title span { color: $yellow; }
-.hero__tagline { margin: 0; font-size: clamp(1.05rem, 2.5vw, 1.35rem); opacity: .92; }
+.hero__logo img { width: auto; height: clamp(240px, 46vh, 460px); }
+.hero__tagline { margin: 0; max-width: 32ch; font-size: clamp(1.1rem, 2.6vw, 1.5rem); color: $muted; }
 .hero__notice {
-    margin: .25rem 0 .5rem; padding: .5rem 1rem; border-radius: 999px;
-    background: rgba(255,255,255,.15); font-weight: 600;
+    margin: .25rem 0 .75rem; padding: .55rem 1.2rem; border-radius: 999px;
+    background: rgba($blue, .08); color: $blue; font-weight: 700;
+}
+
+// Visually-hidden (kept for SEO / screen readers)
+.sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
 }
 
 // --- Section scaffolding ---------------------------------------------------
@@ -175,9 +181,10 @@ h1, h2, h3 { line-height: 1.15; font-weight: 800; }
     display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
     gap: 2.5rem; list-style: none; margin: 0; padding: 0;
 }
-.sponsor-strip img { height: 60px; width: auto; filter: grayscale(1); opacity: .75; transition: filter .15s ease, opacity .15s ease; }
-.sponsor-strip a:hover img { filter: none; opacity: 1; }
+.sponsor-strip img { height: 60px; width: auto; transition: transform .15s ease; }
+.sponsor-strip a:hover img { transform: translateY(-2px); }
 .federazioni { text-align: center; color: $muted; margin-top: 2rem; font-size: .95rem; }
+
 
 // --- Contatti --------------------------------------------------------------
 .section--contatti { text-align: center; }
