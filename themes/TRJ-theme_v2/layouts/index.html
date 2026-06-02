@@ -90,18 +90,41 @@
 
 {{/* ---------- 5. CHI SIAMO ---------- */}}
 <section class="section" id="chi-siamo">
-    <div class="wrap chi">
-        <div class="chi__text">
-            <h2 class="section__title">Chi siamo</h2>
-            <p>Il Team Romagna Judo nasce nel <strong>1972</strong> dalla passione del
-            <strong>Maestro Paolo Berretti</strong>, cintura nera 7° Dan, fondatore e presidente della società.</p>
-            <p>Negli anni il TRJ è diventato una delle principali realtà agonistiche dell’Emilia-Romagna —
-            con titoli regionali, nazionali ed europei e oltre 60 cinture nere formate.</p>
-            <a class="btn" href="/allenatori/paolo-berretti/">La storia del Maestro</a>
+    <div class="wrap">
+        <h2 class="section__title">Chi siamo</h2>
+        <div class="chi">
+            <div class="chi__text">
+                <p>Il Team Romagna Judo nasce nel <strong>1972</strong> dalla passione del
+                <strong>Maestro Paolo Berretti</strong>, cintura nera 7° Dan e <strong>fondatore</strong>
+                della società. Oggi la presidenza è affidata a <strong>Danilo Naldi</strong>.</p>
+                <p>Negli anni il TRJ è diventato una delle principali realtà agonistiche dell’Emilia-Romagna —
+                con titoli regionali, nazionali ed europei e oltre 60 cinture nere formate.</p>
+                <a class="btn" href="/allenatori/paolo-berretti/">La storia del fondatore</a>
+            </div>
+            <div class="chi__media">
+                <img src="/images/logo-squared.jpg" alt="Team Romagna Judo" loading="lazy">
+            </div>
         </div>
-        <div class="chi__media">
-            <img src="/images/logo-squared.jpg" alt="Team Romagna Judo" loading="lazy">
+        {{ $trainers := slice }}
+        {{ range (where .Site.RegularPages "Section" "allenatori").ByWeight }}{{ if ne .Params.active false }}{{ $trainers = $trainers | append . }}{{ end }}{{ end }}
+        {{ with $trainers }}
+        <div class="chi-staff">
+            <h3 class="chi-staff__title">I nostri allenatori</h3>
+            <div class="staff-grid">
+                {{ range $t := . }}
+                    <div class="staff">
+                        {{ with $t.Params.photo }}<img class="staff__photo" src="/images/staff/{{ . }}" alt="{{ $t.Title }}" loading="lazy">{{ end }}
+                        <div class="staff__body">
+                            <h4 class="staff__nome">{{ $t.Title }}</h4>
+                            <p class="staff__ruolo">{{ $t.Params.role }}{{ with $t.Params.gym }} · {{ . }}{{ end }}</p>
+                            <div class="staff__bio">{{ $t.Summary }}</div>
+                            {{ if $t.Truncated }}<a class="staff__more" href="{{ $t.RelPermalink }}">Scopri di più →</a>{{ end }}
+                        </div>
+                    </div>
+                {{ end }}
+            </div>
         </div>
+        {{ end }}
     </div>
 </section>
 
@@ -164,7 +187,7 @@
         <div class="contatti__actions">
             <a class="btn btn--primary btn--lg" href="mailto:teamromagnajudo1972@libero.it">Scrivici via email</a>
             {{/* TODO: sostituire con il numero WhatsApp reale della società */}}
-            <a class="btn btn--whatsapp btn--lg" href="https://wa.me/393330000000" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn btn--whatsapp btn--lg" href="https://wa.me/393387918514" target="_blank" rel="noopener">WhatsApp</a>
         </div>
         <div class="contatti__info">
             <p><a href="mailto:teamromagnajudo1972@libero.it">teamromagnajudo1972@libero.it</a></p>

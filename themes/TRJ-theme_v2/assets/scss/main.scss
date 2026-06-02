@@ -147,6 +147,20 @@ h1, h2, h3 { line-height: 1.15; font-weight: 800; }
 .chi__text p { margin: 0 0 1rem; }
 .chi__media img { border-radius: $radius; box-shadow: 0 12px 30px rgba(0,0,0,.10); }
 
+.chi-staff { margin-top: 2.75rem; }
+.chi-staff__title { font-size: 1.35rem; margin: 0 0 1.5rem; }
+.staff-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); gap: 1.25rem; }
+.staff { display: flex; gap: 1.1rem; align-items: flex-start; background: $bg; border: 1px solid $line; border-radius: $radius; padding: 1.25rem 1.35rem; }
+.staff__photo { width: 76px; height: 76px; border-radius: 50%; object-fit: cover; flex: none; }
+.staff__body { min-width: 0; }
+.staff__nome { margin: 0; font-size: 1.1rem; }
+.staff__ruolo { margin: .15rem 0 .55rem; color: $red; font-weight: 700; font-size: .8rem; text-transform: uppercase; letter-spacing: .03em; }
+.staff__bio { color: $muted; font-size: .92rem; }
+.staff__bio p { margin: 0 0 .6rem; }
+.staff__bio :first-child { margin-top: 0; }
+.staff__bio :last-child { margin-bottom: 0; }
+.staff__more { display: inline-block; margin-top: .6rem; color: $blue; font-weight: 700; font-size: .9rem; }
+
 // --- Notizie ---------------------------------------------------------------
 .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
 .news {
