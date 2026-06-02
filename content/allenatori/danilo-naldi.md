@@ -2,7 +2,7 @@
 title = "Danilo Naldi"
 role = "Istruttore e Presidente"
 gym = "Lugo"
-photo = ""
+photo = "danilo-naldi.jpeg"
 weight = 10
 active = true
 draft = false

@@ -2,7 +2,7 @@
 title = "Enrico Naldi"
 role = "Allenatore Base"
 gym = "Lugo"
-photo = ""
+photo = "enrico-naldi.jpeg"
 weight = 25
 active = true
 draft = false
