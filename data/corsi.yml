@@ -18,7 +18,7 @@ calendario:
       - fascia: "adulti"
         orario: "19:30-21:00"
         giorni: [lunedì, venerdì]
-      - fascia: "Agonisti"
+      - fascia: "agonisti"
         orario: "19:30-21:00"
         giorni: [lunedì, mercoledì, venerdì]
 

@@ -7,4 +7,4 @@ weight = 30                         # ordine in home: più basso = più in alto
 acttive = true
 +++
 
-Bio in **markdown** (qualifiche, percorso…).
+Allenatore, 2º Dan, segue principalmente le attività degli adulti nella palestra di Lugo.
