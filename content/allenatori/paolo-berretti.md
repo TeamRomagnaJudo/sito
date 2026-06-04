@@ -10,11 +10,13 @@ draft = false
 
 +++
 
+Fondatore del Team Romagna Judo.
+
+<!--more-->`
+
 # Maestro Paolo Berretti - cintura nera 7° Dan
 
 ### Fondatore del Team Romagna Judo
-
-<!--more-->`
 
 ##### Nato a Lugo (RA) il 06-12-1946 
 
