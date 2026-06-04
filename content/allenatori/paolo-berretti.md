@@ -14,6 +14,8 @@ draft = false
 
 ### Fondatore del Team Romagna Judo
 
+<!--more-->`
+
 ##### Nato a Lugo (RA) il 06-12-1946 
 
 Nell’Anno 1964 la Romagna, regione di grande passione e forti valori morali, non poteva che essere la terra più fertile per la diffusione di uno sport, il judo, che, tra le sue caratteristiche ha proprio la determinazione, la correttezza, il rispetto dell’avversario ed il crescere assieme a quest’ultimo. Alla Romagna serviva soltanto un tramite, un appassionato romagnolo (non solo di nascita, ma che avesse tutte le peculiarità tipiche di chi vive in territorio romagnolo) che trasmettesse il sapere di Jigoro Kano alle generazioni a venire. Queste caratteristiche, furono riscontrate in **Paolo Berretti**.
